@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 700px;
+            height: 700px;
+            /*border: 1px solid #ccc;*/
+            margin-top: 20px;
+            position: relative;
+        }
+
+        #box div {
+            width: 50px;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            left: 0;
+            background-color: red;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oBox = document.getElementById('box');
+            var aDiv = oBox.getElementsByTagName('div');
+            var oBtn1 = document.getElementById('btn1');
+            var oBtn2 = document.getElementById('btn2');
+            var len = 100;
+            var str = '';
+            var arrBg = ['red', 'blue', 'yellow'];
+
+            oBtn1.onclick = function () {
+
+                for (var i = 0; i < len; i++) {
+                    str += "<div></div>";
+                }
+                oBox.innerHTML = str;
+
+                for (var i = 0; i < aDiv.length; i++) {
+                    aDiv[i].style.left = i % 10 * 55 + 'px';
+                    aDiv[i].style.top = Math.floor(i / 10) * 55 + 'px';
+                    aDiv[i].style.background = arrBg[i % 3];
+                }
+            };
+            oBtn2.onclick =function () {
+                oBox.innerHTML = '';
+            }
+
+
+        }
+    </script>
+</head>
+<body>
+<input type="button" value="点我点我" id="btn1">
+<input type="button" value="再点我" id="btn2">
+<div id="box"></div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<style type="text/css">
+			*{
+				margin: 0px;
+				padding: 0px;
+			}
+			
+			p{
+				margin: 30px 30px 40px 50px;
+			}
+		</style>
+	</head>
+	<body>
+		<p>我是段落标签</p>
+	</body>
+	<script>
+		$(function(){
+			//设置单个样式的值
+			//$('p').css('color','blue');
+			//设置多个样式的值
+			//$('p').css({'font-size':'30px','color':'red'});
+			
+			var $_top = $('p').offset().top;
+			console.log($_top);
+			var $_left = $('p').offset().left;
+				console.log($_left);
+		})
+		
+	</script>
+</html>

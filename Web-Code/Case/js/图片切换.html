@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<style type="text/css">
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    width: 600px;
+    height: 445px;
+    border: 2px solid mediumpurple;
+    margin: 20px auto;
+}
+
+.sele {
+    width: 600px;
+    height: 70px;
+    background-color: #000;
+    position: relative;
+}
+
+.btn {
+    width: 300px;
+    height: 45px;
+    line-height: 45px;
+    /* background-color: #fff; */
+    /* border-radius: 10px; */
+    position: absolute;
+    left: 50%;
+    top: 10px;
+    margin-left: -150px;
+    border: 1px solid #fff;
+    text-align: center;
+}
+
+.btn a {
+    float: left;
+    width: 150px;
+    text-decoration: none;
+    color: #fff;
+}
+
+.btn a:hover,
+.btn .active {
+    background-color: #fff;
+    color: #000;
+    /* border-radius: 8px; */
+}
+
+#picbox {
+    height: 375px;
+    width: 600px;
+    position: relative;
+    background-color: #eee;
+}
+
+#picbox img {
+    width: 600px;
+    height: 375px;
+}
+
+#picbox span {
+    position: absolute;
+    left: 0;
+    display: block;
+    text-align: center;
+    width: 600px;
+    background-color: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    color: #fff;
+    line-height: 30px;
+    font-size: 14px;
+}
+
+#number {
+    top: 0;
+}
+
+#intro {
+    bottom: 0;
+}
+
+#picbox a {
+    position: absolute;
+    top: 50%;
+    margin-top: -25px;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #000;
+    color: #fff;
+    text-decoration: none;
+    background-color: #000;
+    opacity: .3;
+    filter: alpha(opacity=30);
+}
+
+#next {
+    right: 0;
+}
+
+#prev {
+    left: 0;
+}
+
+#picbox a:hover {
+    opacity: .9;
+    filter: alpha(opacity=90);
+}
+
+#shade {
+    background-color: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    position: fixed;
+    left: 50%;
+    top: 20px;
+    width: 600px;
+    height: 445px;
+    display: none;
+    z-index: 10;
+    margin-left: -300px;
+}
+
+.tips {
+    width: 200px;
+    height: 70px;
+    background-color: #fff;
+    opacity: .8;
+    filter: alpha(opacity=80);
+    position: absolute;
+    top: 250px;
+    left: 50%;
+    margin-left: -100px;
+    margin-top: -55px;
+    padding: 30px 0 50px 0;
+    text-align: center;
+    color: red;
+    /* line-height: 50px ; */
+    z-index: 20;
+}
+
+#noneL,
+#noneR {
+    display: none;
+}
+
+#oky1,
+#oky2 {
+    width: 50px;
+    height: 20px;
+    background-color: blue;
+    position: absolute;
+    left: 50%;
+    top: 65%;
+    margin-left: -25px;
+    /* margin-top: -10px; */
+    font-size: 14px;
+    color: #fff;
+    cursor: pointer;
+}
+</style>
+<script>
+window.onload = function() {
+    var oNext = document.getElementById('next');
+    var oPrev = document.getElementById('prev');
+    var oImg = document.getElementById('img');
+    var oIntro = document.getElementById('intro');
+    var oNumber = document.getElementById('number');
+
+    var oCir = document.getElementById('cir');
+    var oSeq = document.getElementById('seq');
+
+    var onOff = true;
+
+    var oShade = document.getElementById('shade');
+    var oNoneL = document.getElementById('noneL');
+    var oNoneR = document.getElementById('noneR');
+    var oOky1 = document.getElementById('oky1');
+    var oOky2 = document.getElementById('oky2');
+
+
+    var imgArr = ['img/01.jpg', 'img/02.jpg', 'img/03.jpg', 'img/04.jpg', 'img/05.jpg'];
+    var textArr = ['海贼王2017', '海贼王2016', '海贼王2015', '海贼王2014', '海贼王2013'];
+
+    var num = 0;
+
+    oPrev.onclick = function() {
+        num--;
+        if(num == -1) {
+            if (onOff) {
+                num = imgArr.length - 1;
+            } else {
+                oShade.style.display = 'block';
+                oNoneL.style.display = 'block';
+                num = 0;
+            }
+
+        }
+        tab();
+
+    };
+
+    oNext.onclick = function() {
+        num++;
+        if (num == imgArr.length) {
+            if (onOff) {
+                num = 0;
+            } else {
+                oShade.style.display = 'block';
+                oNoneR.style.display = 'block';
+                num = imgArr.length - 1;
+            }
+
+        }
+        tab()
+    };
+
+    oOky1.onclick = function() {
+        oShade.style.display = 'none';
+        oNoneL.style.display = 'none';
+    };
+    oOky2.onclick = function() {
+        oShade.style.display = 'none';
+        oNoneR.style.display = 'none';
+    };
+    oCir.onclick = function() {
+        oSeq.className = '';
+        oCir.className = 'active';
+        onOff = true;
+
+    };
+    oSeq.onclick = function() {
+        oCir.className = '';
+        oSeq.className = 'active';
+        onOff = false;
+    };
+
+    function tab() {
+        oImg.src = imgArr[num];
+        oIntro.innerHTML = textArr[num];
+        oNumber.innerHTML = num + 1 + '/' + imgArr.length;
+    }
+    tab();
+
+
+
+}
+</script>
+
+<body>
+    <div id="shade">
+    </div>
+    <div id="noneL" class="tips">这是第一张,前面没有了!
+        <div id="oky1">
+            确定
+        </div>
+    </div>
+    <div id="noneR" class="tips">已经到最后一张啦!
+        <div id="oky2">
+            确定
+        </div>
+    </div>
+    <div class="box">
+        <div class="sele">
+            <div class="btn">
+                <a href="javascript:;" id="cir" class="active">循环切换</a>
+                <a href="javascript:;" id="seq">顺序切换</a>
+            </div>
+        </div>
+        <div id="picbox">
+            <img src="" alt="" id="img">
+            <a href="javascript:;" id="next">&gt;</a>
+            <a href="javascript:;" id="prev">&lt;</a>
+            <span id="number">...</span>
+            <span id="intro">...</span>
+        </div>
+    </div>
+</body>
+
+</html>

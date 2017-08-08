@@ -1,0 +1,713 @@
+    body {
+        /* height: 9999px; */
+        background-color: #f2f2f2;
+    }
+    /*头部-页眉*/
+    
+    header {
+        width: 100%;
+        min-width: 1310px;
+        background-color: #dcdcdc;
+    }
+    
+    .header {
+        width: 1310px;
+        margin: auto;
+        overflow: hidden;
+        line-height: 35px;
+    }
+    
+    .header p {
+        float: left;
+    }
+    
+    .header a {
+        float: right;
+        margin-left: 20px;
+        cursor: pointer;
+        color: #000;
+        position: relative;
+    }
+    
+    .header span {
+        border: 1px solid #000;
+        height: 10px;
+        width: 0px;
+        display: block;
+        position: absolute;
+        left: 66px;
+        top: 13px;
+    }
+    /*页眉结束*/
+    /*头部导航*/
+    
+    nav {
+        height: 90px;
+        border-bottom: 3px solid #f84545;
+    }
+    
+    nav .logo {
+        float: left;
+        margin-top: 24px;
+    }
+    
+    .allnav {
+        width: 1310px;
+        margin: auto;
+        height: 90px;
+    }
+    
+    .nav {
+        float: left;
+        width: 800px;
+        line-height: 90px;
+        margin-left: 100px;
+    }
+    
+    .nav li a {
+        float: left;
+        padding: 0 14px;
+        line-height: 90px;
+        /*font-weight: 600;*/
+    }
+    
+    .login {
+        float: right;
+        height: 90px;
+        line-height: 90px;
+    }
+    
+    .login li {
+        float: left;
+        width: 65px;
+        cursor: pointer;
+    }
+    
+    .login li a {
+        float: right;
+    }
+    
+    .login .search {
+        float: left;
+        background: url(../img/img_026.png) no-repeat 0 0;
+        width: 16px;
+        height: 16px;
+        margin-top: 38px;
+        margin-left: 10px;
+    }
+    
+    .login .log {
+        float: left;
+        background: url(../img/img_026.png) no-repeat -27px 0;
+        width: 16px;
+        height: 16px;
+        margin-top: 38px;
+        margin-left: 10px;
+    }
+    
+    .login .sign {
+        float: left;
+        background: url(../img/img_026.png) no-repeat -52px 0;
+        width: 17px;
+        height: 15px;
+        margin-top: 38px;
+        margin-left: 10px;
+    }
+    /*导航结束*/
+    /*主要部分*/
+    
+    .main {
+        width: 1310px;
+        height: 486px;
+        margin: auto;
+    }
+    
+    .main-nav {
+        width: 220px;
+        height: 486px;
+        background-color: #f84545;
+        float: left;
+    }
+    
+    .main-banner {
+        margin: 5px 0 0 5px;
+        width: 805px;
+        height: 481px;
+        float: left;
+    }
+    
+    .main-right {
+        width: 275px;
+        height: 486px;
+        float: right;
+    }
+    /*主要部分-导航*/
+    
+    .main-nav li {
+        padding-left: 20px;
+        padding-top: 12px;
+    }
+    
+    .main-nav li a {
+        font-size: 12px;
+        color: #fff;
+    }
+    
+    .main-nav .a-top {
+        display: inline-block;
+        padding-bottom: 5px;
+    }
+    /*主要部分-轮播图*/
+    
+    .main-banner .main-slide {
+        width: 805px;
+        height: 340px;
+        position: relative;
+    }
+    
+    .banner-bottom {
+        margin-top: 10px;
+        width: 805px;
+        height: 132px;
+    }
+    
+    .main-slide .arrow {
+        width: 45px;
+        height: 70px;
+        position: absolute;
+        top: 135px;
+        opacity: .2;
+        text-align: center;
+        line-height: 70px;
+        font-size: 45px;
+        background-color: #000;
+        color: #fff;
+        padding-bottom: 5px;
+    }
+    
+    .slide-left {
+        left: 0;
+    }
+    
+    .slide-right {
+        right: 0;
+    }
+    
+    .slide-indicator {
+        width: 100px;
+        height: 15px;
+        position: absolute;
+        bottom: 15px;
+        left: 50%;
+        margin-left: -50px;
+        padding-left: 10px;
+        padding-top: 5px;
+    }
+    
+    .slide-indicator .slide-indicator-btn {
+        float: left;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: #fff;
+        margin-right: 10px;
+    }
+    
+    .slide-indicator .slide-indicator-btn.current {
+        background-color: rgba(0, 0, 0, .1);
+        border: 1px solid #fff;
+        width: 7px;
+        height: 7px;
+    }
+    
+    .banner-bottom .banner-bottom-left {
+        width: 401px;
+        height: 132px;
+        float: left;
+        background-color: #65c4cf;
+    }
+    
+    .banner-bottom .banner-bottom-right {
+        width: 401px;
+        height: 132px;
+        float: right;
+        background-color: #f4c34a;
+    }
+    
+    .banner-bottom img {
+        margin-top: 10px;
+        margin-right: 40px;
+        float: right;
+    }
+    
+    .banner-bottom .banner-text {
+        width: 250px;
+        height: 132px;
+        float: left;
+    }
+    
+    .banner-bottom-left .banner-text {
+        width: 200px;
+    }
+    
+    .banner-bottom .banner-text h3 {
+        margin: 20px 0 0 26px;
+        font-size: 26px;
+        color: #026fc9;
+    }
+    
+    .banner-bottom .banner-text p {
+        margin: 10px 0 0 26px;
+        font-size: 16px;
+        color: #026fc9;
+    }
+    
+    .banner-bottom .banner-text a {
+        display: block;
+        margin: 10px 0 0 26px;
+        font-size: 12px;
+        color: #65c4cf;
+        background-color: #fff;
+        width: 75px;
+        padding-left: 10px;
+        border-radius: 0 10px 10px 0;
+    }
+    
+    .banner-bottom-right .banner-text h3 {
+        color: #fff;
+    }
+    
+    .banner-bottom-right .banner-text p {
+        color: #fff;
+    }
+    
+    .banner-bottom-right .banner-text a {
+        color: #f4c34a;
+    }
+    /*主要部分-新闻*/
+    
+    .main .main-right .main-news {
+        width: 276px;
+        height: 206px;
+        background-color: #fff;
+    }
+    
+    .main-news .news-title {
+        width: 276px;
+        height: 40px;
+        border-bottom: 1px solid #c8c8c8;
+    }
+    
+    .main-news .news-title h3 {
+        padding-left: 10px;
+        line-height: 40px;
+        float: left;
+        width: 100px;
+        height: 40px;
+        font-size: 18px;
+    }
+    
+    .main-news .news-title a {
+        font-size: 12px;
+        color: #a1a1a1;
+        float: right;
+        line-height: 40px;
+        padding-top: 2px;
+        padding-right: 22px;
+        cursor: pointer;
+    }
+    
+    .main-news .news-prodfun {
+        width: 266px;
+        height: 164px;
+        padding-left: 10px;
+    }
+    
+    .main-news .news-prodfun li {
+        float: left;
+        line-height: 24px;
+    }
+    
+    .main-news .news-prodfun li a {
+        font-size: 12px;
+        color: #7b7b7b;
+    }
+    /*主要部分-产品介绍*/
+    
+    .main .main-right .main-product {
+        margin-top: 5px;
+        width: 274px;
+        height: 276px;
+        background-color: #fff;
+    }
+    
+    .main .main-right .main-product li {
+        margin-right: -1px;
+        margin-top: -1px;
+        padding-top: 50px;
+        float: left;
+        width: 67px;
+        height: 41px;
+        border: 1px solid #d2d2d2;
+        text-align: center;
+        position: relative;
+        cursor: pointer;
+    }
+    
+    .main .main-right .main-product li.pro-current {
+        background-color: red;
+    }
+    
+    .main .main-right .main-product li.pro-current a {
+        color: #fff;
+    }
+    
+    .main .main-right .main-product li a {
+        font-size: 12px;
+        color: #838383;
+    }
+    
+    .main .main-right .main-product span {
+        width: 28px;
+        height: 28px;
+        background-color: red;
+        position: absolute;
+        top: 16px;
+        left: 20px;
+        background: url("../img/img_026.png") no-repeat;
+    }
+    
+    .main .main-right .main-product .pro1 {
+        background-position: 1px -17px;
+    }
+    
+    .main .main-right .main-product .pro2 {
+        background-position: -25px -17px;
+    }
+    
+    .main .main-right .main-product .pro3 {
+        background-position: -51px -17px;
+    }
+    
+    .main .main-right .main-product .pro4 {
+        background-position: -76px -17px;
+    }
+    
+    .main .main-right .main-product .pro5 {
+        background-position: 2px -43px;
+    }
+    
+    .main .main-right .main-product .pro6 {
+        background-position: -25px -43px;
+    }
+    
+    .main .main-right .main-product .pro7 {
+        background-position: -51px -43px;
+    }
+    
+    .main .main-right .main-product .pro8 {
+        background-position: -76px -43px;
+    }
+    
+    .main .main-right .main-product .pro9 {
+        background-position: 1px -69px;
+    }
+    
+    .main .main-right .main-product .pro10 {
+        background-position: -25px -68px;
+    }
+    
+    .main .main-right .main-product .pro11 {
+        background-position: -50px -70px;
+    }
+    
+    .main .main-right .main-product .pro12 {
+        background-position: -76px -71px;
+    }
+    /*产品内容-公共样式*/
+    
+    .proContent {
+        width: 1310px;
+        margin: auto;
+        margin-top: 24px;
+    }
+    
+    .proContent .pro-title {
+        width: 1310px;
+        line-height: 50px;
+        background-color: #fff;
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .proContent .pro-title span {
+        position: absolute;
+        left: 0;
+        top: 16px;
+        width: 4px;
+        height: 18px;
+        background-color: red;
+        marigin-top: 16px;
+    }
+    
+    .proContent .pro-title h3 {
+        float: left;
+        margin-left: 10px;
+        font-weight: 700;
+    }
+    
+    .proContent .pro-title a {
+        float: right;
+        font-size: 13px;
+        margin-right: 15px;
+        color: #a1a1a1;
+    }
+    
+    .proContent .pro-intro {
+        width: 1310px;
+        overflow: hidden;
+        padding-top: 16px;
+    }
+    
+    .proContent .pro-intro li {
+        padding: 10px;
+        float: left;
+        width: 292px;
+        background-color: #fff;
+    }
+    
+
+    .proContent .pro-intro li h4 {
+        margin-top: 10px;
+        font-size: 20px;
+        font-weight: 500;
+    }
+    
+    .proContent .pro-intro li p {
+        font-size: 13px;
+        color: #797979;
+        margin-top: 10px;
+    }
+    
+    .proContent .pro-intro li div {
+        margin-top: 10px;
+    }
+    
+    .proContent .pro-intro li div a {
+        font-size: 14px;
+    }
+    
+    .proContent .pro-intro li div .pro-star {
+        float: left;
+        width: 100px;
+    }
+    
+    .proContent .pro-intro li div a span {
+        width: 20px;
+        height: 20px;
+        background: url("../img/img_026.png") no-repeat -85px 1px;
+        float: left;
+    }
+    
+    .proContent .pro-intro li div .pro-link {
+        float: left;
+        width: 100px;
+    }
+    
+    .proContent .pro-intro li div .pro-link span {
+        width: 20px;
+        height: 20px;
+        background: url("../img/img_026.png") no-repeat -118px 1px;
+        float: left;
+    }
+    
+    .proContent .pro-intro li div .pro-look {
+        float: right;
+        color: red;
+    }
+    /*产品内容-产品方案*/
+    
+    .proContent .scheme {
+        width: 1310px;
+    }
+    /*产品内容-产品云*/
+    
+    .proContent .pro-title .sort {
+        float: right;
+        margin-right: 30px;
+    }
+    
+    .sort li {
+        float: left;
+    }
+    
+    .proContent .pro-title .sort li a {
+        font-size: 16px;
+        color: #000;
+        margin-right: 4px;
+    }
+    
+    .proContent .pro-title .sort li a.sort-current {
+        color: red;
+    }
+    
+    .proContent .pro-intro li h3 {
+        margin-bottom: 10px;
+        font-size: 18px;
+        font-weight: 500;
+    }
+    
+    .pro-intro .intro-img {
+        position: relative;
+    }
+    
+    .pro-intro .intro-img .intro-black {
+        line-height: 34px;
+        width: 289px;
+        position: absolute;
+        left: 0;
+        bottom: 4px;
+        background-color: rgba(0, 0, 0, .6)
+    }
+    
+    .pro-intro .intro-img .intro-black .money-now {
+        color: #fff;
+        float: right;
+        font-size: 20px;
+        margin-right: 20px;
+        margin-top: 0;
+    }
+    
+    .proContent .pro-intro .money-old {
+        padding-right: 30px;
+        text-align: right;
+        line-height: 10px;
+        color: red;
+        text-decoration: line-through;
+    }
+    
+    .proContent .pro-intro li div .pro-car {
+        float: left;
+        width: 100px;
+    }
+    
+    .proContent .pro-intro li div .pro-car span {
+        width: 20px;
+        height: 20px;
+        background: url("../img/img_026.png") no-repeat -114px -24px;
+        float: left;
+    }
+    
+    .proContent .pro-intro li .box-bottom {
+        margin-top: 20px;
+    }
+    
+    .proContent .pro-intro li div .pro-buy {
+        float: right;
+        color: #fff;
+        background-color: red;
+        width: 90px;
+        text-align: center;
+        line-height: 30px;
+        margin-top: -5px;
+    }
+    /*产品内容-团队*/
+    
+    .items-intro {
+        float: right;
+        margin-right: 8px;
+        width: 150px;
+    }
+    
+    .proContent .pro-intro .items-intro h4 {
+        margin-top: 18px;
+        font-size: 14px;
+    }
+    
+    .proContent .pro-intro .items-intro .items-left {
+        font-size: 12px;
+        float: left;
+        color: #5a5a5a;
+    }
+    
+    .proContent .pro-intro .items-intro .items-right {
+        font-size: 12px;
+        float: right;
+        color: #f85151;
+    }
+    
+    #pro-teams li {
+        width: 272px;
+        padding: 20px;
+    }
+    /* 页脚部分 */
+    
+    footer {
+        margin-top: 104px;
+        background-color: #f7f7f7;
+        width: 100%;
+        height: 290px;
+    }
+    
+    .footer-top {
+        background-color: #bfdfe5;
+        height: 249px;
+        width: 100%;
+        color: #777;
+    }
+    
+    .footer-content {
+        width: 1310px;
+        margin: auto;
+        height: 249px;
+    }
+    
+    .company {
+        float: left;
+        width: 450px;
+        
+    }
+    
+    .footer-top h3 {
+        line-height: 90px;
+        font-size: 16px;
+    }
+    .footer-nav {
+    	overflow: hidden;
+    	margin-bottom: 10px;
+    }
+    .footer-nav a {
+        float: left;
+        margin-right: 20px;
+        cursor: pointer;
+        color: #777;
+        position: relative;
+    }
+    
+    .footer-nav span {
+        border: 1px solid #777;
+        height: 10px;
+        width: 0px;
+        display: block;
+        position: absolute;
+        left: -10px;
+        top: 5px;
+    }
+     .company p{
+     	line-height: 30px;
+     	font-size: 14px;
+     }
+     .parter{
+     	float: left;
+     	width: 600px;
+     	margin-left: 80px;
+     }
+     .erweima{
+     	float: right;
+     }
+    .footer-bottom p {
+        line-height: 41px;
+        text-align: center;
+        color: #777;
+        font-size: 14px;
+    }

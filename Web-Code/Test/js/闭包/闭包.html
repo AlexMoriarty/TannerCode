@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<!--
+1.js中的垃圾回收机制
+
+优点:
+1: 使一个变量长期驻存在内存当中
+2: 避免全局变量的污染
+3: 使变量私有化
+
+用法:
+1: 使模块代码化
+-->
+</body>
+</html>
+<script>
+    // 全局变量
+//    var num = 0;
+//    function aaa() {
+//        num++;
+//        alert(num);
+//    }
+//    aaa(); //2
+//    aaa(); //3
+
+    // 局部变量 垃圾回收机制,调用完后就没了
+//     function aaa() {
+//         var num = 0;
+//         num++;
+//         alert(num);
+//     }
+//     aaa(); //1
+//     aaa(); //1
+
+    // 局部变量
+//    function aaa() {
+//        var num = 0;
+//        return function () {
+//            num++;
+//            alert(num);
+//        }
+//    }
+//    var b = aaa();
+//    b(); //1
+//    b(); //2
+//    alert(num);
+
+//    函数表达式 模块化代码
+//    var aaa = (function () {
+//        var num  = 0;
+//        return function () {
+//            num++;
+//            alert(num);
+//        }
+//    })();
+//    aaa(); //1
+//    aaa(); //2
+
+//    模块化代码
+//    var aaa = (function () {
+//        var num = 0;
+//
+//        function bbb() {
+//            num++;
+//            alert(num);
+//        }
+//        function ccc() {
+//            num++;
+//            alert(num);
+//        }
+//
+//        return {
+//            b:bbb,
+//            c:ccc
+//        }
+//    })();
+//    aaa.b(); //1
+//    aaa.c(); //2
+//    alert(num);
+//    alert(bbb);
+
+</script>

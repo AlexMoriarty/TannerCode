@@ -1,0 +1,120 @@
+.wrap-box {
+    width: 800px;
+    border: 1px solid #ccc;
+    /*height: 800px;*/
+    margin: 0 auto;
+    position: relative;
+}
+
+/*个人模板*/
+.people {
+    width: 100%;
+    /*height: 300px;*/
+    border: 1px solid #ccc;
+    margin-bottom: 10px;
+    padding: 10px;
+    overflow: hidden;
+    position: relative;
+}
+
+.people img {
+    width: 100%;
+    /*height: 150px;*/
+    border-radius: 50%;
+    border: 1px solid #ccc;
+}
+
+.pic {
+    width: 20%;
+    /*height: 150px;*/
+    float: left;
+}
+
+.infor {
+    float: left;
+    padding: 0 10px 0 20px;
+    width: 70%;
+    /*background-color: #ccc;*/
+}
+
+textarea {
+    resize: none;
+    width: 500px;
+    height: 80px;
+    overflow: auto;
+}
+
+/*按钮样式*/
+.btn-base {
+    position: fixed;
+    right: 170px;
+    width: 80px;
+    height: 30px;
+    border-radius: 5px;
+}
+
+.clone {
+    background-color: #31ffff;
+    top: 10px;
+}
+
+.clone:hover {
+    background-color: #23b6b6;
+}
+
+.add {
+    background-color: #ff9594;
+    top: 44px;
+}
+
+.add:hover {
+    background-color: #b56a69;
+}
+
+.shade-box {
+    width: 10%;
+    float: left;
+    display: none;
+    position: relative;
+}
+
+.btn-base2 {
+    position: absolute;
+    left: 0;
+    /*margin-top:-50px;*/
+    width: 50px;
+    height: 30px;
+    /*border-radius: 50%;*/
+    border: none;
+}
+
+.del {
+    /*right: 200px;*/
+    top: 40px;
+    background-color: #ff5b5d;
+}
+
+.del:hover {
+    background-color: #a83c3d;
+}
+
+.write {
+    /*left: 200px;*/
+    background-color: #d2ff97;
+}
+
+.write:hover {
+    background-color: #8fae67;
+
+}
+
+.oky {
+    background-color: #7bfa78;
+    top: 80px;
+    display: none;
+
+}
+
+.oky:hover {
+    background-color: #5cbc5a;
+}

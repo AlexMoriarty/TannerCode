@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            list-style: none;
+            text-indent: 35px;
+            /*border-bottom: 1px solid #ccc;*/
+        }
+
+        #list {
+            /*margin: 0 auto;*/
+            width: 150px;
+            /*overflow: hidden;*/
+            border: 1px solid #ccc;
+            /*height: 90px;*/
+        }
+
+        #list h3 {
+            text-indent: 30px;
+            height: 30px;
+            background: url(img/ico1.gif) no-repeat 10px center #b9c1ff;
+        }
+
+        #list h3.active {
+            background: url(img/ico2.gif) no-repeat 10px center #404373;
+            /*color: #fff;*/
+            cursor: pointer;
+        }
+
+        #list li ul {
+            display: none;
+        }
+
+        #list li li {
+            border-top: 1px solid #ccc;
+            /*display: none;*/
+        }
+
+        #list li .active {
+            background-color: #fff9b4;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oList = document.getElementById('list');
+            var aH3 = oList.getElementsByTagName('h3');
+            var aUl = oList.getElementsByTagName('ul');
+            var arrLi = [];
+
+//            console.log(aUl.length);
+
+            for (var i = 0; i < aUl.length; i++) {
+                aLi = aUl[i].getElementsByTagName('li');
+                for (var j = 0; j < aLi.length; j++) {
+                    arrLi.push(aLi[j]);
+                }
+            }
+
+            for (var i = 0; i < aUl.length; i++) {
+                aH3[i].index = i;
+
+                aH3[i].onclick = function () {
+                    if (this.className == '') {
+
+                        aUl[this.index].style.display = 'block';
+                        this.className = 'active';
+//                        for (var i = 0; i < arrLi.length; i++) {
+//                            arrLi[i].className = '';
+//                        }
+                    } else {
+                        aUl[this.index].style.display = 'none';
+                        this.className = '';
+                    }
+
+                }
+            }
+
+            for (var i = 0; i < arrLi.length; i++) {
+                arrLi[i].index = i;
+                arrLi[i].onclick = function () {
+
+//                    for (var i = 0; i < arrLi.length; i++) {
+//                        arrLi[i].className = '';
+//                    }
+
+                    if (this.className == 'active') {
+                        this.className = '';
+                        for (var i = 0; i < arrLi.length; i++) {
+                            arrLi[i].className = '';
+                        }
+                    } else {
+                        for (var i = 0; i < arrLi.length; i++) {
+                            arrLi[i].className = '';
+                        }
+                        this.className = 'active';
+
+                    }
+
+                }
+            }
+
+        }
+    </script>
+</head>
+<body>
+<ul id="list">
+    <li>
+        <h3>我的好友</h3>
+        <ul>
+            <li>张三</li>
+            <li>张三</li>
+            <li>张三</li>
+            <li>张三</li>
+        </ul>
+    </li>
+    <li>
+        <h3>公司好友</h3>
+        <ul>
+            <li>李四</li>
+            <li>李四</li>
+            <li>李四</li>
+            <li>李四</li>
+        </ul>
+    </li>
+    <li>
+        <h3>黑名单</h3>
+        <ul>
+            <li>王五</li>
+            <li>王五</li>
+            <li>王五</li>
+            <li>王五</li>
+        </ul>
+    </li>
+</ul>
+</body>
+</html>

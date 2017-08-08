@@ -1,0 +1,316 @@
+/*基础样式*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block
+}
+
+body {
+	line-height: 1
+}
+
+ol,
+ul {
+	list-style: none
+}
+
+blockquote,
+q {
+	quotes: none
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0
+}
+
+
+/*日历样式*/
+
+.calendar {
+	/*border: 1px solid #eaeaea;*/
+	width: 360px;
+	background: #fff;
+	border-radius: 4px;
+	overflow: hidden;
+	/*position: absolute;*/
+}
+
+.ui-datepicker-header {
+	height: 80px;
+	line-height: 80px;
+	color: #fff;
+	background: #43b9f6;
+	margin-bottom: 10px;
+
+}
+
+
+.ui-datepicker-prev,
+.ui-datepicker-next {
+	width: 20px;
+	height: 20px;
+	text-indent: 9999px;
+	border: 2px solid #43b9f6;
+	border-radius: 100%;
+	cursor: pointer;
+	overflow: hidden;
+	margin-top: 32px;
+}
+
+.ui-datepicker-prev {
+	float: left;
+	margin-left: 12px;
+}
+
+.ui-datepicker-prev:after {
+	transform: rotate(45deg);
+	margin: -76px 0px 0px 8px;
+}
+
+
+
+.ui-datepicker-next {
+	float: right;
+	margin-right: 12px;
+}
+
+.ui-datepicker-next:after {
+	transform: rotate(-135deg);
+	margin: -76px 0px 0px 6px;
+}
+
+.ui-datepicker-prev:after,
+.ui-datepicker-next:after {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 10px;
+	height: 10px;
+	border-left: 2px solid #fff;
+	border-bottom: 2px solid #fff;
+}
+
+.ui-datepicker-prev:hover,
+.ui-datepicker-next:hover{
+	border-color: #43b9f6;
+}
+.ui-datepicker-prev:hover:after,
+.ui-datepicker-next:hover:after {
+	border-color: #5ed1cc;
+}
+
+.ui-datepicker-title .ui-datepicker-month{
+	position: absolute;
+	left: 50%;
+	top: 44px;
+	font-size: 20px;
+	width: 50px;
+	margin-left: -25px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+
+}
+.ui-datepicker-title .ui-datepicker-year{
+	position: absolute;
+	left: 50%;
+	top: 20px;
+	font-size: 14px;
+	width: 50px;
+	margin-left: -25px;
+	height: 22px;
+	line-height: 22px;
+	text-align: center;
+}
+
+.ui-datepicker-calendar {
+	/*width: 100%;*/
+	width: 178px;
+	/*padding: 0 30px;*/
+	text-align: center;
+	margin-top: -10px;
+	margin-bottom: -1px;
+}
+
+.ui-datepicker-calendar thead tr th span {
+	display: block;
+	width: 51px;
+	height: 44px;
+	line-height: 44px;
+	color: #c7eafc;
+	/*margin-bottom: 10px;*/
+	font-size: 14px;
+	background-color: #43b9f6;
+
+}
+.ui-datepicker-calendar tbody{
+	/*padding: 0 30px;*/
+}
+.ui-datepicker-calendar tbody tr{
+	border-bottom: 1px solid #eaeaea;	
+	
+}
+
+
+.ui-state-default {
+	display: block;
+	text-decoration: none;
+	color: #464646;
+	/*line-height: 72px;*/
+	font-size: 14px;
+	height: 52px;
+	padding-top: 20px;
+
+}
+
+.ui-state-default:hover {
+	/*background: rgba(0, 0, 0, 0.02);*/
+	background-color: #edf6f9;
+	filter: alpha(opacity=80);
+	-moz-opacity: 0.8;
+	-khtml-opacity: 0.8;
+	opacity: 0.8;
+}
+
+.ui-state-highlight {
+	color: #43b9f6;
+}
+
+.ui-state-active {
+	color: #000;
+	background-color: #edf6f9;
+	position: relative;
+}
+.ui-state-active:before{
+	content: "";
+	width: 20px;
+	height: 20px;
+	background-color: #43b9f6;
+	position: absolute;
+	left: 50%;
+	top:16px;
+	margin-left: -10px;
+	border-radius: 50%;
+	opacity: 0.8;
+}
+
+
+.ui-datepicker-unselectable .ui-state-default {
+	color: #eee;
+	border: 2px solid transparent;
+}
+
+
+.ui-datepicker-calendar tbody tr td:first-of-type>a{
+	color: #bcbcbc;
+}
+.ui-datepicker-calendar tbody tr td:last-of-type>a{
+	color: #bcbcbc;
+}

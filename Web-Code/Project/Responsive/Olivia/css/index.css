@@ -1,0 +1,1225 @@
+/*顶部banner区域*/
+
+.head-banner {
+	margin-top: 20px;
+	padding: 20px;
+	/*height: 610px;*/
+}
+
+.head-text-wrap img,
+.head-phone-wrap img {
+	display: inline-block;
+}
+
+.head-text-wrap {
+	color: #fff;
+	padding: 10px 30px;
+	text-align: center;
+}
+
+.head-text-wrap h1 {
+	font-size: 40px;
+}
+
+.head-text-wrap p {
+	font-size: 14px;
+	line-height: 22px;
+}
+
+.head-text-wrap h3 {
+	margin-top: 14px;
+	margin-bottom: 12px;
+	font-size: 22px;
+}
+
+
+/*end 顶部banner区域*/
+
+
+/*features部分*/
+
+.features-wrap {
+	background: url(../img/bg_people_01.png) no-repeat center top #fdf8ff;
+	/*background-size: 100%;*/
+	width: 100%;
+	/*height: 840px;*/
+}
+
+.features-wrap .features {
+	padding: 30px 20px;
+	color: #3b434d;
+}
+
+.features-title-wrap h2 {
+	font-size: 30px;
+}
+
+.features-title-wrap p {
+	margin-top: 2px;
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.feat-info-wrap {
+	margin-top: 20px;
+}
+
+.feat-info-wrap h3 {
+	font-size: 18px;
+	margin-bottom: 4px;
+	margin-top: 10px;
+}
+
+.feat-info-wrap p {
+	font-size: 14px;
+	line-height: 18px;
+}
+
+.feat-info-pic img {
+	display: inline-block;
+}
+
+.feat-info {
+	overflow: hidden;
+	padding: 0 30px;
+	margin-bottom: 30px;
+}
+
+
+/*end features部分*/
+
+
+/*newapp*/
+
+.newapp-wrap {
+	color: #fff;
+	width: 100%;
+	padding: 30px 20px 0;
+}
+
+.handphone-title h3 {
+	font-size: 28px;
+	margin-bottom: 30px;
+}
+
+.newapp-text {
+	padding: 10px 20px 0 40px;
+	position: relative;
+}
+
+.newapp-text h4 {
+	font-size: 16px;
+	line-height: 16px;
+}
+
+.newapp-text p {
+	font-size: 14px;
+	line-height: 16px;
+}
+
+.newapp-text .icon-new {
+	position: absolute;
+	left: 0;
+	top: 12px;
+	font-size: 20px
+}
+
+.headphone-pic {
+	display: inline-block;
+}
+
+
+/*end newapp*/
+
+
+/*screen*/
+
+.screen {
+	background: url(../img/bg_screen.jpg) no-repeat center top;
+	width: 100%;
+}
+
+.screen-wrap .screen {
+	padding: 30px 20px 60px 20px;
+	color: #3b434d;
+}
+
+.screen-title h3 {
+	font-size: 34px;
+	color: #3b434d;
+	margin-bottom: 30px;
+}
+
+.screen-wrap .carousel-indicators {
+	bottom: -50px;
+}
+
+.screen-wrap .carousel-indicators li {
+	border-color: #a62ad7;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.screen-wrap .carousel-indicators .active {
+	background-color: #a62ad7;
+}
+
+.screen-wrap .carousel-control {
+	width: 5%;
+}
+
+
+/*end screen*/
+
+
+/*personal*/
+
+.personal-wrap {
+	width: 100%;
+	padding: 60px 0 70px 0;
+}
+
+.personal-wrap .carousel-control.right,
+.personal-wrap .carousel-control.left {
+	background-image: none;
+}
+
+.personal-wrap .carousel-control {
+	width: 5%;
+}
+
+.personal-wrap .carousel-caption {
+	text-align: left;
+	left: 26%;
+	right: 5%;
+}
+
+.icon-person {
+	font-size: 30px;
+	position: absolute;
+}
+
+.icon-person-left {
+	left: -30px;
+	top: 16px;
+}
+
+.icon-personal-right {
+	left: 386px;
+	top: 90px;
+}
+
+.person-text {
+	text-align: left;
+	position: absolute;
+}
+
+.person-text .person-info {
+	font-size: 16px;
+	line-height: 30px;
+	margin: 0 0 44px;
+}
+
+.person-text .person-name {
+	position: absolute;
+	font-size: 18px;
+	line-height: 46px;
+	left: 0;
+	top: 120px;
+	/*margin: 0px 0 -220px;*/
+}
+
+.person-text .person-level {
+	position: absolute;
+	left: 0;
+	top: 150px;
+	font-size: 16px;
+	line-height: 46px;
+}
+
+.person-pic {
+	width: 146px;
+	/*position: absolute;*/
+	/*left: 0;*/
+	/*top: 0;*/
+	display: inline-block;
+}
+
+.person-content .person-pic {
+	width: 207px;
+}
+
+.person-xs-text {
+	padding: 10px 32px;
+}
+
+.person-xs-text p {
+	font-size: 14px;
+	line-height: 18px;
+	color: #fff;
+}
+
+.person-text .person-level {
+	font-size: 16px;
+}
+
+.person-xs-text .person-name1 {
+	font-size: 18px;
+}
+
+.personal-wrap .carousel-indicators {
+	bottom: -40px;
+}
+
+
+/*end personal*/
+
+
+/*ask*/
+
+.ask-wrap {
+	width: 100%;
+	background-color: #fff;
+	padding: 50px 0;
+}
+
+.ask-title-wrap {
+	color: #3b434d;
+}
+
+.ask-title-wrap h3 {
+	font-size: 30px;
+	line-height: 32px;
+}
+
+.ask-title-wrap p {
+	margin-top: 36px;
+	font-size: 18px;
+	line-height: 24px;
+}
+
+.aks-info-wrap {
+	margin-top: 50px;
+}
+
+.ask-info h4 {
+	font-size: 14px;
+}
+
+.ask-info p {
+	font-size: 12px;
+	line-height: 14px;
+}
+
+.ask-info img {
+	display: inline-block;
+}
+
+.ask-info hr {
+	margin-bottom: 10px;
+	margin-top: 10px;
+}
+
+
+/*end ask*/
+
+
+/*email*/
+
+.email-wrap {
+	padding: 40px 0;
+}
+
+.email-title {
+	/*padding: 0 90px;*/
+	color: #fff;
+}
+
+.email-title h3 {
+	font-size: 60px;
+	margin-bottom: 30px;
+}
+
+.email-title p {
+	font-size: 16px;
+	line-height: 30px;
+}
+
+.email-form {
+	margin-top: 30px;
+}
+
+.email-form input {
+	color: #fff;
+	padding-left: 60px;
+	background-color: transparent;
+	border: 2px solid #fff;
+	/*width: 70%;*/
+	display: inline-block;
+}
+
+.email-form input::-webkit-input-placeholder,
+textarea::-webkit-input-placeholder {
+	/* WebKit*/
+	color: #fff;
+}
+
+.email-form input:-moz-placeholder,
+textarea:-moz-placeholder {
+	/* Mozilla Firefox 4 to 18 */
+	color: #fff;
+}
+
+.email-form input::-moz-placeholder,
+textarea::-moz-placeholder {
+	/* Mozilla Firefox 19+ */
+	color: #fff;
+}
+
+.email-form input:-ms-input-placeholder,
+textarea:-ms-input-placeholder {
+	/* IE 10+ */
+	color: #fff;
+}
+
+.form-inline .form-control {
+	width: 360px;
+}
+
+.email-form-group {
+	position: relative;
+}
+
+.email-form-group1 {
+	position: relative;
+	display: inline-block;
+	width: 70%;
+}
+
+.email-form-group .icon-youjian {
+	position: absolute;
+	left: 16px;
+	top: -6px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.email-form-group1 .icon-youjian {
+	position: absolute;
+	left: 10px;
+	top: -6px;
+	font-size: 30px;
+	color: #fff;
+}
+
+.btn-default {
+	color: #fff;
+	background-color: #a62ad7;
+	border-color: #a62ad7;
+}
+
+
+/*end email*/
+
+
+/*blog*/
+
+.blog-wrap {
+	background: url(../img/bg_blog.jpg) no-repeat center top #efe5ff;
+	width: 100%;
+}
+
+.blog {
+	padding: 40px 0;
+}
+
+.blog-title h3 {
+	font-size: 44px;
+	font-weight: 400;
+	color: #3b434d;
+	margin-bottom: 50px;
+}
+
+.blog-date-wrap {
+	padding: 0 16px;
+}
+
+.blog-date {
+	background-color: #a62ad7;
+	color: #fff;
+	padding: 5px 5px;
+	position: relative;
+}
+
+.blog-date h4 {
+	font-size: 22px;
+	/*margin: 0;*/
+}
+
+.blog-date p {
+	font-size: 16px;
+	font-weight: 100;
+	margin: 5px;
+}
+
+.blog-date span {
+	position: absolute;
+	right: -27px;
+	top: 26px;
+	border: 14px solid #a62ad7;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+.blog-date-info h4 {
+	font-size: 16px;
+	margin: 0 0 4px 0;
+}
+
+.blog-date-info .glob-i {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+	margin-bottom: 4px;
+}
+
+.blog-date-info .glob-g {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 400;
+}
+
+.icon-globe {
+	margin-right: 6px;
+}
+
+.blog-carousel-wrap .carousel-indicators {
+	bottom: -20px;
+}
+
+.blog-carousel-wrap .carousel-indicators li {
+	border-color: #a62ad7;
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.blog-carousel-wrap .carousel-indicators .active {
+	background-color: #a62ad7;
+}
+
+.blog-carousel-wrap .carousel-control {
+	width: 5%;
+}
+
+.blog-xs-mb {
+	margin-bottom: 20px;
+}
+
+.blog-date2 {
+	background-color: #4183f1;
+}
+
+.blog-date2 span {
+	border-color: #4183f1;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	border-right-color: transparent;
+}
+
+
+/*end blog*/
+
+
+/*媒体查询*/
+
+@media only screen and (min-width: 768px) {
+	/*顶部banner文字*/
+	.head-banner {
+		margin-top: 40px;
+	}
+	.head-text-wrap {
+		padding: 10px 0 0 40px;
+		text-align: left;
+	}
+	.head-text-wrap h1 {
+		font-size: 44px;
+	}
+	.head-text-wrap p {
+		font-size: 14px;
+		line-height: 22px;
+	}
+	.head-text-wrap h3 {
+		margin-top: 15px;
+		margin-bottom: 8px;
+		font-size: 20px;
+	}
+	/*features部分*/
+	.features-wrap .features {
+		padding: 40px 20px;
+	}
+	.features-title-wrap h2 {
+		font-size: 40px;
+	}
+	.features-title-wrap p {
+		margin-top: 4px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.feat-info-wrap {
+		margin-top: 40px;
+	}
+	.feat-info-wrap h3 {
+		font-size: 22px;
+		margin-bottom: 8px;
+		margin-top: 16px;
+	}
+	.feat-info-wrap p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.feat-info {
+		padding: 0 30px;
+		margin-bottom: 30px;
+	}
+	/*newapp*/
+	.newapp-wrap {
+		padding: 40px 20px 0;
+	}
+	.handphone-title h3 {
+		font-size: 34px;
+		margin-bottom: 40px;
+	}
+	.newapp-text {
+		padding: 0 20px 0 0;
+	}
+	.newapp-text h4 {
+		margin-bottom: 2px;
+		font-size: 18px;
+		line-height: 20px;
+	}
+	.newapp-text p {
+		font-size: 12px;
+		line-height: 16px;
+	}
+	.newapp-text .icon-new {
+		left: -34px;
+		top: -4px;
+		font-size: 20px
+	}
+	/*screen*/
+	.screen-wrap .screen {
+		padding: 40px 20px 80px 20px;
+	}
+	.screen-title h3 {
+		font-size: 38px;
+		margin-bottom: 40px;
+	}
+	.screen-wrap .carousel-indicators {
+		bottom: -70px;
+	}
+	/*personal*/
+	.personal-wrap {
+		padding: 80px 0;
+	}
+	.personal-wrap .carousel-caption {
+		left: 26%;
+		right: 0;
+		bottom: -20px;
+	}
+	.icon-person {
+		font-size: 20px;
+	}
+	.icon-person-left {
+		left: -24px;
+		top: 14px;
+	}
+	.icon-personal-right {
+		left: 140px;
+		top: 86px;
+	}
+	.person-text .person-info {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.person-text .person-name {
+		font-size: 14px;
+		top: 96px;
+	}
+	.person-text .person-level {
+		top: 116px;
+		font-size: 13px;
+	}
+	.person-pic {
+		width: 146px;
+	}
+	.personal-wrap .carousel-indicators {
+		bottom: -60px;
+	}
+	/*ask*/
+	.ask-wrap {
+		padding: 100px 0;
+	}
+	.ask-title-wrap h3 {
+		font-size: 40px;
+		line-height: 22px;
+	}
+	.ask-title-wrap p {
+		margin-top: 46px;
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.aks-info-wrap {
+		margin-top: 60px;
+	}
+	.ask-info h4 {
+		font-size: 18px;
+	}
+	.ask-info p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.ask-info hr {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	/*email*/
+	.email-wrap {
+		padding: 50px 0;
+	}
+	.email-title {
+		padding: 0 2px;
+	}
+	.email-title h3 {
+		font-size: 50px;
+		margin-bottom: 30px;
+	}
+	.email-title p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.email-form {
+		margin-top: 30px;
+	}
+	.email-form input {
+		padding-left: 60px;
+		border: 2px solid #fff;
+		width: 80px;
+	}
+	.form-inline .form-control {
+		width: 360px;
+	}
+	.email-form-group .icon-youjian {
+		left: 16px;
+		top: -6px;
+		font-size: 30px;
+	}
+	/*blog*/
+	.blog {
+		padding: 60px 0;
+	}
+	.blog-title h3 {
+		font-size: 44px;
+		margin-bottom: 50px;
+	}
+	.blog-date-wrap {
+		padding: 0 10px;
+	}
+	.blog-date {
+		padding: 10px 10px;
+	}
+	.blog-date h4 {
+		font-size: 22px;
+		margin: 5px;
+	}
+	.blog-date p {
+		font-size: 14px;
+		font-weight: 100;
+		margin: 5px;
+	}
+	.blog-date span {
+		right: -20px;
+		top: 22px;
+		border: 10px solid #a62ad7;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+	.blog-date-info h4 {
+		font-size: 16px;
+		margin: 0;
+	}
+	.blog-date-info .glob-i {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 400;
+		margin-bottom: 4px;
+	}
+	.blog-date-info .glob-g {
+		font-size: 12px;
+		line-height: 14px;
+		font-weight: 400;
+	}
+	.icon-globe {
+		margin-right: 8px;
+	}
+	.blog-carousel-wrap .carousel-indicators {
+		bottom: -20px;
+	}
+	.blog-xs-mb {
+		margin-bottom: 50px;
+	}
+	.blog-date2 span {
+		border-color: #4183f1;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/*顶部banner文字*/
+	.head-banner {
+		margin-top: 70px;
+	}
+	.head-text-wrap {
+		padding: 30px 0 0 50px;
+		text-align: left;
+	}
+	.head-text-wrap h1 {
+		font-size: 60px;
+	}
+	.head-text-wrap p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.head-text-wrap h3 {
+		margin-top: 30px;
+		margin-bottom: 15px;
+		font-size: 24px;
+	}
+	/*features部分*/
+	.features-wrap .features {
+		padding: 50px 20px;
+	}
+	.features-title-wrap h2 {
+		font-size: 50px;
+	}
+	.features-title-wrap p {
+		margin-top: 6px;
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.feat-info-wrap {
+		margin-top: 60px;
+	}
+	.feat-info-wrap h3 {
+		font-size: 26px;
+		margin-bottom: 14px;
+		margin-top: 20px;
+	}
+	.feat-info-wrap p {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.feat-info {
+		padding: 0 30px;
+		margin-bottom: 30px;
+	}
+	/*newapp*/
+	.newapp-wrap {
+		padding: 60px 20px 0;
+	}
+	.handphone-title h3 {
+		font-size: 44px;
+		margin-bottom: 50px;
+	}
+	.newapp-text {
+		padding: 10px 20px 0 80px;
+	}
+	.newapp-text h4 {
+		font-size: 20px;
+		line-height: 20px;
+	}
+	.newapp-text p {
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.newapp-text .icon-new {
+		left: 24px;
+		top: 6px;
+		font-size: 30px
+	}
+	/*screen*/
+	.screen-wrap .screen {
+		padding: 60px 20px 100px 20px;
+	}
+	.screen-title h3 {
+		font-size: 40px;
+		margin-bottom: 60px;
+	}
+	.carousel-indicators {
+		bottom: -60px;
+	}
+	/*personal*/
+	.personal-wrap {
+		padding: 110px 0;
+	}
+	.personal-wrap .carousel-caption {
+		left: 28%;
+		right: -2%;
+		bottom: 20px
+	}
+	.icon-person {
+		font-size: 30px;
+	}
+	.icon-person-left {
+		left: -30px;
+		top: 16px;
+	}
+	.icon-personal-right {
+		left: 566px;
+		top: 90px;
+	}
+	.person-text .person-info {
+		font-size: 16px;
+		line-height: 30px;
+		margin: 0 0 44px;
+	}
+	.person-text .person-name {
+		position: absolute;
+		font-size: 18px;
+		line-height: 46px;
+		top: 120px;
+	}
+	.person-text .person-level {
+		top: 150px;
+		font-size: 16px;
+		line-height: 46px;
+	}
+	.person-pic {
+		width: 208px;
+	}
+	.personal-wrap .carousel-indicators {
+		bottom: -60px;
+	}
+	/*ask*/
+	.ask-wrap {
+		padding: 120px 0;
+	}
+	.ask-title-wrap h3 {
+		font-size: 50px;
+		line-height: 22px;
+	}
+	.ask-title-wrap p {
+		margin-top: 56px;
+		font-size: 24px;
+		line-height: 24px;
+	}
+	.aks-info-wrap {
+		margin-top: 80px;
+	}
+	.ask-info h4 {
+		font-size: 18px;
+	}
+	.ask-info p {
+		font-size: 14px;
+		line-height: 18px;
+	}
+	.ask-info hr {
+		margin-bottom: 14px;
+		margin-top: 14px;
+	}
+	/*email*/
+	.email-wrap {
+		padding: 80px 0;
+	}
+	.email-title {
+		padding: 0 90px;
+	}
+	.email-title h3 {
+		font-size: 60px;
+		margin-bottom: 40px;
+	}
+	.email-title p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.email-form {
+		margin-top: 30px;
+	}
+	.email-form input {
+		padding-left: 60px;
+		border: 2px solid #fff;
+		width: 80px;
+	}
+	.form-inline .form-control {
+		width: 360px;
+	}
+	.email-form-group .icon-youjian {
+		left: 16px;
+		top: -6px;
+		font-size: 30px;
+	}
+	/*blog*/
+	.blog {
+		padding: 80px 0;
+	}
+	.blog-title h3 {
+		font-size: 50px;
+		margin-bottom: 70px;
+	}
+	.blog-date-wrap {
+		padding: 0 22px;
+	}
+	.blog-date {
+		padding: 10px 10px;
+	}
+	.blog-date h4 {
+		font-size: 30px;
+		margin: 0;
+	}
+	.blog-date p {
+		font-size: 16px;
+		font-weight: 100;
+		margin: 0;
+	}
+	.blog-date span {
+		right: -27px;
+		top: 26px;
+		border: 14px solid #a62ad7;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+	.blog-date-info h4 {
+		font-size: 18px;
+		margin: 0;
+	}
+	.blog-date-info .glob-i {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+		margin-bottom: 2px;
+	}
+	.blog-date-info .glob-g {
+		font-size: 14px;
+		line-height: 16px;
+		font-weight: 400;
+	}
+	.icon-globe {
+		margin-right: 10px;
+	}
+	.blog-carousel-wrap .carousel-indicators {
+		bottom: -30px;
+	}
+	.blog-date2 span {
+		border-color: #4183f1;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	/*顶部banner文字*/
+	.head-banner {
+		margin-top: 110px;
+	}
+	.head-text-wrap {
+		padding: 60px 0 0 90px;
+		text-align: left;
+	}
+	.head-text-wrap h1 {
+		font-size: 72px;
+	}
+	.head-text-wrap p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.head-text-wrap h3 {
+		margin-top: 40px;
+		margin-bottom: 20px;
+		font-size: 28px;
+	}
+	/*features部分*/
+	.features-wrap .features {
+		padding: 60px 20px;
+	}
+	.features-title-wrap h2 {
+		font-size: 60px;
+	}
+	.features-title-wrap p {
+		margin-top: 14px;
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.feat-info-wrap {
+		margin-top: 80px;
+	}
+	.feat-info-wrap h3 {
+		font-size: 30px;
+		margin-bottom: 20px;
+	}
+	.feat-info-wrap p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.feat-info {
+		padding: 0 30px;
+		margin-bottom: 30px;
+	}
+	/*newapp*/
+	.newapp-wrap {
+		padding: 100px 20px 0;
+	}
+	.handphone-title h3 {
+		font-size: 60px;
+		margin-bottom: 90px;
+	}
+	.newapp-text {
+		padding: 10px 20px 0 100px;
+	}
+	.newapp-text h4 {
+		font-size: 20px;
+		line-height: 24px;
+	}
+	.newapp-text p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.newapp-text .icon-new {
+		left: 46px;
+		top: 10px;
+	}
+	/*screen*/
+	.screen-title h3 {
+		font-size: 48px;
+		margin-bottom: 100px;
+	}
+	.carousel-indicators {
+		bottom: -60px;
+	}
+	.carousel-indicators li {
+		margin-right: 10px;
+		margin-left: 10px;
+	}
+	/*personal*/
+	.personal-wrap {
+		padding: 140px 0;
+	}
+	.personal-wrap .carousel-caption {
+		left: 26%;
+		right: 5%;
+	}
+	.icon-person {
+		font-size: 30px;
+	}
+	.icon-person-left {
+		left: -30px;
+		top: 16px;
+	}
+	.icon-personal-right {
+		left: 386px;
+		top: 90px;
+	}
+	.person-text .person-info {
+		font-size: 16px;
+		line-height: 30px;
+		margin: 0 0 44px;
+	}
+	.person-text .person-name {
+		position: absolute;
+		font-size: 18px;
+		line-height: 46px;
+		top: 120px;
+	}
+	.person-text .person-level {
+		top: 150px;
+		font-size: 16px;
+		line-height: 46px;
+	}
+	/*ask*/
+	.ask-wrap {
+		padding: 140px 0;
+	}
+	.ask-title-wrap h3 {
+		font-size: 60px;
+		line-height: 22px;
+	}
+	.ask-title-wrap p {
+		margin-top: 66px;
+		font-size: 27px;
+		line-height: 24px;
+	}
+	.aks-info-wrap {
+		margin-top: 100px;
+	}
+	.ask-info h4 {
+		font-size: 18px;
+	}
+	.ask-info p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.ask-info hr {
+		margin-bottom: 20px;
+		margin-top: 20px;
+	}
+	/*blog*/
+	.blog {
+		padding: 100px 0;
+	}
+	.blog-title h3 {
+		font-size: 60px;
+		margin-bottom: 90px;
+	}
+	.blog-date-wrap {
+		padding: 0 22px;
+	}
+	.blog-date {
+		padding: 10px 10px;
+	}
+	.blog-date h4 {
+		font-size: 36px;
+		/*margin: 0;*/
+	}
+	.blog-date p {
+		font-size: 18px;
+		font-weight: 100;
+		margin: 0;
+	}
+	.blog-date span {
+		right: -27px;
+		top: 26px;
+		border: 14px solid #a62ad7;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+	.blog-date-info h4 {
+		font-size: 18px;
+	}
+	.blog-date-info .glob-i {
+		font-size: 14px;
+		line-height: 24px;
+		font-weight: 400;
+	}
+	.blog-date-info .glob-g {
+		font-size: 14px;
+		line-height: 20px;
+		font-weight: 400;
+	}
+	.icon-globe {
+		margin-right: 16px;
+	}
+	.blog-date2 span {
+		border-color: #4183f1;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+}
+
+
+/*end 媒体查询*/

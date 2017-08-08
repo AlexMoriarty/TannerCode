@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div id="box1">
+    <input type="button" value="-">
+    <span>0</span>
+    <input type="button" value="+">
+    <strong>单价</strong>
+    <em>17.7</em>
+    <span>合计: </span>
+    <span>0元</span>
+</div>
+<div id="box2">
+    <input type="button" value="-">
+    <span>0</span>
+    <input type="button" value="+">
+    <strong>单价</strong>
+    <em>92.3</em>
+    <span>合计: </span>
+    <span>0元</span>
+</div>
+<div id="box3">
+    <input type="button" value="-">
+    <span>0</span>
+    <input type="button" value="+">
+    <strong>单价</strong>
+    <em>11.5</em>
+    <span>合计: </span>
+    <span>0元</span>
+</div>
+<p>
+    <span>总计: </span>
+    <span id="sum"></span>
+</p>
+</body>
+</html>
+<script>
+    window.onload = function () {
+        count('box1');
+        count('box2');
+        count('box3');
+
+        function count(box) {
+            var oBox1 = document.getElementById(box);
+            var aBtn = oBox1.getElementsByTagName('input');
+            var aSpan = oBox1.getElementsByTagName('span');
+            var aEm = oBox1.getElementsByTagName('em');
+            var num = 0;
+
+            aBtn[1].onclick = function () {
+                num++;
+                aSpan[0].innerHTML = num;
+                aSpan[2].innerHTML = num*aEm[0].innerHTML+'元';
+            };
+            aBtn[0].onclick = function () {
+                if (num<1){
+                    num = 0;
+                }else{
+                    num--;
+                }
+                aSpan[0].innerHTML = num;
+                aSpan[2].innerHTML = num*aEm[0].innerHTML+'元';
+            };
+
+        }
+
+//        function sum() {
+//            var aDiv = document.getElementsByTagName('div');
+//            var oSum = document.getElementById('sum') ;
+//            var str= '';
+//            for (i=0;i<aDiv.length;i++){
+//                str=
+//            }
+//            oSum.innerHTML = str;
+//
+//        }
+    }
+</script>

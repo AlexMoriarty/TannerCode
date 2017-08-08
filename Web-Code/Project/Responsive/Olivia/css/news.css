@@ -1,0 +1,143 @@
+.news-wrap {
+	width: 100%;
+	padding: 60px 0;
+}
+
+.news-pic img {
+	display: inline-block;
+}
+
+.news-pic p {
+	margin-top: 10px;
+	margin-bottom: 40px;
+}
+
+.blog-date-info h4 {
+	font-size: 20px;
+	line-height: 24px;
+	font-weight: bold;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.blog-date-info p {
+	font-size: 14px;
+	line-height: 24px;
+	text-align: center;
+}
+
+.blog-date {
+	background-color: #a62ad7;
+	color: #fff;
+	/*padding: 5px 5px;*/
+	position: relative;
+	margin-bottom: 30px;
+}
+
+.blog-date h4 {
+	display: inline-block;
+	font-size: 22px;
+	margin-left:  20px;
+	margin-right:  20px;
+}
+
+.blog-date p {
+	font-size: 22px;
+	display: inline-block;
+	font-weight: 100;
+	margin: 0 20px;
+}
+
+.blog-date span {
+	position: absolute;
+	right:48%;
+	top: 54px;
+	border: 14px solid #a62ad7;
+	border-bottom-color: transparent;
+	border-left-color: transparent;
+	border-right-color: transparent;
+}
+
+
+/*媒体查询*/
+
+@media only screen and (min-width: 768px) {
+	.blog-date h4 {
+		margin: 5px 0;
+		display: block;
+	}
+	.blog-date p {
+	font-size: 16px;
+		
+		display: block;
+		margin: 5px;
+	}
+	.blog-date span {
+		position: absolute;
+		right: -27px;
+		top: 18px;
+		border: 14px solid #a62ad7;
+		border-bottom-color: transparent;
+		border-top-color: transparent;
+		border-right-color: transparent;
+	}
+	.news-wrap {
+		padding: 120px 0;
+	}
+	.news-pic p {
+		margin-top: 20px;
+	}
+	.blog-date-info h4 {
+		font-size: 18px;
+		font-weight: 600;
+		line-height: 22px;
+		margin-bottom: 10px;
+		text-align: left;
+	}
+	.blog-date-info p {
+		font-size: 14px;
+		line-height: 24px;
+		text-align: left;
+	}
+	.blog-date-wrap {
+		padding: 0 16px;
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	.news-wrap {
+		padding: 120px 0;
+	}
+	.news-pic p {
+		margin-top: 20px;
+	}
+	.blog-date-info h4 {
+		margin-bottom: 10px;
+	}
+	.blog-date-info p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+	.blog-date-wrap {
+		padding: 0 26px;
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	.news-wrap {
+		padding: 150px 0;
+	}
+	.news-pic p {
+		margin-top: 20px;
+	}
+	.blog-date-info h4 {
+		margin-bottom: 10px;
+	}
+	.blog-date-info p {
+		font-size: 14px;
+		line-height: 24px;
+	}
+}
+
+
+/*end 媒体查询*/

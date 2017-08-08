@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .box-wrap {
+            width: 800px;
+            /*height: 200px;*/
+            /*border: 1px solid red;*/
+            margin: 0 auto;
+        }
+
+        .img-box {
+            width: 100%;
+        }
+
+        .img-box img {
+            width: 100%;
+        }
+
+        .write-box {
+            width: 100%;
+            /*height: 200px;*/
+            /*background-color: #ccc;*/
+            border-top: 5px solid #f00;
+            position: relative;
+        }
+
+        .write-area {
+            width: 100%;
+            height: 150px;
+            padding: 10px 10px 10px 10px;
+            font-size: 18px;
+            resize: none;
+            border: 1px solid #ffb3ba;
+            outline: none;
+        }
+
+        .tips {
+            position: absolute;
+            right: 0;
+            bottom: 60px;
+            display: none;
+            padding-right: 20px;
+            text-align: right;
+            padding-top: 5px;
+            font-size: 12px;
+        }
+
+        strong {
+            color: #1ad944;
+            margin: 0 5px;
+        }
+
+        .btn-box {
+            text-align: right;
+            padding: 10px;
+        }
+
+        .btn-base {
+            margin: 0 10px;
+            width: 50px;
+            height: 30px;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            background-color: #ff433f;
+            color: #fff;
+        }
+
+        .btn-base:hover {
+            background-color: #a42b29;
+        }
+
+        .btn-sub {
+            background-color: #3b80ff;
+        }
+
+        .btn-sub:hover {
+            background-color: #2857ad;
+        }
+
+        .message-box {
+            padding: 10px;
+        }
+
+        .message-box h3 {
+            border-bottom: 2px solid #ffc1b8;
+            padding-bottom: 2px;
+        }
+
+        .message {
+            width: 100%;
+            /*border: 1px solid #ccc;*/
+            padding: 5px;
+            margin: 5px 0;
+            position: relative;
+        }
+
+        .message h6 {
+            display: inline-block;
+            font-size: 14px;
+            color: #ccc;
+        }
+
+        .message-top {
+            position: relative;
+        }
+
+        .message-top .date {
+            font-size: 12px;
+            color: #ccc;
+            position: absolute;
+            right: 10px;
+            top: 0;
+        }
+
+        .message p {
+            margin: 5px 0;
+            /*padding-right: 80px;*/
+        }
+
+        .no-comment {
+            text-align: center;
+            padding: 20px 0;
+            color: #777;
+        }
+
+        .del-box {
+            display: none;
+            text-align: right;
+        }
+
+        .del-comment {
+            cursor: pointer;
+            color: red;
+            font-size: 12px;
+            /*display: block;*/
+
+        }
+    </style>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="box-wrap">
+
+    <!--banner-->
+    <div class="img-box">
+        <img src="img/10.jpg" alt="">
+    </div>
+
+    <!--意见输入-->
+    <form>
+        <div class="write-box">
+            <textarea class="write-area" placeholder="请输入你的宝贵意见"></textarea>
+            <div class="tips">
+                <span>还可以输入</span><strong class="max_num"></strong><span>个字符</span>
+            </div>
+            <div class="btn-box">
+                <input type="button" value="提交" class="btn-base btn-sub">
+                <input type="reset" value="重置" class="btn-base">
+            </div>
+        </div>
+    </form>
+
+    <!--留言板显示-->
+    <div class="message-box">
+        <h3>留言区:</h3>
+        <ul class="message-list">
+            <!--<li class="message">-->
+            <!--<div class="message-top">-->
+            <!--<h6>第<span>1</span>楼</h6>-->
+            <!--<span class="date">2017年9月9日</span>-->
+            <!--</div>-->
+            <!--<p>等哈科技时等哈科技时代哈萨d克多撒后开具的等哈科技时代哈萨d克多撒后开具的等哈科技时代哈萨d克多撒后开具的等哈科技时代哈萨d克多撒后开具的代哈萨d克多撒后开具的</p>-->
+            <!--<div class='del-box'>-->
+            <!--<span class='del-comment'>删除</span>-->
+            <!--</div>-->
+            <!--</li>-->
+        </ul>
+        <p class='no-comment'>暂无评论</p>
+    </div>
+</div>
+</body>
+</html>
+
+<script>
+    $(function () {
+        var num = 0;
+        var initnum = 300;
+        var maxnum = initnum;
+
+
+//        输入框出现提示,失去焦点隐藏提示
+        $('.write-area').focus(function () {
+            $('.max_num').html(maxnum);
+            $('.tips').css('display', 'block');
+            maxNum();
+        }).blur(function () {
+            $('.tips').css('display', 'none')
+        });
+
+//        输入时最大字数开始变化
+        $('.write-area').keyup(function () {
+            maxNum();
+        });
+
+//        点击提交按钮,把输入框的内容放到留言板
+        $('.btn-sub').on('click', function () {
+//            var num = $('.message-list li').length;
+            var content = $('.write-area').val();
+//            alert(content);
+            if (content == '') {
+                alert('请输入内容后再发布!')
+            } else {
+//                楼数加1
+                num++;
+                $('.message-list').append('<li class="message">'
+                    + '<div class="message-top">'
+                    + '<h6>第<span>' + num + '</span>楼</h6>' + '<span class="date">' + '发表时间: ' + showTime() + '</span>'
+                    + '</div>'
+                    + '<p>' + content + '</p>'
+                    + '<div class="del-box">'
+                    + '<span class="del-comment">删除</span>'
+                    + '</div>' + '</li>');
+            }
+//            把输入框内的文本清空
+            $('.write-area').val('');
+
+//            暂无评论在有内容的时候消失
+            if ($("ul li").length > 0) {
+                $(".no-comment").css('display', 'none');
+            } else {
+                $(".no-comment").css('display', 'block');
+            }
+
+        });
+
+//        动态添加的元素,使用了事件委托
+        $('.message-list').delegate('.message', 'mouseover', function () {
+            $(this).find(".del-box").css('display', 'block');
+        });
+        $('.message-list').delegate('.message', 'mouseout', function () {
+            $(this).find(".del-box").css('display', 'none');
+        });
+
+//        点击删除按钮,删除当前的评论
+        $(".message-list").on('click', '.del-comment', function () {
+//            把当前评论楼层删除
+            $(this).parent().parent().find('p').html('该评论已被删除');
+            $(this).parent().parent().find('p').css({'color': '#ccc', 'textAlign': 'center'});
+            $(this).remove();
+
+//            判断如果评论区没有评论显示暂无评论
+            if ($("ul li").length > 0) {
+                $(".no-comment").css('display', 'none');
+            } else {
+                $(".no-comment").css('display', 'block');
+            }
+        });
+
+
+//        计算最大值的函数
+        function maxNum() {
+            var len = $('.write-area').val().length;
+            if (len > 299) {
+                $('.write-area').val($(this).val().substring(0, 299))
+            }
+            maxnum = 300 - len;
+            $('.max_num').html(maxnum);
+        }
+
+//        获取系统时间,并格式化的函数
+        function showTime() {
+            var date = new Date();
+            var seperator1 = "-";
+            var seperator2 = ":";
+            var month = date.getMonth() + 1;
+            var strDate = date.getDate();
+            var strHours = date.getHours();
+            var strMinutes = date.getMinutes();
+            var strSeconds = date.getSeconds();
+
+            if (month >= 1 && month <= 9) {
+                month = "0" + month;
+            }
+            if (strDate >= 0 && strDate <= 9) {
+                strDate = "0" + strDate;
+            }
+            if (strHours >= 0 && strHours <= 9) {
+                strHours = "0" + strHours;
+            }
+            if (strMinutes >= 0 && strMinutes <= 9) {
+                strMinutes = "0" + strMinutes;
+            }
+            if (strSeconds >= 0 && strSeconds <= 9) {
+                strSeconds = "0" + strSeconds;
+            }
+            var currentdate = date.getFullYear() + seperator1 + month + seperator1 + strDate
+                + " " + strHours + seperator2 + strMinutes
+                + seperator2 + strSeconds;
+            return currentdate;
+        }
+
+
+    })
+</script>
+
+
+
+
+
+
+
+

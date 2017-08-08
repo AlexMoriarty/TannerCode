@@ -1,0 +1,411 @@
+/*公共类*/
+
+.mb30 {
+	margin-bottom: 30px;
+}
+
+.mb40 {
+	margin-bottom: 40px;
+}
+
+.mb50 {
+	margin-bottom: 50px;
+}
+
+.pr20 {
+	padding-right: 20px;
+}
+
+.pl20 {
+	padding-left: 20px;
+}
+
+
+/*顶部banner区域*/
+
+
+/*背景*/
+
+.toRight {
+	background-image: -webkit-gradient(linear, 100% 0, 0 0, from(#b359e0), to(#788def));
+	background-image: -webkit-linear-gradient(to right, #b359e0, #788def);
+	background-image: -moz-linear-gradient(to right, #b359e0, #788def);
+	background-image: -o-linear-gradient(to right, #b359e0, #788def);
+	background-image: linear-gradient(to right, #b359e0, #788def);
+}
+
+.toLeft {
+	background-image: -webkit-gradient(linear, 100% 0, 0 0, from(#b359e0), to(#788def));
+	background-image: -webkit-linear-gradient(to left, #b359e0, #788def);
+	background-image: -moz-linear-gradient(to left, #b359e0, #788def);
+	background-image: -o-linear-gradient(to left, #b359e0, #788def);
+	background-image: linear-gradient(to left, #b359e0, #788def);
+}
+
+.bgImg {
+	background: url(../img/bg_line.png) repeat;
+	padding-bottom: 40px;
+	margin-bottom: 0;
+}
+
+.header-wrap{
+	/*width: 100%;*/
+	padding-top: 40px;
+	padding-bottom: 10px;
+	/*position: fixed;*/
+}
+
+
+/*end 背景*/
+
+
+/*顶部导航*/
+
+.logo-top {
+	position: absolute;
+	left: 10px;
+	top: -2px;
+	width: 106px;
+	height: 38px;
+	z-index: 382;
+}
+
+.oa-btn-list {
+	border: none;
+	margin-top: 0;
+}
+
+.navbar-default .navbar-toggle:focus,
+.navbar-default .navbar-toggle:hover {
+	background-color: #fff;
+}
+
+.navbar-default .navbar-toggle {
+	border-color: #fff;
+}
+
+.navbar-default {
+	background-color: transparent;
+	border: none;
+}
+
+.oa-navbar li {
+	margin-left: 5px;
+	margin-bottom: 5px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	color: #fff;
+	background-color: #a62ad7;
+	border-radius: 55px;
+}
+
+.navbar-default .oa-navbar li a {
+	padding: 10px 20px;
+	font-size: 14px;
+	color: #fff;
+}
+
+.navbar-default .oa-navbar li a:hover {
+	color: #fff;
+	background-color: #a62ad7;
+	border-radius: 55px;
+}
+
+.navbar-default .oa-navbar .active {
+	background-color: #a62ad7;
+	border-radius: 55px;
+}
+
+
+/*end 顶部导航*/
+
+
+/*end 顶部banner区域*/
+
+
+/*footer*/
+
+.footer-wrap {
+	width: 100%;
+	padding: 40px 0 10px 0;
+}
+
+.footer-title-wrap {
+	color: #fff;
+	padding: 0 20px;
+	margin-bottom: 30px;
+}
+
+.footer-title-wrap h3 {
+	font-size: 38px;
+}
+
+.footer-title-wrap p {
+	font-size: 14px;
+	line-height: 20px;
+}
+
+.footer-form-wrap {
+	padding: 0 50px;
+}
+
+.form-item {
+	padding-left: 8px;
+	padding-right: 8px;
+}
+
+.area-item-wrap {
+	padding: 0 8px;
+}
+
+.area-item-wrap {
+	position: relative;
+}
+
+.area-item-wrap a {
+	position: absolute;
+	left: 50%;
+	bottom: -15px;
+	margin-left: -100px;
+	width:200px;
+	background-color: #a62ad7;
+	border-color: #a62ad7;
+}
+
+.area-item-wrap textarea {
+	resize: none;
+	height: 100px;
+}
+
+.company-info-wrap {
+	margin-top: 30px;
+}
+
+.company-info-wrap a {
+	display: inline-block;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+	border-radius: 50%;
+	margin: 0 10px;
+	color: #fff;
+}
+
+.company-info-wrap a i {
+	font-size: 18px
+}
+
+.company-info-wrap a.active,
+.company-info-wrap a:hover {
+	text-decoration: none;
+	background-color: #a62ad7;
+}
+
+.company-info {
+	padding: 0 20px;
+	margin-top: 10px;
+	color: #fff;
+	font-size: 12px
+}
+
+
+/*end footer*/
+
+
+/*媒体查询*/
+
+@media only screen and (min-width: 768px) {
+	/*导航栏logo大小*/
+	.logo-top {
+		left: 20px;
+		top: -8px;
+		width: 126px;
+		height: 46px;
+	}
+	/*顶部Banner大小*/
+	.bgImg {
+		padding-bottom: 60px;
+	}
+	/*footer*/
+	.footer-wrap {
+		padding: 60px 0 20px 0;
+	}
+	
+	.footer-title-wrap {
+		padding: 0 50px;
+		margin-bottom: 30px;
+	}
+	.footer-title-wrap h3 {
+		font-size: 52px;
+	}
+	.footer-title-wrap p {
+		font-size: 16px;
+		line-height: 26px;
+	}
+	.footer-form-wrap {
+		padding: 0 50px;
+	}
+	.form-item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.area-item-wrap {
+		padding: 0 8px;
+	}
+	.area-item-wrap a {
+		bottom: -15px;
+		margin-left: -150px;
+		width: 300px;
+	}
+	.company-info-wrap {
+		margin-top: 45px;
+	}
+	
+	.company-info-wrap a {
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 50%;
+		margin: 0 30px;
+	}
+	.company-info-wrap a i {
+		font-size: 20px
+	}
+	.company-info {
+		margin-top: 15px;
+		font-size: 14px
+	}
+}
+
+@media only screen and (min-width: 992px) {
+	/*导航栏logo大小*/
+	.logo-top {
+		top: -16px;
+		width: 136px;
+		height: 52px;
+	}
+	/*顶部Banner大小*/
+	.bgImg {
+		padding-bottom: 80px;
+	}
+	/*顶部导航栏字体*/
+	.navbar-default .oa-navbar li a {
+		font-size: 16px;
+	}
+	/*footer*/
+	.footer-wrap {
+		padding: 80px 0 25px 0;
+	}
+	
+	.footer-title-wrap {
+		padding: 0 120px;
+		margin-bottom: 30px;
+	}
+	.footer-title-wrap h3 {
+		font-size: 52px;
+	}
+	.footer-title-wrap p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.footer-form-wrap {
+		padding: 0 50px;
+	}
+	.form-item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.area-item-wrap {
+		padding: 0 8px;
+	}
+	.area-item-wrap a {
+		bottom: -15px;
+		margin-left: -150px;
+		width: 300px;
+	}
+	.company-info-wrap {
+		margin-top: 50px;
+	}
+	.company-info-wrap a {
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 50%;
+		margin: 0 30px;
+	}
+	.company-info-wrap a i {
+		font-size: 20px
+	}
+	.company-info {
+		margin-top: 20px;
+		font-size: 16px
+	}
+}
+
+@media only screen and (min-width: 1200px) {
+	/*导航栏logo大小*/
+	.logo-top {
+		top: -16px;
+		width: 156px;
+		height: 60px;
+	}
+	/*顶部Banner大小*/
+	.bgImg {
+		padding-bottom: 100px;
+	}
+	/*顶部导航栏字体*/
+	.navbar-default .oa-navbar li a {
+		font-size: 18px;
+	}
+	/*footer*/
+	.footer-wrap {
+		width: 100%;
+		padding: 100px 0 30px 0;
+	}
+	.footer-title-wrap {
+		padding: 0 120px;
+		margin-bottom: 30px;
+	}
+	.footer-title-wrap h3 {
+		font-size: 60px;
+	}
+	.footer-title-wrap p {
+		font-size: 16px;
+		line-height: 30px;
+	}
+	.footer-form-wrap {
+		padding: 0 50px;
+	}
+	.form-item {
+		padding-left: 8px;
+		padding-right: 8px;
+	}
+	.area-item-wrap {
+		padding: 0 8px;
+	}
+	.area-item-wrap a {
+		bottom: -15px;
+		margin-left: -150px;
+		width: 300px;
+	}
+	.company-info-wrap {
+		margin-top: 60px;
+	}
+	.company-info-wrap a {
+		width: 36px;
+		height: 36px;
+		line-height: 36px;
+		border-radius: 50%;
+		margin: 0 30px;
+	}
+	.company-info-wrap a i {
+		font-size: 20px
+	}
+	.company-info {
+		margin-top: 30px;
+		font-size: 16px
+	}
+}

@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>缩略小图</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            position: relative;
+            width: 732px;
+            height: 392px;
+            margin: 0 auto;
+            padding: 60px 100px;
+            background: url(img/05.jpg) no-repeat;
+        }
+
+        #img {
+            width: 700px;
+            height: 360px;
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            border: 16px solid #db5c0e;
+            margin-left: -366px;
+            margin-top: -196px;
+        }
+
+        .dot {
+            width: 77px;
+            position: absolute;
+            left: 50%;
+            bottom: 20px;
+            margin-left: -30px;
+        }
+
+        .dot i {
+            font-style: normal;
+            width: 10px;
+            height: 10px;
+            border: 1px solid #fff;
+            border-radius: 50%;
+            display: inline-block;
+            margin: 0 5px;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .dot .active {
+            background-color: #fff;
+        }
+
+        .arrow {
+            width: 50px;
+            height: 80px;
+            border-radius: 10px;
+            background-color: #fff;
+            position: absolute;
+            top: 50%;
+            margin-top: -40px;
+            font-size: 30px;
+            text-align: center;
+            line-height: 80px;
+            opacity: .6;
+            cursor: pointer;
+        }
+
+        .arrow:hover {
+            opacity: .9;
+        }
+
+        #left {
+            left: 25px;
+        }
+
+        #right {
+            right: 25px;
+        }
+
+        .smallbox {
+            width: 90px;
+            height: 60px;
+            border-radius: 5px;
+            border: 4px solid #ccc;
+            position: absolute;
+            left: -44px;
+            top: -82px;
+            z-index: 30;
+        }
+
+        .smallbox img {
+            width: 90px;
+            height: 60px;
+        }
+
+        .smallbox span {
+            border: 7px solid #ccc;
+            border-bottom-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            position: absolute;
+            left: 52%;
+            bottom: -17px;
+            margin-left: -9px;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oBtnL = document.getElementById('left');
+            var oBtnR = document.getElementById('right');
+            var oImg = document.getElementById('img');
+            var aI = document.getElementsByTagName('i');
+            var arrImg = ['img/02.jpg', 'img/03.jpg', 'img/04.jpg'];
+            var num = 0;
+
+//            console.log(arrImg.length);
+            oBtnR.onclick = function () {
+                num++;
+                if (num == arrImg.length ) {
+                    num = 0;
+                }
+                oImg.src = arrImg[num];
+                dotTab();
+            };
+
+            oBtnL.onclick = function () {
+                num--;
+                if (num == -1) {
+                    num = arrImg.length - 1;
+                }
+                oImg.src = arrImg[num];
+                dotTab();
+            };
+
+            function dotTab() {
+                for (var i = 0; i < aI.length; i++) {
+                    aI[i].className = '';
+                }
+                aI[num].className = 'active'
+            }
+
+            function fnTab() {
+                oImg.src = arrImg[num];
+                dotTab();
+            }
+
+            fnTab();
+
+
+            for (var i = 0; i < aI.length; i++) {
+                aI[i].index = i;
+                aI[i].onclick = function () {
+                    num = this.index;
+                    fnTab();
+                }
+            }
+
+            for (var i = 0; i < aI.length; i++) {
+                aI[i].index = i;
+                aI[i].onmouseover = function () {
+                    this.innerHTML = '<div class="smallbox">'+'<img src='+arrImg[this.index]+'>'+'<span></span>'+'</div>';
+                };
+                aI[i].onmouseout = function () {
+                    this.innerHTML = '';
+                }
+
+            }
+
+        }
+    </script>
+</head>
+<body>
+<div class="box">
+    <a href="javascript:;"><img src="" alt="" id='img'></a>
+    <div class='dot'>
+        <i>
+            <!--<div class="smallbox">-->
+            <!--<img src="img/02.jpg" alt="">-->
+            <!--<span></span>-->
+            <!--</div>-->
+        </i>
+        <i></i>
+        <i></i>
+    </div>
+    <span id="left" class="arrow"><</span>
+    <span id="right" class="arrow">></span>
+</div>
+</body>
+</html>

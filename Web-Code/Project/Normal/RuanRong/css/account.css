@@ -1,0 +1,297 @@
+.footer {
+    margin-top: 72px;
+}
+
+.ac_content {
+    margin-top: 22px;
+}
+
+.left_wrap {
+    width: 300px;
+    height: 700px;
+    margin-right: 16px;
+    /*background-color: pink;*/
+    float: left;
+}
+
+.right_wrap {
+    width: 994px;
+    height: 700px;
+    /*background-color: lightgreen;*/
+    float: left;
+}
+
+.my_money {
+    width: 300px;
+    height: 260px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    position: relative;
+}
+
+.my_headpic {
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    position: absolute;
+    left: 50%;
+    top: 30px;
+    margin-left: -63px;
+    border: 6px solid #e7e7e7;
+}
+
+.my_money p {
+    position: absolute;
+    left: 0;
+    width: 300px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.my_money .name {
+    top: 168px;
+}
+
+.my_money .money {
+    bottom: 26px;
+    line-height: 24px;
+    text-align: left;
+}
+
+.money .gold {
+    font-size: 14px;
+    color: #777;
+    margin-left: 72px;
+}
+
+.money .gold_num {
+    font-size: 18px;
+    color: #111;
+    margin-left: 20px;
+}
+
+
+
+.money .pay a {
+    background-color: #f84545;
+    width: 70px;
+    height: 24px;
+    line-height: 24px;
+    float: right;
+    text-align: center;
+    margin-right: 26px;
+    color: #fff;
+}
+
+.money .pay a:hover {
+    background-color: #e23f3f;
+}
+
+.my_set {
+    width: 300px;
+    height: 420px;
+    background-color: #fff;
+}
+.my_setting li{
+    text-align: center;
+    padding: 18px 0;
+}
+.my_setting a {
+    padding-left:40px;
+    background: url("../img/ac_icon_01.png") no-repeat;
+}
+
+.my_setting .set_icon1 {
+    background-position: 0 -45px;
+}
+
+.my_setting .set_icon2 {
+    background-position: 0 -95px;
+}
+
+.my_setting .set_icon3 {
+    background-position: 0 -150px;
+}
+
+.my_setting .set_icon4 {
+    background-position: 0 -200px;
+}
+
+.my_setting .set_icon5 {
+    background-position: 0 -250px;
+}
+
+.my_setting a {
+    font-size: 16px;
+    display: inline-block;
+    line-height: 20px;
+    /*line-height: 50px;*/
+}
+
+.my_setting .active{
+    background-color: #f84545;
+}
+
+.my_setting .active a{
+    color: #fff;
+}
+
+.my_infor_t{
+    height: 200px;
+    width: 894px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 30px 50px;
+    position: relative;
+}
+
+.my_infor_b{
+    width: 884px;
+    height: 380px;
+    background-color: #fff;
+    padding: 40px 50px 0 60px;
+}
+
+.my_infor_t li {
+    float: left;
+    width: 400px;
+    line-height: 44px;
+    font-size: 18px;
+    color: #000;
+}
+
+.my_infor_t span{
+    color:#777;
+}
+.change_infor_btn a{
+    background-color: #f84545;
+    font-size: 18px;
+    text-align: center;
+    width: 138px;
+    height: 34px;
+    line-height: 34px;
+    color: #fff;
+    position: absolute;
+    right: 50px;
+    bottom: 38px;
+}
+.change_infor_btn a:hover{
+    background-color: #d43b3b;
+}
+
+.change_pic{
+    width: 124px;
+    text-align: center;
+    font-size:16px;
+    color: #000;
+    float: left;
+}
+
+.change_pic img{
+    width: 120px;
+    height: 120px;
+    border-radius: 5px;
+    margin-top: 64px;
+    margin-bottom: 12px;
+}
+.change_pic span{
+    color:#f84545;
+    padding: 0 4px;
+}
+
+.change_myinfor{
+    float: left;
+    width: 684px;
+    margin-left: 76px;
+}
+.change_myinfor li{
+    height: 59px;
+    line-height: 59px;
+    border-bottom: 1px solid #ccc;
+    font-size: 16px;
+    color: #000;
+}
+.change_myinfor span{
+    color: #777;
+}
+.change_myinfor .chang_icon{
+    background: url("../img/ac_icon_01.png") no-repeat right 20px;
+}
+.change_myinfor .chang_icon_btn{
+    float: right;
+    /*background-color: pink;*/
+    width: 39px;
+    height: 39px;
+    margin-top: 10px;
+}
+.change_myinfor .btn1{
+    float: right;
+    font-size: 14px;
+    color: #000;
+    border: 1px solid #f84545;
+    width: 84px;
+    height: 24px;
+    line-height: 24px;
+    margin-top: 16px;
+    margin-left: 14px;
+    text-align: center;
+}
+.change_myinfor .btn2{
+    background-color: #f84545;
+    color: #fff;
+}
+
+.change_pwd{
+    width: 318px;
+    height: 328px;
+    border-radius: 5px;
+    background-color: #fff;
+    position: fixed;
+    left:50%;
+    top: 50%;
+    margin-left:-159px;
+    margin-top:-164px;
+    z-index: 777777;
+}
+
+.change_pwd h3{
+    font-size:16px;
+    text-align: center;
+    margin-top:24px;
+}
+.change_pwd .at_verify_box{
+    left: 22px;
+}
+.change_pwd .at_verify{
+    margin-top:15px;
+}
+.at_pwd {
+    margin-left: 22px;
+}
+
+
+.at_code {
+    left: 22px;
+}
+.at_code .code {
+    right: 50px;
+}
+
+.at_pwd {
+    margin-top: 40px;
+}
+
+.ac_oky {
+    width: 120px;
+    height: 34px;
+    margin-left: 98px;
+    margin-top: 34px;
+}
+#close_box{
+    width: 10px;
+    height: 10px;
+    font-size: 18px;
+    position: absolute;
+    top: 12px;
+    right: 12px;
+}

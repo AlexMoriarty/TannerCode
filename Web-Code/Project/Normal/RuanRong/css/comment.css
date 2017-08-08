@@ -1,0 +1,396 @@
+/*网页头部*/
+
+/*头部顶部*/
+.header {
+    border-bottom: 2px solid #f84545;
+    width: 100%;
+}
+
+.rr_head_top {
+    background-color: #dcdcdc;
+    height: 36px;
+    line-height: 36px
+}
+
+.rr_head_top p {
+    font-size: 14px;
+    color: #323232;
+}
+
+.top_site a {
+    padding: 0 10px;
+    font-size: 14px;
+    position: relative;
+    color: #323232;
+}
+
+.top_site a:hover {
+    color: #f84545;
+}
+
+.top_site i {
+    border: 1px solid #999;
+    height: 12px;
+    position: absolute;
+    right: -3px;
+    top: 1px;
+}
+
+/*头部顶部结束*/
+
+/*头部导航*/
+.rr_head_nav {
+    height: 90px;
+    line-height: 88px;
+    background-color: #fff;
+}
+
+.navbox {
+    margin-left: 102px;
+}
+
+.navbox li {
+    float: left;
+    /*width: 110px;*/
+    text-align: center;
+    margin-right: 30px;
+}
+
+.navbox a {
+    font-size: 20px;
+}
+
+.navbox .active {
+    color: #f84545
+}
+
+.login li {
+    float: left;
+    padding-left: 26px;
+    margin-left: 16px;
+    background: url("../img/login.png") no-repeat 0 2px;
+    line-height: 20px;
+    margin-top: 34px;
+    padding-right: 10px;
+}
+
+#head_pic {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    background: #ccc;
+    float: left;
+    padding: 0;
+    margin-left: 48px;
+    margin-right: 50px;
+    margin-top: 20px;
+    cursor: pointer;
+    position: relative;
+}
+
+#head_pic img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+}
+
+#head_pic .message {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 15px;
+    height: 15px;
+    background-color: #f84a4a;
+    border-radius: 50%;
+    line-height: 15px;
+    color: #fff;
+    text-align: center;
+    font-size: 12px;
+}
+
+#my_set {
+    width: 60px;
+    height: 194px;
+    padding: 10px 25px;
+    background-color: #fff;
+    position: absolute;
+    right: -34px;
+    top: 50px;
+    z-index: 999;
+    display: none;
+}
+
+#my_set .line {
+    position: absolute;
+    left: 50%;
+    top: -3px;
+    margin-left: -20px;
+    width: 40px;
+    height: 5px;
+    background-color: #f84a4a;
+}
+
+.setting li {
+    padding: 0;
+    margin: 0;
+    background: #fff;
+}
+
+#my_set .setting a {
+    line-height: 38px;
+    font-size: 14px;
+}
+
+#my_set .setting .active {
+    color: #f84a4a;
+}
+
+.login a {
+    font-size: 16px;
+    line-height: 20px;
+
+}
+
+.login .log {
+    background-position: 0 -18px;
+}
+
+.login .sign {
+    background-position: 0 -38px;
+}
+
+/*头部导航结束*/
+/*网页头部结束*/
+
+/*网页脚部*/
+.footer {
+    width: 100%;
+    margin-top: 104px;
+}
+
+.rr_foot_top {
+    height: 220px;
+    width: 100%;
+    padding-top: 30px;
+    background-color: #bfdfe5;
+}
+
+.rr_foot_bot {
+    height: 40px;
+    background-color: #f7f7f7;
+}
+
+.foot_t_box {
+    position: relative;
+}
+
+.company_infor {
+    width: 386px;
+}
+
+.company_infor h3 {
+    line-height: 50px;
+}
+
+.company_infor p {
+    line-height: 30px;
+}
+
+.com_site a {
+    padding: 0 10px;
+    font-size: 14px;
+    position: relative;
+    color: #787878;
+    line-height: 30px;
+}
+
+.com_site .no_pl {
+    padding-left: 0;
+}
+
+.com_site a:hover {
+    color: #f84545;
+}
+
+.com_site i {
+    border: 1px solid #787878;
+    height: 12px;
+    position: absolute;
+    right: -3px;
+    top: 1px;
+}
+
+.company_partner {
+    margin-left: 120px;
+    width: 804px;
+}
+
+.company_partner h3 {
+    line-height: 50px;
+}
+
+.company_partner ul {
+    width: 450px;
+    margin-top: 8px;
+    /*zoom: 1;*/
+}
+
+.company_partner a {
+    height: 26px;
+    margin: 0 8px 8px 0;
+    background: url("../img/img_027.png") no-repeat 0 0;
+    float: left;
+}
+
+.company_partner .link1 {
+    width: 70px;
+    background-position: 0 0;
+}
+
+.company_partner .link2 {
+    width: 92px;
+    background-position: -78px 0;
+}
+
+.company_partner .link3 {
+    width: 78px;
+    background-position: -178px 0;
+}
+
+.company_partner .link4 {
+    width: 92px;
+    background-position: -262px 0;
+}
+
+.company_partner .link5 {
+    width: 78px;
+    background-position: -361px 0;
+}
+
+.company_partner .link6 {
+    width: 70px;
+    background-position: 0 -33px;
+}
+
+.company_partner .link7 {
+    width: 92px;
+    background-position: -78px -33px;
+}
+
+.company_partner .link8 {
+    width: 78px;
+    background-position: -178px -33px;
+}
+
+.company_partner .link9 {
+    width: 92px;
+    background-position: -262px -33px;
+}
+
+.company_partner .link10 {
+    width: 78px;
+    background-position: -361px -33px;
+}
+
+.company_partner .link11 {
+    width: 70px;
+    background-position: 0 -66px;
+}
+
+.company_partner .link12 {
+    width: 92px;
+    background-position: -78px -66px;
+}
+
+.company_partner .link13 {
+    width: 78px;
+    background-position: -178px -66px;
+}
+
+.company_partner .link14 {
+    width: 92px;
+    background-position: -262px -66px;
+}
+
+.qr_code_box {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 146px;
+    /*position: relative;*/
+}
+
+.qr_code_box p {
+    /*float: left;*/
+    position: absolute;
+    right: 0;
+    top: 0;
+    background-color: #f84545;
+    color: #fff;
+    width: 12px;
+    line-height: 12px;
+    height: 98px;
+    font-size: 12px;
+    padding: 12px 6px;
+}
+
+.qr_code {
+    border: 1px solid #fff;
+    width: 120px;
+    height: 120px;
+    text-align: center;
+    line-height: 120px;
+    float: left;
+}
+
+.foot_b_box {
+    text-align: center;
+    line-height: 40px;
+}
+
+/*网页脚部结束*/
+
+/*账户登录的头部*/
+.at_head {
+    height: 140px;
+    line-height: 140px;
+}
+
+.at_head p {
+    font-size: 18px;
+    margin-left: 250px;
+}
+
+/*账户登录注册的头部结束*/
+
+/*账户登录注册的页脚*/
+.at_foot {
+    height: 190px;
+    /*line-height: 190px;*/
+    text-align: center;
+}
+
+.com_infor span {
+    padding: 0 12px;
+    font-size: 16px;
+    color: #787878;
+}
+
+.com_title {
+    color: #b7b7b7;
+}
+
+/*账户登录注册的页脚结束*/
+
+/*遮罩*/
+.shade {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    background-color: #000;
+    opacity: .6;
+    filter: alpha(opacity=60);
+    z-index: 66666;
+}

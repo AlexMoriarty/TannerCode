@@ -1,0 +1,551 @@
+body {
+	background-color: #ebebeb;
+}
+
+
+/*头部banner*/
+
+
+/*.header-wrap {
+	padding-top: 62px;
+	padding-bottom: 62px;
+	background: url(../img/bg.jpg) no-repeat center 20%;
+	background-size: cover;
+	text-align: center;
+	color: #fff;
+}
+
+.header-wrap h1 {
+	font-size: 3em;
+}*/
+
+.header-wrap .slider-self img {
+	width: 100%;
+	height: 260px;
+}
+
+.carousel-indicators {
+	bottom: -6px;
+}
+
+.btn-self {
+	position: relative;
+	bottom: -40px;
+	border: 1px solid #f1362f;
+	background-color: transparent;
+	color: #fff;
+}
+
+.btn-self:hover {
+	background-color: #222;
+	border: 1px solid #222;
+	color: #fff;
+}
+
+
+/*导航栏*/
+
+.navbar-wrap {
+	line-height: 0;
+}
+
+.navbar-nav {
+	display: inline-block;
+	/*margin: 0 auto;*/
+	text-align: center;
+	float: none;
+}
+
+.navbar-toggle {
+	float: none;
+}
+
+.navbar .mynav .nav-a {
+	color: #505050;
+	line-height: 50px;
+	display: block;
+	padding: 0 21px;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+	background-color: #f8f8f8;
+}
+
+.navbar .mynav .active {
+	border-bottom: 2px solid #e67e22;
+}
+
+.navbar .mynav .nav-a:hover {
+	color: #e67e22;
+}
+
+
+/*主要内容*/
+
+
+/*首页部分*/
+
+.content-news {
+	padding: 35px;
+	background: #fff;
+	margin-bottom: 35px;
+	position: relative;
+	overflow: hidden;
+}
+
+.content-news .content-head .content-title {
+	margin: 0;
+	font-size: 2em;
+	line-height: 1.2em;
+}
+
+.content-news .content-head .content-title a {
+	margin: 0;
+	font-size: 28px;
+	line-height: 1.2em;
+	color: #000;
+}
+
+.content-news .content-head .content-title a:hover {
+	text-decoration: none;
+}
+
+.content-news .content-info {
+	color: #959595;
+	margin: 14px 0 0;
+}
+
+.content-news .content-info a {
+	color: #e67e22;
+}
+
+.content-img {
+	margin-top: 30px;
+	overflow: hidden;
+}
+
+.content-img img {
+	width: 100%;
+}
+
+.content-text {
+	margin: 30px 0;
+	font: 400 18px/1.62 Georgia, "Xin Gothic", "Hiragino Sans GB", "Droid Sans Fallback", "Microsoft YaHei", sans-serif;
+	color: #444443;
+}
+
+.content-btn-link {
+	border: 1px solid #e67e22;
+	background: #e67e22;
+	color: #fff;
+	padding: 7px 14px;
+	border-radius: 2px;
+}
+
+.content-btn-link:hover {
+	background: #222;
+	color: #fff;
+}
+
+.content-foot {
+	margin-top: 30px;
+	border-top: 1px solid #ebebeb;
+	padding: 21px 0 0;
+}
+
+.content-foot a {
+	color: #959595;
+	margin-left: 7px;
+}
+
+.content-foot a:hover {
+	color: #e67e22;
+}
+
+.page-self {
+	margin: 0 0 35px;
+	text-align: center;
+	display: block;
+	border-radius: 4px;
+}
+
+.pagination .page-number {
+	background: #e67e22;
+	color: #fff;
+	margin: 0 3px;
+	display: inline-block;
+	line-height: 36px;
+	padding: 0 14px;
+	border-radius: 2px;
+}
+
+.pagination a {
+	text-align: center;
+	display: inline-block;
+	color: #fff;
+	background: #e67e22;
+	line-height: 36px;
+	border-radius: 2px;
+	width: 36px;
+	height: 36px;
+	line-height: 36px;
+}
+
+
+/*侧边栏*/
+
+.sidebar .widget {
+	background: #fff;
+	padding: 21px 30px;
+	margin-bottom: 35px;
+}
+
+.sidebar .widget .title {
+	margin-top: 0;
+	padding-bottom: 7px;
+	border-bottom: 1px solid #ebebeb;
+	margin-bottom: 21px;
+	position: relative;
+	font-size: 1.5em;
+}
+
+.sidebar .widget .title:after {
+	content: "";
+	width: 90px;
+	height: 1px;
+	background: #e67e22;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+
+.widget p {
+	margin: 0 0 10px;
+}
+
+.widget a {
+	color: #e67e22;
+}
+
+.iconself2 {
+	font-size: 12px;
+}
+
+.iconself {
+	color: #e67e22;
+}
+
+.side-content a {
+	border: 1px solid #ebebeb;
+	color: #959595;
+	margin-left: 6px;
+}
+
+.widget .btn-download {
+	border: 1px solid #e67e22;
+	background: #e67e22;
+	color: #fff;
+	padding: 7px 14px;
+	border-radius: 2px;
+	display: block;
+	width: 100%;
+	margin-bottom: 5px;
+}
+
+.widget .btn-download:hover {
+	background-color: #222;
+	border: 1px solid #222;
+}
+
+
+/*首页部分结束*/
+
+
+/*快捷手册部分*/
+
+.fast-api-wrap .fast-api-hr {
+	border-bottom: 1px solid #DA6426;
+	margin-bottom: 60px;
+	margin-top: 60px;
+	margin-left: -35px;
+	margin-right: -35px;
+	display: block;
+	width: 50%;
+	height: 1px;
+	border-top: #dededc 1px solid;
+	padding: 0;
+}
+
+.fast-api-h2 a {
+	color: #E67E22;
+}
+
+.table-self {
+	font-size: 18px;
+}
+
+.table-self a {
+	color: #E67E22;
+}
+
+.table-striped>tbody>tr:nth-of-type(even) {
+	background-color: #efefee;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd) {
+	background-color: #fff;
+}
+
+.list-self2 {
+	list-style-type: circle;
+}
+.list-self3 {
+    list-style-type: disc;
+}
+
+
+
+/*快捷手册部分结束*/
+
+
+/*下载部分*/
+
+.down-text-p {
+	color: #666664;
+	font-size: 17.5px;
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
+.content-text-top .down-span {
+	height: 98px;
+}
+
+.title-h2 {
+	font-size: 28px;
+	margin: 0.83em 0;
+}
+
+.list-self code {
+	color: #808080;
+	font-size: 0.96em;
+	background-color: #f9f9f7;
+	padding: 1px 2px;
+	border: 1px solid #dadada;
+	border-radius: 3px;
+	font-family: Menlo, Monaco, Consolas, "Courier New", monospace;
+	word-wrap: break-word;
+	line-height: 30px;
+}
+.api ol li{
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+
+/*下载部分结束*/
+
+
+/*关于部分*/
+
+.content-title {
+	font-size: 2.5em;
+	line-height: 1em;
+}
+
+.content-text-top {
+	padding: 30px 0px 10px 0px;
+	font-size: 19px;
+	position: relative;
+}
+
+.content-text-top span {
+	position: absolute;
+	left: -24px;
+	height: 80px;
+	border-left: 4px solid #E67E22;
+}
+
+.content-news hr {
+	display: block;
+	width: 50%;
+	height: 1px;
+	border: 0 none;
+	border-top: #dededc 1px solid;
+	margin: 3.2em auto;
+	padding: 0;
+}
+
+.title-p {
+	margin-top: 60px;
+	margin-bottom: 25px;
+	font-size: 18px
+}
+
+.list-self {
+	list-style-type: square;
+	font-size: 19px;
+}
+
+.list-self li {
+	margin-bottom: 10px;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.list-self a {
+	font-size: 18px;
+	color: #E67E22;
+}
+
+
+/*关于部分结束*/
+
+
+/*页脚部分*/
+
+.foot-self {
+	background-color: #202020;
+	padding: 35px 0 0;
+	color: #959595;
+}
+
+.widge {
+	padding: 0 30px;
+	margin-bottom: 35px;
+}
+
+.foot-news {
+	border-bottom: 1px dashed #303030;
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+}
+
+.news-date {
+	/*line-height: 20px;*/
+	margin-top: 5px;
+	color: #505050;
+}
+
+.foot-news a {
+	font-size: 14px;
+	color: #959595;
+}
+
+.foot-news a:hover {
+	text-decoration: none;
+	color: #e67e22;
+}
+
+.foot-title {
+	color: #fff;
+	border-bottom: 1px solid #303030;
+	font-size: 1.5em;
+	position: relative;
+	padding-bottom: 5px;
+}
+
+.mt25 {
+	margin-top: 25px;
+}
+
+.foot-title:after {
+	content: "";
+	width: 90px;
+	height: 1px;
+	background: #e67e22;
+	position: absolute;
+	left: 0;
+	bottom: -1px;
+}
+
+.foot-cloud {
+	border: 1px solid #303030;
+	padding: 2px 7px;
+	color: #959595;
+	line-height: 1.5em;
+	display: inline-block;
+	margin-top: 5px;
+	margin-left: 8px;
+}
+
+.foot-cloud:hover {
+	background-color: #e67e22;
+	color: #fff;
+	text-decoration: none;
+}
+
+.foot-links {
+	border-bottom: 1px dashed #303030;
+	padding-bottom: 14px;
+	margin-bottom: 14px;
+}
+
+.foot-links a {
+	float: left;
+	padding: 2px 7px;
+	color: #959595;
+	line-height: 1.5em;
+	display: inline-block;
+	margin: 0 7px 7px 0;
+}
+
+.foot-links a:hover {
+	background-color: #e67e22;
+	color: #fff;
+	text-decoration: none;
+}
+
+
+/*公司注册*/
+
+.copyright {
+	background: #111;
+	font-size: 13px;
+	text-align: center;
+	color: #555;
+	padding-top: 28px;
+	padding-bottom: 28px;
+	border-top: 1px solid #303030;
+}
+
+.copyright span {
+	margin: 0 .5em;
+	line-height: 25px;
+}
+
+.copyright a {
+	color: #555;
+}
+
+
+/* 回到顶部 */
+
+#btnTop {
+	width: 30px;
+	height: 30px;
+	background: rgba(230, 126, 34, .6);
+	color: #fff;
+	text-align: center;
+	border-radius: 2px;
+	position: fixed;
+	right: 10px;
+	bottom: 10px;
+	display: none;
+}
+
+#btnTop span {
+	border: 5px solid transparent;
+	border-bottom-color: #fff;
+	position: absolute;
+	left: 9px;
+	top: 7px;
+}
+
+#btnTop:hover {
+	background-color: rgba(230, 126, 34, 1);
+	;
+}

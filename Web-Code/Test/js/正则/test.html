@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var reg = /\d/;
+    console.log(reg.test('aa'));
+    console.log(reg.test('1'));
+    console.log(reg.test('10'));
+    console.log(reg.test('aa10'));
+
+    console.log(reg.exec('aa1120'));
+    console.log(reg.exec('0'));
+    console.log(reg.exec('aa'));
+</script>
+
+</body>
+</html>

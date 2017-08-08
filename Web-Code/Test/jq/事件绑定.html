@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+        }
+    </style>
+</head>
+<body>
+<button class="btn">Go</button>
+<div></div>
+</body>
+</html>
+<script>
+    $(function () {
+//        $(".btn").click(function () {
+//            $('div').css('width','200px')
+//        });
+
+//        $(".btn").on('click',function () {
+//            $('div').css('width','200px')
+//        });
+//        $(".btn").off();
+        $(".btn").bind('click',function () {
+            $('div').css('width','200px')
+        });
+        $(".btn").unbind();
+
+    })
+</script>

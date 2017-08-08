@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<!-- jquery一定要在bootstrap之前引入-->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>bootstrap</title>
+		<style type="text/css">
+			button{
+				margin: 30px;
+			}
+		</style>
+	</head>
+	<body>
+	<!--  <button class="btn btn-default origin-popover" data-toggle="popover"
+		 	data-container="body"	data-original-title="弹出框居左" 
+		 	data-placement="left" data-content="弹出框的内容">
+		 	提示框
+	  </button>
+	 
+	   <button class="btn btn-default origin-popover" data-toggle="popover"
+		 	data-container="body"	data-original-title="弹出框居右" 
+		 	data-placement="right" data-content="弹出框的内容">
+		 	提示框
+	  </button>
+	   <button class="btn btn-default origin-popover" data-toggle="popover"
+		 	data-container="body"	data-original-title="弹出框居上" 
+		 	data-placement="top" data-content="弹出框的内容">
+		 	提示框
+	  </button>
+	   <button class="btn btn-default origin-popover" data-toggle="popover"
+		 	data-container="body"	data-original-title="弹出框居下" 
+		 	data-placement="bottom" data-content="弹出框的内容">
+		 	提示框
+	  </button>
+	  -->
+	  
+	  <button class="btn btn-default box" data-toggle="popover">
+		 	弹出框居下
+	  </button>
+	</body>
+	<script>
+		$(function(){
+			//$(".origin-popover").popover();
+			$(".box").popover({
+				container:"body",
+				title:"弹出框居下",
+				placement:"bottom",
+				content:"弹出框的内容"
+				
+			})
+		})
+	</script>
+</html>

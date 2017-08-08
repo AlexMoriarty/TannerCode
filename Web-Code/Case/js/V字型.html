@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 40px;
+            height: 40px;
+            background-color: deeppink;
+            position: absolute;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var len = 11;
+            var str = '';
+            var cen = Math.floor(len/2);
+
+            for (var i = 0; i < len; i++) {
+                if (i<cen){
+                    str += '<div style="left: ' + i * 40 + 'px;top:' + i * 40 + 'px"></div>';
+                }else{
+                    str += '<div style="left: ' + i * 40 + 'px;top:' + (len-1-i) * 40 + 'px"></div>';
+                }
+            }
+
+
+            document.body.innerHTML = str;
+        }
+    </script>
+</head>
+<body>
+
+</body>
+</html>

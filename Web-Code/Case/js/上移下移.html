@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			button{
+				margin: 10px;
+			}
+		</style>
+	</head>
+	<body>
+		<ul id="list">
+			<li>aaa <button class="btnon">上移</button><button class="btnup">下移</button></li>
+			<li>bbb <button class="btnon">上移</button><button class="btnup">下移</button></li>
+			<li>ccc <button class="btnon">上移</button><button class="btnup">下移</button></li>
+			<li>ddd <button class="btnon">上移</button><button class="btnup">下移</button></li>
+			<li>eee <button class="btnon">上移</button><button class="btnup">下移</button></li>
+		</ul>
+	</body>
+</html>
+<script type="text/javascript">
+	window.onload = function(){
+		var oList = document.getElementById('list');
+		var aLi  = oList.children;
+		
+		alert(aLi[0]);
+		
+		
+		
+		
+	}
+</script>

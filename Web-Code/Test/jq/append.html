@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../lab/jquery/jquery.min.js"></script>
+</head>
+<body>
+    <p>我是P</p>
+    <span class="sp2">第一个</span>
+    <span class="sp1">第a个</span>
+</body>
+</html>
+<script>
+    $(function () {
+        $('p').appendTo('.sp2');
+        $('p').prependTo('.sp1');
+//        $('p').appendTo('.sp2');
+//        $('p').appendTo('.sp2');
+    })
+</script>

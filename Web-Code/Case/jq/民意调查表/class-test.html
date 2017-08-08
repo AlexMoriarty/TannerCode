@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .wrap-box {
+            border: 1px solid #000;
+            width: 600px;
+            /*height: 600px;*/
+            margin: 40px auto;
+            padding: 40px;
+            position: relative;
+        }
+
+        .title {
+            position: absolute;
+            left: 26px;
+            top: -18px;
+            background-color: #fff;
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: 500;
+            text-align: center;
+            line-height: 30px;
+        }
+
+        .wrap-box h3 {
+            width: 200px;
+            height: 30px;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 30px;
+            margin-top: 5px;
+        }
+
+        /*.text{*/
+        /*display: block;*/
+        /*height: 20px;*/
+        /*margin-bottom: 5px;*/
+        /*}*/
+        .sex {
+            margin: 0 0 10px 0;
+        }
+
+        div {
+            margin: 10px 0;
+        }
+
+        textarea {
+            margin-top: 10px;
+        }
+
+        .btn {
+            text-align: center;
+        }
+
+        .btn-base {
+            width: 150px;
+            height: 40px;
+        }
+
+        #submit {
+            background-color: #52cb52;
+            color: #fff;
+        }
+
+        #reset {
+            background-color: #e5e5e5;
+            color: #000;
+        }
+
+        #age-tips {
+            display: none;
+        }
+
+        #sex-tips {
+            color: red;
+            display: none;
+        }
+
+
+    </style>
+    <script src="jquery/jquery.min.js"></script>
+
+</head>
+<body>
+<div class="wrap-box">
+    <h2 class="title">小区居民意见调查表</h2>
+    <!--题目三: 点击提交后出现弹出框-->
+    <form action="success.html">
+        <h3>基本信息</h3>
+        <div class="name-box">
+            <input type="text" class="text" placeholder="请输入称呼">
+        </div>
+        <div class="age-box">
+            <input type="text" class="text" placeholder="请输入年龄" id="age">
+            <span id="age-tips">年龄都不会填吗?</span>
+        </div>
+        <div class="job-box">
+            <input type="text" class="text" placeholder="请输入职位">
+
+        </div>
+        <div class="sex">
+            <input type="radio" name="sex" checked> 男
+            <input type="radio" name="sex"> 女
+            <input type="radio" name="sex"> 人妖
+            <p id="sex-tips">变态死人妖</p>
+        </div>
+        <h3>调查信息</h3>
+        <p>你觉得小区周边安全吗?</p>
+        <div class="safe">
+            <input type="radio" name="safe" checked> 安全
+            <input type="radio" name="safe"> 不安全
+            <input type="radio" name="safe"> 没概念
+        </div>
+        <p>你觉得小区周边设施齐全吗?</p>
+        <div class="facility">
+            <input type="radio" name="facility" checked> 还好
+            <input type="radio" name="facility"> 要啥没啥
+            <input type="radio" name="facility"> 完美
+        </div>
+        <p>你觉得小区有哪些方面需要完善?</p>
+        <div class="need">
+            <input type="checkbox" name="need" checked> 早餐
+            <input type="checkbox" name="need"> 菜场
+            <input type="checkbox" name="need"> 超市
+        </div>
+        <p>其他意见</p>
+        <textarea cols="84" rows="10" id="text"></textarea>
+        <div class="btn">
+            <input type="submit" value="提交" id="submit" class="btn-base">
+            <input type="reset" value="重置" id="reset" class="btn-base">
+        </div>
+    </form>
+</div>
+</body>
+</html>
+<script>
+
+    $(function () {
+//            题目1: 输入年龄后出现提示框
+        $('#age').keyup(function () {
+            $("#age-tips").css('display', 'inline-block')
+        });
+
+//            题目2: 选择人妖时出现提示框 （使用eq(index)）
+
+        $('input[name ^="sex"]').eq(2).click(function () {
+            $("#sex-tips").css('display', 'block')
+        });
+        $('input[name ^="sex"]').eq(0).click(function () {
+            $("#sex-tips").css('display', 'none')
+        });
+        $('input[name ^="sex"]').eq(1).click(function () {
+            $("#sex-tips").css('display', 'none')
+        });
+
+//            题目4: 鼠标经过调查问题时，颜色变化
+        $("p").each(function () {
+            $(this).hover(function () {
+                $(this).css({'color': 'red'});
+            }, function () {
+                $(this).css({'color': '#000'});
+            })
+        });
+
+
+//            题目五:输入框要求必须填写，有为空时不能提交，提交成功后跳转到success.html alert(“您好！”);
+        
+        
+//        alert($('.text').length);
+
+
+
+//        console.log( $('.text')[1].val());
+
+        $('form').submit(function () {
+            for(var i=0;i<$('.text').length;i++){
+//                $('.text').index = i;
+                if ( $('.text').eq(i).val() == ''){
+                    return false;
+                }
+            }
+            return true;
+        })
+
+    })
+
+</script>

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="UTF-8">
+    <title>设置div颜色尺寸</title>
+    <style type="text/css">
+    /* 初始化 */
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+    
+    body {
+        height: 2000px;
+    }
+    /* 基础样式 */
+    .bigbox{
+    	border: 2px solid #000;
+    	width: 600px;
+    	height: 600px;
+    }
+    
+    .box {
+        width: 500px;
+        height: 30px;
+        line-height: 30px;
+    }
+    
+    .box h3 {
+        float: left;
+        margin-right: 10px;
+    }
+    
+    .box #btn {
+        background-color: #900;
+        width: 90px;
+        float: left;
+        color: #fff;
+        text-align: center;
+        cursor: pointer;
+    }
+    
+    #changebox {
+        border: 2px solid #000;
+        width: 100px;
+        height: 100px;
+        margin: 20px;
+    }
+    /* 遮罩 */
+    
+    #shade {
+        background-color: #000;
+        opacity: .6;
+        filter: alpha(opacity=60);
+        position: fixed;
+        left: 2px;
+        top: 2px;
+        /* left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0; */
+        width: 600px;
+        height: 600px;
+        display: none;
+        z-index: 10;
+    }
+    /* 设置块 */
+    
+    #setbox {
+        border: 5px solid #900;
+        background-color: #fff;
+        width: 320px;
+        height: 190px;
+        position: absolute;
+        left: 605px;
+        top: 0px;
+        z-index: 20;
+        display: none;
+    }
+    
+    #setbox div {
+        line-height: 30px;
+        margin: 10px;
+        height: 30px;
+    }
+    
+    #setbox a{
+        width: 30px;
+        height: 30px;
+        display: inline-block;
+        color: #eee;
+        text-align: center;
+        border: 1px solid #ccc;
+        font-size: 14px;
+        cursor: pointer;
+        text-decoration: none;
+    }
+    #setbox a:hover{
+    	background-color: yellow;
+    	color: #000;
+    	border: 1px solid red;
+    }
+    
+    #setbox .widthbox a,
+    #setbox .heightbox a {
+        background-color: #ccc;
+        color: #000;
+
+    }
+    #setbox .widthbox a:hover,
+    #setbox .heightbox a:hover{
+    	background-color: #777;
+    	color: #fff;
+    }
+    
+    #bgc1 {
+        background-color: red;
+    }
+    
+    #bgc2 {
+        background-color: green;
+    }
+    
+    #bgc3 {
+        background-color: blue;
+    }
+    
+    #bgc4 {
+        background-color: orange;
+    }
+    
+    #bgc5 {
+        background-color: pink;
+    }
+    
+    .btnbox {
+        padding: 0 40px;
+    }
+    
+    #reset,
+    #oky {
+        border: 1px solid #ccc;
+        width: 80px;
+        line-height: 30px;
+        background-color: #aaa;
+        float: left;
+        text-align: center;
+        color: #fff;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    </style>
+    <script>
+    window.onload = function() {
+        var oChangebox = document.getElementById('changebox');
+        var oBtn = document.getElementById('btn');
+        var oShade = document.getElementById('shade');
+        var oOky = document.getElementById('oky');
+        var oSetbox = document.getElementById('setbox');
+        var oReset = document.getElementById('reset');
+
+        var oBgc1 = document.getElementById('bgc1');
+        var oBgc2 = document.getElementById('bgc2');
+        var oBgc3 = document.getElementById('bgc3');
+        var oBgc4 = document.getElementById('bgc4');
+        var oBgc5 = document.getElementById('bgc5');
+
+        var oWidth1 = document.getElementById('width1');
+        var oWidth2 = document.getElementById('width2');
+        var oWidth3 = document.getElementById('width3');
+        var oWidth4 = document.getElementById('width4');
+        var oWidth5 = document.getElementById('width5');
+
+        var oHeight1 = document.getElementById('height1');
+        var oHeight2 = document.getElementById('height2');
+        var oHeight3 = document.getElementById('height3');
+        var oHeight4 = document.getElementById('height4');
+        var oHeight5 = document.getElementById('height5');
+
+        var oBdemo = document.getElementById('bdemo');
+        var oWdemo = document.getElementById('wdemo');
+        var oHdemo = document.getElementById('hdemo');
+
+
+        var span1 = oBdemo.getElementsByTagName('span');
+        console.log(span1.length);
+        // var arr = [];
+        // arr.push('span1');
+
+        // for (var i = 0; i <= span1.length; i++) {
+
+        // 	span1.onmouseover = function () {
+        // 		span1[i].style.background = "red";
+        // 	}
+        // }
+        // arr[i].onmouseover = function() {
+        // 	this.style.background = "red";
+        // }
+
+
+        oBtn.onclick = function() {
+            oSetbox.style.display = 'block';
+            oShade.style.display = 'block';
+        }
+        oOky.onclick = function() {
+            oSetbox.style.display = 'none';
+            oShade.style.display = 'none';
+        }
+        oReset.onclick = function() {
+            oChangebox.style.background = '#fff';
+            oChangebox.style.width = '100px';
+            oChangebox.style.height = '100px';
+        }
+
+        oOky.onmouseover = function() {
+            oOky.style.background = "red";
+        }
+        oReset.onmouseover = function() {
+            oReset.style.background = "red";
+        }
+        oOky.onmouseout = function() {
+            oOky.style.background = "#aaa";
+        }
+        oReset.onmouseout = function() {
+            oReset.style.background = "#aaa";
+        }
+
+        oBgc1.onclick = function() {
+            oChangebox.style.background = 'red';
+        }
+        oBgc2.onclick = function() {
+            oChangebox.style.background = 'green';
+        }
+        oBgc3.onclick = function() {
+            oChangebox.style.background = 'blue';
+        }
+        oBgc4.onclick = function() {
+            oChangebox.style.background = 'orange';
+        }
+        oBgc5.onclick = function() {
+            oChangebox.style.background = 'pink';
+        }
+
+        oWidth1.onclick = function() {
+            oChangebox.style.width = '100px';
+        }
+        oWidth2.onclick = function() {
+            oChangebox.style.width = '200px';
+        }
+        oWidth3.onclick = function() {
+            oChangebox.style.width = '300px';
+        }
+        oWidth4.onclick = function() {
+            oChangebox.style.width = '400px';
+        }
+        oWidth5.onclick = function() {
+            oChangebox.style.width = '500px';
+        }
+
+        oHeight1.onclick = function() {
+            oChangebox.style.height = '100px';
+        }
+        oHeight2.onclick = function() {
+            oChangebox.style.height = '200px';
+        }
+        oHeight3.onclick = function() {
+            oChangebox.style.height = '300px';
+        }
+        oHeight4.onclick = function() {
+            oChangebox.style.height = '400px';
+        }
+        oHeight5.onclick = function() {
+            oChangebox.style.height = '500px';
+        }
+
+    }
+    </script>
+</head>
+
+<body>
+    <div id="shade"> </div>
+    <div class="bigbox">
+        <div class="box">
+            <h3>请为下面的DIV设置样式: </h3>
+            <div id="btn">点击设置</div>
+        </div>
+        <div id="changebox"></div>
+        <div id="setbox">
+            <div id="bdemo" class="bgc">请选择背景色:
+               <a href="javascript:;" id="bgc1">红</a>
+               <a href="javascript:;" id="bgc2">绿</a>
+               <a href="javascript:;" id="bgc3">蓝</a>
+               <a href="javascript:;" id="bgc4">橙</a>
+               <a href="javascript:;" id="bgc5">粉</a>
+            </div>
+            <div id="wdemo" class="widthbox">请选择宽(px):&nbsp;
+                <a href="javascript:;" id="width1">100</a>
+                <a href="javascript:;" id="width2">200</a>
+                <a href="javascript:;" id="width3">300</a>
+                <a href="javascript:;" id="width4">400</a>
+                <a href="javascript:;" id="width5">500</a>
+            </div>
+            <div id="bdemo" class="heightbox">请选择高(px):&nbsp;
+                <a href="javascript:;" id="height1">100</a>
+                <a href="javascript:;" id="height2">200</a>
+                <a href="javascript:;" id="height3">300</a>
+                <a href="javascript:;" id="height4">400</a>
+                <a href="javascript:;" id="height5">500</a>
+            </div>
+            <div class="btnbox">
+                <div id="reset">恢复</div>
+                <div id="oky">确定</div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<!-- 
+问题1:遮罩层如果屏幕很长阻止滑动
+问题2:span怎么多选
+ -->

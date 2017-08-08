@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box {
+            width: 820px;
+            height: 330px;
+        }
+
+        #box ul {
+            float: left;
+        }
+
+        #box li {
+            list-style: none;
+            width: 60px;
+            height: 79px;
+            line-height: 79px;
+            text-align: center;
+            background-color: #ccc;
+            color: #000;
+            border-bottom: 1px solid #999;
+        }
+
+        #box .active {
+            background-color: #f00;
+            color: #fff;
+        }
+
+        #box img {
+            width: 700px;
+            height: 320px;
+            float: left;
+        }
+    </style>
+    <script>
+        window.onload = function () {
+            var oDiv = document.getElementById('box');
+            var oBtn1 = document.getElementById('btn1');
+            var oBtn2 = document.getElementById('btn2');
+            var aLi = oDiv.getElementsByTagName('li');
+            var oImg = oDiv.getElementsByTagName('img')[0];
+            var arr = ['img/05.jpg', 'img/04.jpg', 'img/03.jpg', 'img/02.jpg'];
+
+            var onOff = true;
+
+            oBtn1.onclick = function () {
+                onOff = true;
+                tab();
+                console.log(onOff);
+            };
+            oBtn2.onclick = function () {
+                onOff = false;
+                tab();
+
+                console.log(onOff);
+            };
+
+
+            function tab() {
+                if (onOff) {
+                    for (var i = 0; i < aLi.length; i++) {
+                        aLi[i].index = i;
+                        aLi[i].onclick = function () {
+                            for (var i = 0; i < aLi.length; i++) {
+                                aLi[i].className = '';
+                            }
+                            aLi[this.index].className = 'active';
+                            aLi[aLi.length - 1 - this.index].className = 'active';
+
+                            if (this.index < aLi.length / 2) {
+                                oImg.src = arr[this.index];
+                            } else {
+                                oImg.src = arr[aLi.length - 1 - this.index];
+                            }
+
+                        }
+                    }
+
+                } else {
+                    for (var i = 0; i < aLi.length; i++) {
+                        aLi[i].index = i;
+                        aLi[i].onclick = function () {
+                            for (var i = 0; i < aLi.length; i++) {
+                                aLi[i].className = '';
+                            }
+
+                            aLi[this.index].className = 'active';
+                            if (this.index< Math.floor(aLi.length / 2)){
+                                aLi[this.index + Math.floor(aLi.length / 2)].className = 'active';
+                            }else{
+                                aLi[this.index - Math.floor(aLi.length / 2)].className = 'active';
+                            }
+
+
+                            if (this.index < Math.floor(aLi.length / 2)) {
+                                oImg.src = arr[this.index];
+                            } else {
+                                oImg.src = arr[this.index - Math.floor(aLi.length / 2) ];
+                            }
+
+                        }
+                    }
+
+
+                }
+            }
+
+            tab();
+
+        }
+    </script>
+</head>
+<body>
+<div id="box">
+    <ul>
+        <li class="active">1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+    </ul>
+    <img src="img/05.jpg" alt="">
+    <ul>
+        <li>5</li>
+        <li>6</li>
+        <li>7</li>
+        <li class="active">8</li>
+    </ul>
+</div>
+<input type="button" value="交叉" id='btn1'>
+<input type="button" value="同步" id='btn2'>
+</body>
+</html>

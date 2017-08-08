@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+</body>
+</html>
+<script>
+    $(function () {
+        //        定义每一个人的数据为一个数组
+        var arr = [{"num": "1", "name": "张三", "age": "22", "sex": "女", "grade": "92"},
+            {"num": "2", "name": "李四", "age": "18", "sex": "男", "grade": "89"},
+            {"num": "3", "name": "王五", "age": "21", "sex": "女", "grade": "76"},
+//            {"num": "4", "name": "赵六", "age": "19", "sex": "男", "grade": "72"}
+        ];
+
+
+        //        创建了一个学生成绩表格
+        $('<div>', {class: 'student-form'}).appendTo('body');
+
+        //        添加表格标题和副标题
+        $('<h2>', {text: '学生成绩表'}).appendTo('.student-form');
+        $('<h3>', {text: '高二年级三班'}).appendTo('.student-form');
+
+        //        生成表格分类的标题
+        $('<div>', {class: 'title'}).appendTo('.student-form');
+        $('<div>', {class: 't-s', text: '学号'}).appendTo('.title');
+        $('<div>', {class: 't-b', text: '姓名'}).appendTo('.title');
+        $('<div>', {class: 't-s', text: '年龄'}).appendTo('.title');
+        $('<div>', {class: 't-s', text: '性别'}).appendTo('.title');
+        $('<div>', {class: 't-s', text: '成绩'}).appendTo('.title');
+
+
+        /////////////////////////////////////////////////////////////////
+        //        怎么根据数组自动生成ul和li,并把数组中的数据添加进去!!!!!!!!!
+        //        生成每一行的数据
+        $('<ul>', {class: 'list-row list1'}).appendTo('.student-form');
+        $('<li>', {class: 'l-s'}).appendTo('.list1');
+        $('<li>', {class: 'l-b'}).appendTo('.list1');
+        $('<li>', {class: 'l-s'}).appendTo('.list1');
+        $('<li>', {class: 'l-s'}).appendTo('.list1');
+        $('<li>', {class: 'l-s'}).appendTo('.list1');
+
+        $('<ul>', {class: 'list-row list2'}).appendTo('.student-form');
+        $('<li>', {class: 'l-s'}).appendTo('.list2');
+        $('<li>', {class: 'l-b'}).appendTo('.list2');
+        $('<li>', {class: 'l-s'}).appendTo('.list2');
+        $('<li>', {class: 'l-s'}).appendTo('.list2');
+        $('<li>', {class: 'l-s'}).appendTo('.list2');
+
+        $('<ul>', {class: 'list-row list3'}).appendTo('.student-form');
+        $('<li>', {class: 'l-s'}).appendTo('.list3');
+        $('<li>', {class: 'l-b'}).appendTo('.list3');
+        $('<li>', {class: 'l-s'}).appendTo('.list3');
+        $('<li>', {class: 'l-s'}).appendTo('.list3');
+        $('<li>', {class: 'l-s'}).appendTo('.list3');
+
+//          alert(json[2].name);
+//          alert(arr.length);
+
+//        $("ul").each(function(){
+//            var li= $(this).children().eq(0);
+//            li.css("background","pink");
+//        });
+
+        $("ul:eq(0)").children().eq(0).text(arr[0].num);
+        $("ul:eq(0)").children().eq(1).text(arr[0].name);
+        $("ul:eq(0)").children().eq(2).text(arr[0].age);
+        $("ul:eq(0)").children().eq(3).text(arr[0].sex);
+        $("ul:eq(0)").children().eq(4).text(arr[0].grade);
+
+        $("ul:eq(1)").children().eq(0).text(arr[1].num);
+        $("ul:eq(1)").children().eq(1).text(arr[1].name);
+        $("ul:eq(1)").children().eq(2).text(arr[1].age);
+        $("ul:eq(1)").children().eq(3).text(arr[1].sex);
+        $("ul:eq(1)").children().eq(4).text(arr[1].grade);
+
+        $("ul:eq(2)").children().eq(0).text(arr[2].num);
+        $("ul:eq(2)").children().eq(1).text(arr[2].name);
+        $("ul:eq(2)").children().eq(2).text(arr[2].age);
+        $("ul:eq(2)").children().eq(3).text(arr[2].sex);
+        $("ul:eq(2)").children().eq(4).text(arr[2].grade);
+
+
+        //        生成计算平均盒子
+        $('<div>', {class: 'average-box'}).appendTo('.student-form');
+        $('<div>', {class: 'average', text: '平均'}).appendTo('.average-box');
+        $('<div>', {class: 'average-num'}).appendTo('.average-box');
+
+        //        平均成绩自动生成
+        var n = 0;
+
+        function avg() {
+            for (var i = 0; i < arr.length; i++) {
+                n += parseInt(arr[i].grade);
+            }
+            n = Math.round(n / arr.length, 2);
+        }
+
+        avg();
+        $('.average-num').text(n);
+
+
+        //        样式设置
+        $('*').css({
+            'margin': '0',
+            'padding': '0',
+            'boxSizing': 'border-box'
+        });
+
+        $('.student-form').css({
+            'width': '820px',
+            'border': '1px solid #ccc',
+            'margin': '20px auto',
+            'text-align': 'center',
+            'overflow': 'hidden'
+        });
+
+
+        $('h2').css({'line-height': '60px'});
+        $('h3').css({'line-height': '40px'});
+
+
+        $('.title').css({
+            'width': '100%',
+            'overflow': 'hidden'
+        });
+        $('.t-s').css({
+            'width': '18%',
+            'line-height': '50px',
+            'border': '1px solid #ccc',
+            'float': 'left'
+        });
+        $('.t-b').css({
+            'width': '28%',
+            'line-height': '50px',
+            'border': '1px solid #ccc',
+            'float': 'left'
+        });
+
+        $('.list-row').css({
+            'width': '100%',
+            'float': 'left',
+            'list-style': 'none'
+
+        });
+        $('.list-row li').css({
+            'line-height': '30px',
+            'height': '30px',
+            'border': '1px solid #ccc',
+            'float': 'left'
+        });
+
+        $('.list-row .l-s').css({
+            'width': '18%'
+        });
+        $('.list-row .l-b').css({
+            'width': '28%'
+        });
+
+
+        $('.average-box').css({
+            'width': '100%',
+            'line-height': '30px',
+            'float': 'left'
+        });
+        $('.average').css({
+            'width': '18%',
+            'height': '30px',
+            'border': '1px solid #ccc',
+            'float': 'left'
+        });
+        $('.average-num').css({
+            'width': '82%',
+            'height': '30px',
+            'border': '1px solid #ccc',
+            'float': 'left'
+        });
+
+
+        //        题目要求1: 把标题设为蓝色
+        $(':header').css('color', '#00f');
+
+        //        题目要求2: 把奇数单元格背景色为蓝色
+        $('.title div:even').css('background', '#77f7ff');
+        $('li:odd').css('background', '#77f7ff');
+        //        判断奇偶数
+        var aLi = document.getElementsByTagName('li');
+        if (aLi.length % 2 == 0) {
+            $('.average-box div:odd').css('background', '#77f7ff');
+        } else {
+            $('.average-box div:even').css('background', '#77f7ff');
+        }
+
+        //        题目要求3: 性别为女的一行字色为红色
+        $('li:contains("女")').parent().children().css('color', 'red');
+
+        //        题目要求4: 第一行高度为50px
+        $('.title div').css('height', '50px');
+
+        //        题目要求5: 鼠标经过时行的背景色为灰色
+        $("li").hover(function () {
+                $(this).parent().children().css('background','#ccc');
+            },function () {
+                $(this).parent().children().css('background', '#fff');
+                $('li:odd').css('background', '#77f7ff');
+            }
+        );
+
+    })
+
+</script>

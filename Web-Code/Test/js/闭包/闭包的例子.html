@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<ul>
+    <li>我是第1个li</li>
+    <li>我是第2个li</li>
+    <li>我是第3个li</li>
+    <li>我是第4个li</li>
+    <li>我是第5个li</li>
+    <li>我是第6个li</li>
+    <li>我是第7个li</li>
+</ul>
+
+</body>
+</html>
+<script>
+    window.onload = function () {
+        var aLi = document.getElementsByTagName('li');
+
+//        for (var i=0; i<aLi.length; i++) {
+//
+//                aLi[i].onclick = function () {
+//                    alert(i);
+//
+//        }
+
+//        通过闭包把参数存在内存中
+
+        for (var i=0; i<aLi.length; i++) {
+            (function (i) {
+                aLi[i].onclick = function () {
+                    alert(i);
+                }
+            })(i)
+        }
+    }
+</script>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		  div{
+		  	width: 200px;
+		  	height: 200px;
+		  }
+	</style>
+	<body>
+	<span></span>
+	</body>
+	<script>
+		/*$(function(){
+		
+		
+			
+		 })*/
+		
+		$(document).mousemove(function(e){
+			$('span').text(e.pageX + ',' + e.pageY);
+		})
+		
+	</script>
+</html>

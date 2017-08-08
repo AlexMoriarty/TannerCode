@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<body>
+<div class="container">
+    <p class="inner first">Hello</p>
+    <p class="inner second">And</p>
+    <p class="inner third">Goodbye</p>
+</div>
+<!--aaaa<p>Hello, <span>Person</span> <a href="#">and person</a></p>-->
+</body>
+</html>
+<script>
+    $(function () {
+//        $(".third").replaceWith($('.first'));
+//        $('<i>i am i tag</i>').replaceAll('p')
+//        $("p").empty();
+//        $('p').remove()
+        $(".container").clone().appendTo($('div'));
+    })
+</script>

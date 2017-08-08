@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="../../lab/jquery/jquery.min.js"></script>
+</head>
+<body>
+<span></span>
+<span></span>
+<span></span>
+</body>
+</html>
+<script>
+    $(function () {
+        $(document).mousemove(function (e) {
+            $('span').eq(0).text(e.pageX + ',' + e.pageY);
+        });
+
+        $(document).mousedown(function (e) {
+            $('span').eq(1).text(e.pageX + ',' + e.pageY);
+        });
+        $(document).mouseup(function (e) {
+            $('span').eq(2).text(e.pageX + ',' + e.pageY);
+        })
+    })
+</script>

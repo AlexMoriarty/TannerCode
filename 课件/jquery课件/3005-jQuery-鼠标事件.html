@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		  div{
+		  	width: 200px;
+		  	height: 200px;
+		  }
+	</style>
+	<body>
+		<div class="mydiv">
+			我是div标签
+		</div>
+	</body>
+	<script>
+		$(function(){
+			/*$('.mydiv').mouseover(function(){
+				$(this).css('color','blue');
+			})
+			
+			$('.mydiv').mouseout(function(){
+				$(this).css('color','red');
+			})*/
+			
+			
+			$('.mydiv').mouseover(function(){
+				$(this).css('color','blue');
+				
+			}).mouseout(function() {
+					$(this).css('color', 'black');
+			})
+			
+			
+			
+		 })
+		
+	</script>
+</html>

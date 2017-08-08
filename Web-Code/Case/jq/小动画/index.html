@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="js/jquery.min.js"></script>
+    <style>
+        .pic{
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            overflow: hidden;
+            border: 1px solid red;
+            position: relative;
+            margin: 10px;
+            float: left;
+        }
+        .pic img{
+            width: 400px;
+            height: 200px;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+
+        .pic2{
+            width: 200px;
+            height: 200px;
+            background-color: #000;
+            overflow: hidden;
+            border: 1px solid red;
+            position: relative;
+            margin: 10px;
+            float: left;
+            /*opacity: .7;*/
+        }
+        .pic2 img{
+            width: 200px;
+            height: 200px;
+        }
+        
+        .ball{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            background-color: #ffab38;
+            position: absolute;
+            top: 300px;
+            left: 0;
+        }
+        .abs{
+            /*width: 100px;*/
+            /*height: 100px;*/
+            border:30px solid #ccc;
+            border-top-color: transparent;
+            border-left-color: transparent;
+            border-right-color: transparent;
+            /*background-color: #ffab38;*/
+            position: absolute;
+            top: 433px;
+            left: 600px;
+        }
+        .line1{
+            width: 200px;
+            height: 200px;
+            border-top: 1px solid #000;
+            position: absolute;
+            left: -72px;
+            top: 416px;
+            transform:rotate(35deg)
+        }
+        .line2{
+            width: 434px;
+            height: 100px;
+            border-top: 1px solid #000;
+            position: absolute;
+            left: 167px;
+            top: 492px;
+        }
+        .box{
+            width: 200px;
+            height: 200px;
+            border: 1px solid #000;
+            border-top-color: transparent;
+            position: absolute;
+            left: 760px;
+            top: 505px;
+        }
+    </style>
+</head>
+<body>
+<div class="pic">
+    <img src="img/w1.jpg" alt="">
+</div>
+<div class="pic2">
+    <img src="img/w2.jpg" alt="">
+</div>
+<div class="line1"></div>
+<div class="line2"></div>
+<div class="ball"></div>
+<div class="abs"></div>
+<div class="box"></div>
+</body>
+</html>
+<script>
+    $(function () {
+        $('.pic img').hover(function () {
+            $('.pic img').stop().animate({left:-200},500)
+        },function () {
+            $('.pic img').stop().animate({left:0},500)
+        });
+
+        $('.pic2 img').stop().animate({opacity:.3});
+        $('.pic2 img').hover(function () {
+            $('.pic2 img').stop().animate({opacity:1},500)
+        },function () {
+            $('.pic2 img').stop().animate({opacity:.3},500)
+        });
+
+        $(".ball").animate({left:134,top:392},300).animate({left:530},500).animate({top:200,left:800},800).animate({top:608},300)
+
+//        $(".ball").animate({left:134,top:392},300,function () {
+//            $(".ball").animate({left:530},500,function () {
+//                $(".ball").animate({top:200,left:800},800,function () {
+//                    $(".ball").animate({top:608},300)
+//                })
+//            })
+//        })
+
+//
+    })
+</script>

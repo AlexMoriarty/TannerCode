@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>综合</title>
+		<script src="js/jquery.min.js"></script>
+		<style>
+			/*第一题*/
+			
+			.test1 {
+				position: relative;
+			}
+			
+			.box1 {
+				width: 100px;
+				height: 150px;
+				position: absolute;
+				top: 70px;
+				/*border: 1px solid #ccc;*/
+				/*background-color: red;*/
+			}
+			
+			.box2 {
+				border: 1px solid #ccc;
+				width: 600px;
+				height: 70px;
+			}
+			/*第二题*/
+			
+			.list1 {
+				list-style: none;
+			}
+			
+			.list1 li {
+				float: left;
+				width: 150px;
+				height: 40px;
+				line-height: 40px;
+				text-align: center;
+				background-color: pink;
+				margin: 0 5px;
+				font-size: 20px;
+				border: 1px solid #000;
+				cursor: pointer;
+			}
+			/*第三题*/
+			
+			.test3 {
+				border: 1px solid #ccc;
+				width: 600px;
+				height: 250px;
+				text-align: center;
+				padding: 5px;
+			}
+			
+			table {
+				border-collapse: collapse;
+			}
+			
+			th,
+			td {
+				width: 160px;
+				height: 30px;
+			}
+			
+			th {
+				background-color: #ccc;
+			}
+			
+			td {
+				text-align: left;
+			}
+			/*th:first,td:first{
+				width: 60px;
+			}*/
+		</style>
+	</head>
+
+	<body>
+		<!--第三题-->
+		<div class="test3">
+			<!--<p>第三题</p>-->
+			<h3>员工信息</h3>
+			<table border="1" cellpadding="0" cellspacing="0">
+				<tr>
+					<th> </th>
+					<th>姓名</th>
+					<th>薪水</th>
+					<th>年龄</th>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" />
+					</td>
+					<td>张三</td>
+					<td>20000</td>
+					<td>23</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" />
+					</td>
+					<td>李四</td>
+					<td>22000</td>
+					<td>22</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" />
+					</td>
+					<td>王五</td>
+					<td>14000</td>
+					<td>26</td>
+				</tr>
+				<tr>
+					<td>
+						<input type="checkbox" />
+					</td>
+					<td>李四</td>
+					<td>15000</td>
+					<td>21</td>
+				</tr>
+			</table>
+		</div>
+		<!--第二题-->
+		<div class="test2">
+			<p>第二题</p>
+			<div class="box2">
+				<ul class="list1">
+					<li>选项一</li>
+					<li>选项二</li>
+					<li>选项三</li>
+				</ul>
+			</div>
+		</div>
+		<!--第一题-->
+		<div class="test1">
+			<p>第一题</p>
+			<div class="box1">我是一个div</div>
+			<button class="btn1">动画一</button>
+			<button class="btn2">动画二</button>
+		</div>
+
+	</body>
+
+</html>
+<script>
+	$(function() {
+		//第一题
+		var num = 0;
+		var count = 100;
+		var riseWidth = '';
+		var riseHeight = '';
+		var lenWidth = $('.box1').width();
+		var lenHeight = $('.box1').height();
+		$(".btn1").click(function() {
+
+			num++;
+			riseWidth = lenWidth + num * count;
+			riseHeight = lenHeight + num * count;
+
+			$(".box1").animate({
+				left: '50px',
+				opacity: '.5',
+				width: riseWidth,
+				height: riseHeight
+			}, "slow");
+		});
+		$(".btn2").click(function() {
+			num=0;
+			lenWidth = 100;
+			lenHeight = 100;
+			$(".box1").css({
+				'border': '10px solid #ccc',
+				'fontSize': '16px',
+				'width': '100px',
+				'height': '100px'
+			})
+		})
+
+		//第二题
+		//方法一
+		//		$(".list1 li").each(function(){
+		//			$(this).hover(function(){
+		//				$(this).css('backgroundColor','yellow')
+		//			},function(){
+		//				$(this).css('backgroundColor','pink')
+		//			})
+		//		})
+		//方法二
+		$(".list1 li").each(function() {
+			$(this).mouseover(function() {
+				$(this).css('backgroundColor', 'yellow')
+			}).mouseout(function() {
+				$(this).css('backgroundColor', 'pink')
+			})
+		})
+
+		//第三题
+		$("tr:odd").css('backgroundColor', 'pink');
+		$("tr:even").css('backgroundColor', 'orange');
+
+		$("input[type=checkbox]").each(function(i) {
+
+			$(this).click(function() {
+
+				if($(this).attr('checked')) {
+					$(this).attr('checked', false);
+					if(i % 2) {
+						$(this).parent().parent().css("background", 'orange')
+					} else {
+						$(this).parent().parent().css("background", 'pink')
+
+					}
+				} else {
+					$(this).attr('checked', 'checked')
+					$(this).parent().parent().css("background", 'yellow')
+				}
+			})
+		})
+
+	})
+</script>

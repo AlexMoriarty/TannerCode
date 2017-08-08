@@ -1,0 +1,1239 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Ghost 开源博客平台 | Ghost中文网</title>
+		<link rel="stylesheet" href="fonts/iconfont.css " />
+		<link rel="stylesheet " href="css/bootstrap.min.css ">
+		<link rel="stylesheet " href="css/index.css ">
+		<script src="js/jquery.min.js "></script>
+		<script src="js/bootstrap.min.js "></script>
+		<script src="js/index.js"></script>
+	</head>
+
+	<body>
+		<!--头部Banner-->
+		<div class="header-wrap header ">
+			<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+				<!-- Indicators -->
+				<ol class="carousel-indicators">
+					<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="1"></li>
+					<li data-target="#carousel-example-generic" data-slide-to="2"></li>
+				</ol>
+
+				<!-- Wrapper for slides -->
+				<div class="carousel-inner slider-self" role="listbox">
+					<div class="item active">
+						<img src="img/a.jpg" alt="...">
+					</div>
+					<div class="item">
+						<img src="img/b.jpg" alt="...">
+					</div>
+					<div class="item">
+						<img src="img/c.jpg" alt="...">
+					</div>
+				</div>
+
+				<!-- Controls -->
+				<a class="left carousel-control" href="#carousel-example-generic"  data-slide="prev">
+					<span class="glyphicon glyphicon-chevron-left" ></span>
+					<span class="sr-only">Previous</span>
+				</a>
+				<a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
+					<span class="glyphicon glyphicon-chevron-right" ></span>
+					<span class="sr-only">Next</span>
+				</a>
+			</div>
+		</div>
+		<!--导航条-->
+		<!--导航条-->
+		<nav class="navbar navbar-default text-center navbar-wrap">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<div class="navbar-header">
+							<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#go_nav" aria-expanded="false">
+						        <span class="sr-only">Toggle navigation</span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						        <span class="icon-bar"></span>
+						    </button>
+						</div>
+						<div class="collapse navbar-collapse" id="go_nav">
+							<ul class="nav  navbar-nav mynav" role="tablist">
+								<li role="presentation" class="active">
+									<a href="#home" aria-controls="home" role="tab" data-toggle="tab" class="nav-a">首页</a>
+								</li>
+								<li role="presentation">
+									<a href="bbs.html" class="nav-a">论坛</a>
+								</li>
+								<li role="presentation">
+									<a href="#fast-api" aria-controls="fast-api" role="tab" data-toggle="tab" class="nav-a">快捷手册</a>
+								</li>
+								<li role="presentation">
+									<a href="chinaAPI.html" class="nav-a">中文文档</a>
+								</li>
+								<li role="presentation">
+									<a href="#download" aria-controls="download" role="tab" data-toggle="tab" class="nav-a">下载</a>
+								</li>
+								<li role="presentation">
+									<a href="#abouts" aria-controls="abouts" role="tab" data-toggle="tab" class="nav-a">关于</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<!-- Nav tabs -->
+
+		<!-- Tab panes -->
+		<div class="tab-content">
+			<div class="tab-pane fade in active tab-self" id="home">
+				<!--主要内容-->
+				<section class="content-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="main-content col-md-8">
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 1.0 版本正式发布</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2017年07月29日</span>
+										</p>
+									</div>
+									<div class="content-img">
+										<a href="#">
+											<img src="img/1.jpg" alt="" />
+										</a>
+									</div>
+
+									<div class="content-text">
+										<p>大约四年前，我们在 Kickstarter 上推出了一个还处在原型阶段的 Ghost，这个小小的原型寄托了我们的一个想法，那就是创建 Web 上的下一代伟大的开源博客平台。 在初期阶段，我们真的只是专注于让所有功能能够运转起来。Ghost 是 Node.js 平台上为数不多的一个
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 1.0 RC1 发布，可用于生产环境</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2017年07月12日</span>
+										</p>
+									</div>
+									<!--<div class="content-img">
+								<a href="#">
+									<img src="img/1.jpg" alt="" />
+								</a>
+							</div>-->
+
+									<div class="content-text">
+										<p>今天，我们正式发布了首个 Ghost 1.0 RC 版本，希望这是到达最终版本的最后一步。你可以通过 Ghost-CLI 安装此最新版本，并且可以使用到 生产环境中！！！如果你需要从 LTS (0.11) 版本迁移到 1.0 版本，请阅读迁移指南。 同时，下面列出从上一个 bet
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 1.0.0-beta.2 发布啦！</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2017年06月23日</span>
+										</p>
+									</div>
+									<div class="content-img">
+										<a href="#">
+											<img src="img/2.png" alt="" />
+										</a>
+									</div>
+
+									<div class="content-text">
+										<p>紧跟前两周发布的 Ghost 1.0.0-beta.1 的步伐，今天发布了 Ghost 1.0.0-beta.2 ，我们距离最终版本又迈了一大步。我们非常期盼这是最后一个 beta 版本，希望下一次发布的就是最终候选版。 在第一个 beta 版本发布后的日子里，我们发现并修复了
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">1.0.0 Beta 版本发布啦！！！</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2017年06月09日</span>
+										</p>
+									</div>
+									<!--<div class="content-img">
+								<a href="#">
+									<img src="img/1.jpg" alt="" />
+								</a>
+							</div>-->
+
+									<div class="content-text">
+										<p>经过 21 个 alpha 版本的迭代，我们终于迎来了第一个 1.0 beta 版本！ 请查看先前的博文以了解 1.0 和 LTS 版本之间的差异。 对于 LTS 版本的官方支持将于 2017 年 8 月 31 号结束。 如何安装 beta 版本？ 官方推荐通过 Ghost-CL
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Node.js v4 LTS 成为 Ghost 推荐版本</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2016年07月26日</span>
+										</p>
+									</div>
+									<!--<div class="content-img">
+								<a href="#">
+									<img src="img/1.jpg" alt="" />
+								</a>
+							</div>-->
+
+									<div class="content-text">
+										<p>从这周起，我们将 Ghost 推荐 Node.js 版本升级为 Node.js v4 LTS。 我们这样做其实已经落后于计划了。然而，经过大量测试之后，我们确信 Ghost 可以在 Node.js v4 平台上流畅的运行并且内存消耗比原来也减少了。目前，Ghost(Pro) 上托
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 桌面版 APP 正式发布，能同时管理多个 Ghost 博客</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2016年04月28日</span>
+										</p>
+									</div>
+									<div class="content-img">
+										<a href="#">
+											<img src="img/3.png" alt="" />
+										</a>
+									</div>
+
+									<div class="content-text">
+										<p>虽然通过浏览器管理 Ghost 博客虽然很方便，但是在多个 tab 之间切换有时候也会很麻烦，嗯，如果能有一个独立的 app 应该使用起来会更爽一些！ 今天的主角来了，Ghost 桌面版 APP -- Ghost Desktop！ 目前，Ghost Desktop 还处于早期阶段
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">为 Ubuntu 和 Debian 安装最新版本的 Node.js</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2016年03月23日</span>
+										</p>
+									</div>
+									<!--<div class="content-img">
+								<a href="#">
+									<img src="img/1.jpg" alt="" />
+								</a>
+							</div>-->
+
+									<div class="content-text">
+										<p>运行 Ghost 必须要安装 Node.js。但是 Ubuntu 或 Debian 的软件仓库中的 Node.js 更新较慢，甚至只能等到新版本发布才能有最新的 Node.js 用。下面我们说一下从 NodeSource 提供的仓库中安装最新版本的 Node.js。 支持的操作系
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 0.7.4 正式发布</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2015年12月29日</span>
+										</p>
+									</div>
+									<div class="content-img">
+										<a href="#">
+											<img src="img/4.png" alt="" />
+										</a>
+									</div>
+
+									<div class="content-text">
+										<p>紧随 Ghost 官方脚步，Ghost 0.7.4 中文正式版发布了！这一版本包含了自 Ghost 0.7.3 版本发布以来所修正的 bug，主要是针对开放 API 功能的改进。 0.7.1、0.7.2、0.7.3 这些版本哪去了？ 从 Ghost 0.7.0 版本发布以来，Gh
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+										<a href="#">新版本发布</a>,
+										<a href="#">Ghost</a>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 0.7.0 正式发布</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2015年09月27日</span>
+										</p>
+									</div>
+									<!--<div class="content-img">
+								<a href="#">
+									<img src="img/1.jpg" alt="" />
+								</a>
+							</div>-->
+
+									<div class="content-text">
+										<p>Ghost 0.7.0 已经正式发布了！此版本主要对后台 UI 的重构，既包含重新设计，也包含底层功能的重大改进。0.7.0 还为即将到来的 API 做了很多铺垫工作。 Ghost 0.7.0 的主要改进 [新增] 设计新后台界面 [新增] 后台能够搜索博文和用户 [新增] 安
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+										<a href="#">Ghost</a>,
+										<a href="#">新版本发布</a>,
+										<a href="#">Ghost 0.7 版本</a>
+									</div>
+								</div>
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h2 class="content-title">
+									<a href="#">Ghost 0.7 中 {{ghost_foot}} 助手函数将不再输出 jQuery</a>
+								</h2>
+										<p class="content-info">
+											<span class="author">作者: <a href="#">王赛</a></span> &nbsp;&nbsp;•
+											<span class="content-date">2015年08月29日</span>
+										</p>
+									</div>
+									<!--<div class="content-img">
+								<a href="#">
+									<img src="img/1.jpg" alt="" />
+								</a>
+							</div>-->
+
+									<div class="content-text">
+										<p>{{ghost_foot}} 助手函数将不再输出 jQuery 链接了。 从 Ghost 第一个版本开始， {{ghost_foot}} 助手函数默认都会输出一个 jQuery 文件链接，并且这个文件还是本地存储的。最开始 Ghost 团队觉得这是一件对所有主题开发者有意义
+										</p>
+									</div>
+									<div class="content-link">
+										<a href="#" class="btn btn-default content-btn-link">阅读全文</a>
+									</div>
+									<div class="content-foot">
+										<i class="iconfont icon-wenjianjia"></i>
+										<a href="#">Ghost</a>,
+										<a href="#">助手函数</a>,
+										<a href="#">jQuery</a>
+									</div>
+								</div>
+
+								<nav class="pagination page-self">
+									<span class="page-number">第 1 页 / 共 7 页</span>
+									<a href="#">&gt;</a>
+								</nav>
+							</div>
+							<aside class="sidebar col-md-4">
+								<div class="widget">
+									<h4 class="title">社区</h4>
+									<div class="community">
+										<p>QQ群：277327792</p>
+										<p>
+											<i class="iconfont icon-weixin2 iconself iconself2"></i>
+											<a href="#">&nbsp;问答社区</a>
+										</p>
+										<p>
+											<i class="iconfont icon-weibo iconself"></i>
+											<a href="#">官方微博</a>
+										</p>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">下载 Ghost</h4>
+									<div class="download">
+										<a href="#" class="btn btn-default btn-download">Ghost 中文版（0.7.4）</a>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">标签云</h4>
+									<div class="side-content">
+										<a href="#" class="foot-cloud">jQuery</a>
+										<a href="#" class="foot-cloud">Ghost 0.7 版本</a>
+										<a href="#" class="foot-cloud">开源</a>
+										<a href="#" class="foot-cloud">助手函数</a>
+										<a href="#" class="foot-cloud">标签云</a>
+										<a href="#" class="foot-cloud">导航</a>
+										<a href="#" class="foot-cloud">自定义页面</a>
+										<a href="#" class="foot-cloud">静态页面</a>
+										<a href="#" class="foot-cloud">Roon.io</a>
+										<a href="#" class="foot-cloud">配置文件</a>
+										<a href="#" class="foot-cloud">又拍云存储</a>
+										<a href="#" class="foot-cloud">上传</a>
+										<a href="#" class="foot-cloud">Handlebars</a>
+										<a href="#" class="foot-cloud">邮件</a>
+										<a href="#" class="foot-cloud">快捷键</a>
+										<a href="#" class="foot-cloud">用户指南</a>
+										<a href="#" class="foot-cloud">主题市场</a>
+										<a href="#" class="foot-cloud">新版本发布</a>
+										<a href="#" class="foot-cloud">...</a>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+
+			</div>
+			
+			<div role="tabpanel" class="tab-pane fade" id="fast-api">
+				<!--快捷手册内容-->
+				<section class="content-wrap fast-api-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="main-content col-md-8">
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h1 class="content-title">
+											<a href="#">Ghost 快捷手册</a>
+										</h1>
+									</div>
+									<section>
+										<h2 class="fast-api-h2">
+											<a href="#">安装/设置</a>
+										</h2>
+										<table class="table table-bordered table-striped table-self">
+											<tr>
+												<td>最新版本</td>
+												<td>
+													<a href="#">下载</a>
+												</td>
+											</tr>
+											<tr>
+												<td>安装指令</td>
+												<td>npm install --production</td>
+											</tr>
+											<tr>
+												<td>启动 Ghost</td>
+												<td>npm start</td>
+											</tr>
+											<tr>
+												<td>停止 Ghost</td>
+												<td>Ctrl+C</td>
+											</tr>
+										</table>
+									</section>
+									<hr class="fast-api-hr" />
+									<section>
+										<h2 class="fast-api-h2">
+											文件路径
+										</h2>
+										<table class="table table-bordered table-striped table-self">
+											<tr>
+												<td>配置文件</td>
+												<td>/config.js</td>
+											</tr>
+											<tr>
+												<td>主题</td>
+												<td>/content/themes</td>
+											</tr>
+											<tr>
+												<td>插件</td>
+												<td>/content/apps</td>
+											</tr>
+											<tr>
+												<td>图片</td>
+												<td>/content/images</td>
+											</tr>
+											<tr>
+												<td>导航（默认）</td>
+												<td>/core/server/helpers/tpl/navigation.hbs</td>
+											</tr>
+											<tr>
+												<td>分页（默认）</td>
+												<td>core/server/helpers/tpl/pagination.hbs</td>
+											</tr>
+										</table>
+									</section>
+									<hr class="fast-api-hr" />
+									<section>
+										<h2 class="fast-api-h2">
+											<a href="#">MarkDown</a>
+											/快捷键
+										</h2>
+										<table class="table table-bordered table-striped table-self">
+											<tr>
+												<td>Save</td>
+												<td>-</td>
+												<td>Ctrl + S</td>
+											</tr>
+											<tr>
+												<td>Bold</td>
+												<td>**text**</td>
+												<td>Ctrl / Cmd + B</td>
+											</tr>
+											<tr>
+												<td>Emphasize</td>
+												<td>__text__</td>
+												<td>Ctrl / Cmd + I</td>
+											</tr>
+											<tr>
+												<td>Inline Code</td>
+												<td>`code`</td>
+												<td>Cmd + K / Ctrl + Shift + K</td>
+											</tr>
+											<tr>
+												<td>Link</td>
+												<td>[title](http://)</td>
+												<td>Ctrl + Shift + L</td>
+											</tr>
+											<tr>
+												<td>Image</td>
+												<td>![alt](http://)</td>
+												<td>Ctrl + Shift + I</td>
+											</tr>
+											<tr>
+												<td>List</td>
+												<td>* item</td>
+												<td>Ctrl + L</td>
+											</tr>
+											<tr>
+												<td>H1</td>
+												<td># Heading</td>
+												<td>Ctrl + Alt + 1</td>
+											</tr>
+											<tr>
+												<td>H2</td>
+												<td>## Heading</td>
+												<td>Ctrl + Alt + 2</td>
+											</tr>
+											<tr>
+												<td>H3</td>
+												<td>### Heading</td>
+												<td>Ctrl + Alt + 3</td>
+											</tr>
+											<tr>
+												<td>Select Word</td>
+												<td></td>
+												<td>Ctrl + Alt + W</td>
+											</tr>
+											<tr>
+												<td>Uppercase</td>
+												<td>-</td>
+												<td>Ctrl + U</td>
+											</tr>
+											<tr>
+												<td>Lowercase</td>
+												<td>-</td>
+												<td>Ctrl + Shift + U</td>
+											</tr>
+											<tr>
+												<td>Titlecase</td>
+												<td>-</td>
+												<td>Ctrl + Alt + Shift + U</td>
+											</tr>
+											<tr>
+												<td>Insert Current Date</td>
+												<td>-</td>
+												<td>Ctrl + Shift + 1</td>
+											</tr>
+										</table>
+									</section>
+									<hr class="fast-api-hr" />
+									<section>
+										<h2 class="fast-api-h2">相关资源</h2>
+										<ul class="list-self">
+											<li>
+												<a href="#">Ghost v0.7.4</a>
+											</li>
+											<li>
+												<a href="#">Handlebars</a>
+											</li>
+											<li>
+												<a href="#">Node.js</a>
+											</li>
+											<li>
+												<a href="#">Ghost 资料/教程</a>
+											</li>
+										</ul>
+									</section>
+									<hr class="fast-api-hr" />
+									<section class="list-self">
+										<h2 class="fast-api-h2">Default.hbs</h2>
+										<em>default.hbs 文件中可以用到的 Handlebars 指令</em>
+										<h3>Head</h3>
+										<code>{{meta_title}}
+       									 	<br>{{meta_description}}
+									        <br>{{ghost_head}}
+									        <br>
+									    </code>
+										<h3>Body</h3>
+										<code>{{body_class}}
+									        <br>{{{body}}}
+									        <br>
+									    </code>
+										<h3>Footer</h3>
+										<code>{{@blog.title}}
+									        <br>{{@blog.url}}/rss/
+									        <br>{{ghost_foot}}
+									        <br>
+									    </code>
+									</section>
+									<hr class="fast-api-hr" />
+									<section>
+										<h2 class="fast-api-h2">
+      									  <a href="#">主题构成</a>
+    									</h2>
+										<ul class="list-self">
+											<li>/assets
+												<ul class="list-self3">
+													<li>/css
+														<ul class="list-self2">
+															<li>screen.css</li>
+															<li>post.css</li>
+														</ul>
+													</li>
+													<li>/fonts</li>
+													<li>/images</li>
+													<li>/js</li>
+													<li>/partials
+														<ul class="list-self2">
+															<li>pagination.hbs</li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+											<li>default.hbs</li>
+											<li>index.hbs [必须]</li>
+											<li>post.hbs [必须]</li>
+											<li>page.hbs [可选]</li>
+											<li>tag.hbs [可选]</li>
+											<li>package.json</li>
+										</ul>
+									</section>
+									<hr class="fast-api-hr" />
+									<section>
+										<h2 class="fast-api-h2">
+        									<a href="#">Handlebars</a>
+   										 </h2>
+										<h3>注释</h3>
+										<div  class="list-self">
+											<code>{{! 'A Comment' }}</code>
+											<h3>HTML 转义</h3>
+											<code>{{content}}</code>
+											<h3>if 指令</h3>
+											<code>{{#if author.website}}
+									        <br>{{else}}
+									        <br>{{/if}}</code>
+											<h3>unless 指令</h3>
+											<code>{{#unless author.website}}
+	        								<br>{{/unless}}</code>
+											<h3>foreach 指令</h3>
+											<code>{{#foreach posts}}
+	    									<br>{{/foreach}}</code>
+											<h3>块表达式</h3>
+											<code>{{#author}}
+	   										<br>{{/author}}</code>
+										</div>
+									</section>
+									<hr class="fast-api-hr" />
+									<section class="list-self">
+										<h2 class="fast-api-h2">Index.hbs</h2>
+										<em>index.hbs 文件中可以使用的 Handlebars 指令</em>
+										<h3>加载父模板 default.hbs</h3>
+										<code>{{!&lt; default}}
+        								<br>
+    									</code>
+										<h3>Header</h3>
+										<code>{{#if @blog.cover}}
+									        <br>{{@blog.cover}}
+									        <br>{{/if}}
+									        <br>
+									        <br>{{#if @blog.logo}}
+									        <br>{{@blog.logo}}
+									        <br>{{/if}}
+									        <br>{{@blog.title}}
+									        <br>{{@blog.description}}
+										</code>
+										<h3>文章</h3>
+										<code>{{#foreach posts}}
+									        <br>{{/foreach}}
+									        <br>{{post_class}}
+									        <br>{{date format='YYYY-MM-DD'}}
+									        <br>{{date published_at format="MMMM DD, YYYY"}}
+									        <br>{{date published_at timeago="true"}}
+									        <br>
+									        <br>{{#if tags}}
+									        <br>{{tags}}
+									        <br>{{tags separator=" | "}}
+									        <br>{{/if}}
+									        <br>
+									        <br>{{excerpt}}
+									        <br>{{excerpt characters="140"}}
+									        <br>{{content}}
+									        <br>{{content words="100"}}
+									        <br>
+									    </code>
+										<h3>分页</h3>
+										<code>{{pagination}}</code>
+									</section>
+									<hr class="fast-api-hr" />
+									<section class="api">
+										<h2>API 概览</h2>
+										<ol>
+											<li>@blog.title</li>
+											<li>@blog.url</li>
+											<li>@blog.logo</li>
+											<li>@blog.description</li>
+											<li>meta_title</li>
+											<li>meta_description</li>
+											<li>body</li>
+											<li>body_class</li>
+											<li>ghost_head</li>
+											<li>ghost_foot</li>
+											<li>pagination
+												<ul class="list-self2">
+													<li>next</li>
+													<li>page</li>
+													<li>pages</li>
+													<li>page_url prev</li>
+													<li>page_url next</li>
+													<li>prev</li>
+												</ul>
+											</li>
+											<li>post_class</li>
+											<li>post, posts</li>
+											<li>author
+												<ul class="list-self2">
+													<li>name</li>
+													<li>website</li>
+													<li>bio</li>
+													<li>cover</li>
+													<li>email</li>
+													<li>image</li>
+												</ul>
+											</li>
+											<li>excerpt [characters][words]</li>
+											<li>content [characters][words]</li>
+											<li>url [absolute]</li>
+											<li>tags [separator]
+												<ul class="list-self2">
+													<li>name</li>
+												</ul>
+											</li>
+											<li>date [format][timeago]</li>
+											<li>id</li>
+											<li>published_at</li>
+										</ol>
+									</section>
+									<hr class="fast-api-hr" />
+									<section class="list-self">
+										<h2>Post.hbs</h2>
+										<em>post.hbs 文件中可以使用的 Handlebars 指令</em>
+										<h3>加载父模板 default.hbs</h3>
+										<code>{{!&lt; default}}
+									        <br>
+									    </code>
+										<h3>Header</h3>
+										<code>{{#if @blog.cover}}
+									        <br>{{@blog.cover}}
+									        <br>{{/if}}
+									        <br>
+									        <br>{{#if @blog.logo}}
+									        <br>{{@blog.logo}}
+									        <br>{{/if}}
+									        <br>
+									        <br>{{@blog.title}}
+									        <br>{{@blog.description}}
+									        <br>{{date published_at timeago="true"}}
+									        <br>
+									    </code>
+										<h3>文章</h3>
+										<code>{{post_class}}
+									        <br>{{#if}}
+									        <br>{{else}}
+									        <br>{{/if}}
+									        <br>
+									        <br>{{#post}}
+									        <br>{{/post}}
+									        <br>{{url}}
+									        <br>{{{title}}}
+									        <br>{{date format='YYYY-MM-DD'}}
+									        <br>{{date published_at format="MMMM DD, YYYY"}}
+									        <br>{{#if tags}} {{tags}}
+									        <br>{{tags separator=" | "}}
+									        <br>{{/if}}
+									        <br>{{content}}
+									        <br>
+									    </code>
+										<h3>作者信息</h3>
+										<code>{{#author}}
+								        <br>{{/author}}
+								        <br>
+								        <br>{{#if author}}
+								        <br>{{/if}}
+								        <br>
+								        <br>{{author.name}}
+								        <br>{{author.bio}}
+								        <br>{{author.email}
+								        <br>{{author.website}}
+								        <br>{{author.image}}
+								        <br>{{author.cover}}
+								        <br>
+								    </code>
+									</section>
+								</div>
+							</div>
+							<aside class="sidebar col-md-4">
+								<div class="widget">
+									<h4 class="title">社区</h4>
+									<div class="community">
+										<p>QQ群：277327792</p>
+										<p>
+											<i class="iconfont icon-weixin2 iconself iconself2"></i>
+											<a href="#">&nbsp;问答社区</a>
+										</p>
+										<p>
+											<i class="iconfont icon-weibo iconself"></i>
+											<a href="#">官方微博</a>
+										</p>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">下载 Ghost</h4>
+									<div class="download">
+										<a href="#" class="btn btn-default btn-download">Ghost 中文版（0.7.4）</a>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">标签云</h4>
+									<div class="side-content">
+										<a href="#" class="foot-cloud">jQuery</a>
+										<a href="#" class="foot-cloud">Ghost 0.7 版本</a>
+										<a href="#" class="foot-cloud">开源</a>
+										<a href="#" class="foot-cloud">助手函数</a>
+										<a href="#" class="foot-cloud">标签云</a>
+										<a href="#" class="foot-cloud">导航</a>
+										<a href="#" class="foot-cloud">自定义页面</a>
+										<a href="#" class="foot-cloud">静态页面</a>
+										<a href="#" class="foot-cloud">Roon.io</a>
+										<a href="#" class="foot-cloud">配置文件</a>
+										<a href="#" class="foot-cloud">又拍云存储</a>
+										<a href="#" class="foot-cloud">上传</a>
+										<a href="#" class="foot-cloud">Handlebars</a>
+										<a href="#" class="foot-cloud">邮件</a>
+										<a href="#" class="foot-cloud">快捷键</a>
+										<a href="#" class="foot-cloud">用户指南</a>
+										<a href="#" class="foot-cloud">主题市场</a>
+										<a href="#" class="foot-cloud">新版本发布</a>
+										<a href="#" class="foot-cloud">...</a>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</div>
+			
+			<div role="tabpanel" class="tab-pane fade" id="download">
+				<!--下载内容-->
+				<section class="content-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="main-content col-md-8">
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h1 class="content-title">
+											<a href="#">下载 Ghost</a>
+										</h1>
+									</div>
+									<div class="content-img">
+										<a href="#">
+											<img src="img/down1.png" alt="" />
+										</a>
+									</div>
+									<hr />
+									<div class="content-text-top">
+										<span class="down-span"></span>
+										<p class="down-text-p"><strong>注意： </strong>Ghost 官方推荐使用 Node 0.10.x 版本，同时支持 Node 0.12.x 和 4.2.x 版本。</p>
+										<p class="down-text-p">打开命令行窗口，执行 node -v 命令查看 Node.js 版本号。</p>
+									</div>
+
+									<h2 class="title-h2">Ghost 中文集成版下载（建议下载此版本） -- 体积：33.6M</h2>
+									<ul class="list-self">
+										<li>最新版本：
+											<a href="#">Ghost v0.7.4 full (zh)</a>
+										</li>
+										<li>安装说明：参考
+											<a href="#">这里</a>
+										</li>
+										<li>版本特色：<code>中文汉化</code>、支持<code>七牛</code>、<code>又拍云</code>、<code>阿里云OSS</code>存储；增加 Roon 主题；集成 <code>node_modules</code> ，无需忍受 <code>npm install --production</code> 的麻烦。</li>
+										<li>支持输出“标签云”。
+											<a href="#">参考这里</a>
+										</li>
+										<li>支持输出“前一篇”、“后一篇”博文。</li>
+										<li>集成 sqlite3 原生库，并支持 Nodejs 0.10.x、0.12.x 和 4.2.x 。</li>
+										<li>支持<code>私密博客</code>功能</li>
+									</ul>
+									<h2 class="title-h2">Ghost 中文标准版下载 -- 体积：3.39M</h2>
+									<ul class="list-self">
+										<li>最新版本：
+											<a href="#">Ghost v0.7.4 (zh)</a>
+										</li>
+										<li>安装说明：参考
+											<a href="#">这里</a>
+										</li>
+										<li>版本特色：<code>中文汉化</code>、支持<code>七牛</code>、<code>又拍云</code>、<code>阿里云OSS</code>存储；增加 Roon 主题</li>
+										<li>支持输出“标签云”。
+											<a href="#">参考这里</a>
+										</li>
+										<li>支持输出“前一篇”、“后一篇”博文。</li>
+										<li>支持<code>私密博客</code>功能</li>
+									</ul>
+									<hr />
+									<h2 class="title-h2">Ghost 英文原版下载 -- 体积：3.23M</h2>
+									<ul class="list-self">
+										<li>最新版本：
+											<a href="#">Ghost v0.7.4</a>
+										</li>
+
+									</ul>
+
+								</div>
+							</div>
+							<aside class="sidebar col-md-4">
+								<div class="widget">
+									<h4 class="title">社区</h4>
+									<div class="community">
+										<p>QQ群：277327792</p>
+										<p>
+											<i class="iconfont icon-weixin2 iconself iconself2"></i>
+											<a href="#">&nbsp;问答社区</a>
+										</p>
+										<p>
+											<i class="iconfont icon-weibo iconself"></i>
+											<a href="#">官方微博</a>
+										</p>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">下载 Ghost</h4>
+									<div class="download">
+										<a href="#" class="btn btn-default btn-download">Ghost 中文版（0.7.4）</a>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">标签云</h4>
+									<div class="side-content">
+										<a href="#" class="foot-cloud">jQuery</a>
+										<a href="#" class="foot-cloud">Ghost 0.7 版本</a>
+										<a href="#" class="foot-cloud">开源</a>
+										<a href="#" class="foot-cloud">助手函数</a>
+										<a href="#" class="foot-cloud">标签云</a>
+										<a href="#" class="foot-cloud">导航</a>
+										<a href="#" class="foot-cloud">自定义页面</a>
+										<a href="#" class="foot-cloud">静态页面</a>
+										<a href="#" class="foot-cloud">Roon.io</a>
+										<a href="#" class="foot-cloud">配置文件</a>
+										<a href="#" class="foot-cloud">又拍云存储</a>
+										<a href="#" class="foot-cloud">上传</a>
+										<a href="#" class="foot-cloud">Handlebars</a>
+										<a href="#" class="foot-cloud">邮件</a>
+										<a href="#" class="foot-cloud">快捷键</a>
+										<a href="#" class="foot-cloud">用户指南</a>
+										<a href="#" class="foot-cloud">主题市场</a>
+										<a href="#" class="foot-cloud">新版本发布</a>
+										<a href="#" class="foot-cloud">...</a>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</div>
+			<div role="tabpanel" class="tab-pane fade" id="abouts">
+				<!--关于内容-->
+				<section class="content-wrap">
+					<div class="container">
+						<div class="row">
+							<div class="main-content col-md-8">
+								<div class="content-news">
+									<div class="content-head text-center">
+										<h1 class="content-title">
+											<a href="#">关于 Ghost 中文网</a>
+										</h1>
+									</div>
+									<div class="content-text-top">
+										<span></span>
+										<p>2013 年 9 月份，Ghost 正式向公众发布，Ghost 中文网也随之上线。 Ghost 中文网的目标是致力于 Ghost 开源博客系统在国内的推广，与广大 Ghost 用户分享 Ghost 相关的知识、技巧。
+										</p>
+									</div>
+									<div class="content-img">
+										<a href="#">
+											<img src="img/about1.jpg" alt="" />
+										</a>
+									</div>
+
+									<div class="content-text">
+										<p>大约四年前，我们在 Kickstarter 上推出了一个还处在原型阶段的 Ghost，这个小小的原型寄托了我们的一个想法，那就是创建 Web 上的下一代伟大的开源博客平台。 在初期阶段，我们真的只是专注于让所有功能能够运转起来。Ghost 是 Node.js 平台上为数不多的一个
+										</p>
+									</div>
+									<hr />
+
+									<p class="title-p">如果你也喜欢 Ghost ，可以通过以下方式与我们交流：</p>
+									<ul class="list-self">
+										<li>微博：
+											<a href="#">@ghostchinacom</a>
+
+										</li>
+										<li>QQ群：309172035</li>
+									</ul>
+									<hr />
+
+									<p class="title-p">合作站点：</p>
+									<ul class="list-self">
+										<li>
+											<a href="#">Bootstrap 中文网</a>
+										</li>
+										<li>
+											<a href="#">开放 CDN 服务</a>
+										</li>
+										<li>
+											<a href="#">Grunt 中文网</a>
+										</li>
+										<li>
+											<a href="#">Laravel 中文网</a>
+										</li>
+										<li>
+											<a href="#">jQuery 中文文档</a>
+										</li>
+									</ul>
+									<p class="title-p">合作伙伴：</p>
+									<ul class="list-self">
+										<li>
+											<a href="#">阿里云</a>
+										</li>
+									</ul>
+									<p class="title-p">赞助商：</p>
+									<ul class="list-self">
+										<li>
+											<a href="#">又拍云</a>
+										</li>
+										<li>
+											<a href="#">UCloud</a>
+										</li>
+										<li>
+											<a href="#">七牛云存储</a>
+										</li>
+									</ul>
+								</div>
+							</div>
+							<aside class="sidebar col-md-4">
+								<div class="widget">
+									<h4 class="title">社区</h4>
+									<div class="community">
+										<p>QQ群：277327792</p>
+										<p>
+											<i class="iconfont icon-weixin2 iconself iconself2"></i>
+											<a href="#">&nbsp;问答社区</a>
+										</p>
+										<p>
+											<i class="iconfont icon-weibo iconself"></i>
+											<a href="#">官方微博</a>
+										</p>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">下载 Ghost</h4>
+									<div class="download">
+										<a href="#" class="btn btn-default btn-download">Ghost 中文版（0.7.4）</a>
+									</div>
+								</div>
+								<div class="widget">
+									<h4 class="title">标签云</h4>
+									<div class="side-content">
+										<a href="#" class="foot-cloud">jQuery</a>
+										<a href="#" class="foot-cloud">Ghost 0.7 版本</a>
+										<a href="#" class="foot-cloud">开源</a>
+										<a href="#" class="foot-cloud">助手函数</a>
+										<a href="#" class="foot-cloud">标签云</a>
+										<a href="#" class="foot-cloud">导航</a>
+										<a href="#" class="foot-cloud">自定义页面</a>
+										<a href="#" class="foot-cloud">静态页面</a>
+										<a href="#" class="foot-cloud">Roon.io</a>
+										<a href="#" class="foot-cloud">配置文件</a>
+										<a href="#" class="foot-cloud">又拍云存储</a>
+										<a href="#" class="foot-cloud">上传</a>
+										<a href="#" class="foot-cloud">Handlebars</a>
+										<a href="#" class="foot-cloud">邮件</a>
+										<a href="#" class="foot-cloud">快捷键</a>
+										<a href="#" class="foot-cloud">用户指南</a>
+										<a href="#" class="foot-cloud">主题市场</a>
+										<a href="#" class="foot-cloud">新版本发布</a>
+										<a href="#" class="foot-cloud">...</a>
+									</div>
+								</div>
+							</aside>
+						</div>
+					</div>
+				</section>
+			</div>
+
+		</div>
+
+		<!--页脚地图-->
+		<footer class="foot-self">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="widge">
+							<h4 class="foot-title">最新文章</h4>
+							<div class="foot-content">
+								<div class="foot-news mt25">
+									<a href="#">Ghost 1.0 版本正式发布</a>
+									<p class="news-date">2017年07月29日</p>
+								</div>
+								<div class="foot-news">
+									<a href="#">Ghost 1.0 RC1 发布，可用于生产环境</a>
+									<p class="news-date">2017年7月13日</p>
+								</div>
+								<div class="foot-news">
+									<a href="#">Ghost 1.0.0-beta.2 发布啦！</a>
+									<p class="news-date">2017年06月24日</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="widge">
+							<h4 class="foot-title">标签云</h4>
+							<div class="foot-content mt25">
+								<a href="#" class="foot-cloud">Ghost</a>
+								<a href="#" class="foot-cloud">新版本发布</a>
+								<a href="#" class="foot-cloud">JavaScript</a>
+								<a href="#" class="foot-cloud">Promise</a>
+								<a href="#" class="foot-cloud">主题</a>
+								<a href="#" class="foot-cloud">Node.js</a>
+								<a href="#" class="foot-cloud">MySQL</a>
+								<a href="#" class="foot-cloud">Nginx</a>
+								<a href="#" class="foot-cloud">阿里云服务器</a>
+								<a href="#" class="foot-cloud">Ubuntu</a>
+								<a href="#" class="foot-cloud">深度玩转 Ghost</a>
+								<a href="#" class="foot-cloud">Theme</a>
+								<a href="#" class="foot-cloud">Markdown</a>
+								<a href="#" class="foot-cloud">反向代理</a>
+								<a href="#" class="foot-cloud">Apache</a>
+								<a href="#" class="foot-cloud">...</a>
+							</div>
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="widge">
+							<h4 class="foot-title">合作伙伴</h4>
+							<div class="foot-content">
+								<ul class="list-unstyled foot-links clearfix mt25">
+									<li>
+										<a href="#">Bootstrap中文网</a>
+									</li>
+									<li>
+										<a href="#">开放CDN服务</a>
+									</li>
+									<li>
+										<a href="#">Grunt中文网</a>
+									</li>
+									<li>
+										<a href="#">Gulp中文网</a>
+									</li>
+								</ul>
+								<ul class="list-unstyled foot-links clearfix">
+									<li>
+										<a href="#">Lodash中文文档</a>
+									</li>
+									<li>
+										<a href="#">jQuery中文文档</a>
+									</li>
+								</ul>
+								<ul class="list-unstyled foot-links clearfix">
+									<li>
+										<a href="#">阿里云</a>
+									</li>
+								</ul>
+								<ul class="list-unstyled foot-links clearfix">
+									<li>
+										<a href="#">又拍云</a>
+									</li>
+									<li>
+										<a href="#">七牛云存储</a>
+									</li>
+								</ul>
+
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+		<!--公司注册-->
+		<div class="copyright">
+			<div class="container">
+				<div class="row">
+					<div class="col-sm-12">
+						<span>Copyright &copy; <a href=http://www.golaravel.com/ >Ghost 中文网</a></span> | <span><a href=http://www.miibeian.gov.cn/ target=_blank>京ICP备11008151号</a></span> | <span>京公网安备11010802014853</span>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div id="btnTop">
+			<span></span>
+		</div>
+	</body>
+
+</html>

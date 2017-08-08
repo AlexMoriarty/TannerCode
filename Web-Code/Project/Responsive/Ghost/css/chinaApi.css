@@ -1,0 +1,94 @@
+/*顶部导航*/
+
+body {
+	padding-top: 50px;
+}
+
+.nav-self {
+	font-size: 16px;
+}
+
+
+/*主要内容*/
+
+
+/*大标题部分*/
+
+.masthead {
+	position: relative;
+	margin-bottom: 20px;
+	padding: 100px 15px;
+	text-align: center;
+	background: rgb(237, 236, 228);
+}
+
+.masthead h1 {
+	font-size: 100px;
+	font-weight: 700;
+	letter-spacing: -2px;
+}
+
+.masthead p {
+	margin-left: 15%;
+	margin-right: 15%;
+	font-size: 30px;
+	font-weight: 300;
+}
+
+.btn-self {
+	margin-top: 15px;
+	padding: 14px 16px;
+	font-size: 18px;
+}
+
+.social{
+	padding:0 0 15px 0;
+    text-align: center;
+    background-color: #fff;
+}   
+.mr65{
+	margin-right: 65px;
+}
+.mr20{
+	margin-right: 20px;
+}
+.btn-github{
+	background-color: #eee;
+}
+.iconfont{
+	font-size: 12px;
+}
+.btn-arrow-box{
+	position: relative;
+	margin-left: 3px;
+}
+.btn-arrow{
+	position: absolute;
+	left: -10px;
+	top:5px;
+	border: 5px solid #d4d4d4;
+	border-bottom-color: transparent;
+	border-top-color: transparent;
+	border-left-color: transparent;
+}
+
+/*页脚导航*/
+
+.footer-self {
+	padding: 40px 20px;
+	color: #a6a6a6;
+	font-size: 0.8em;
+	text-align: center;
+	background: #18191b;
+	border-bottom: #0a0a0a 5px solid;
+}
+
+.footer-self hr {
+	width: 40%;
+	margin: 1em auto;
+	border-color: #4d5356;
+}
+
+.footer-self a {
+	color: #e2edf2;
+}

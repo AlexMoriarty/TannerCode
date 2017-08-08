@@ -1,0 +1,78 @@
+/*轮播图的基本样式*/
+*{
+	padding: 0;
+	margin: 0;
+}
+.w{
+    width: 1140px;
+    margin: 0 auto;
+}
+ul {
+    list-style:none;
+}
+.slider-box{
+	width: 1000px;
+	height: 300px;
+	overflow: hidden;
+	margin: 0 auto;
+	position: relative;
+}
+.slider{
+	width: 5000px;
+	height: 300px;
+	position: absolute;
+}
+.slider li{
+	float: left;
+	height: 400px;
+}
+.slider img{
+	width: 1000px;
+	height:300px;
+}
+
+/*点击左右的箭头*/
+.slider-box .arrow
+{
+    color: #fff;
+    font-size: 24px;
+    text-align: center;
+    width: 30px;
+    height: 50px;
+    line-height: 50px;
+    position: absolute;
+    top: 50%;
+    background-color: #000;
+    opacity: .2;
+    margin-top: -25px;
+    cursor: pointer;
+    display: none;
+}
+
+.slider-box .prev{
+    left: 0;
+}
+.slider-box .next{
+    right: 0;
+}
+
+/*轮播图下方的点*/
+.dot{
+    position: absolute;
+    left: 50%;
+    bottom: 10px;
+}
+
+.dot li{
+    width: 12px;
+    height:12px;
+    border-radius: 50%;
+    background-color: #fff;
+    float: left;
+    margin:0 5px;
+    cursor: pointer;
+}
+
+.dot li.active{
+    background-color: #ffbd34;
+}

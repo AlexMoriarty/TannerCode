@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<!-- jquery一定要在bootstrap之前引入-->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>bootstrap</title>
+		<style type="text/css">
+			button{
+				margin: 30px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<button class="btn btn-default origin-left" data-toggle="tooltip"
+			data-original-title="提示框居左" data-placement="right">提示框居右</button>
+			
+			<button class="btn btn-default origin-left" data-toggle="tooltip"
+			data-original-title="提示框居左" data-placement="left">提示框居左</button>
+			
+			<button class="btn btn-default origin-left" data-toggle="tooltip"
+			data-original-title="提示框居左" data-placement="top">提示框居上</button>
+			
+			<button class="btn btn-default origin-left" data-toggle="tooltip"
+			data-original-title="提示框居左" data-placement="bottom">提示框居下</button>-->
+			
+				
+			<button class="btn btn-default origin-local" data-toggle="tooltip">提示框居下</button>
+	</body>
+	
+	<script>
+		$(function(){
+			//$(".origin-left").tooltip();
+			
+			$(".origin-local").tooltip({
+				title:"提示框居下",
+				placement:"bottom"
+			});
+		})
+	</script>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        div {
+            width: 200px;
+            height: 200px;
+        }
+
+        .dad {
+            /*background-color: blue;*/
+            margin: 100px auto;
+            position: relative;
+        }
+
+        .son {
+            background-color: red;
+            position: absolute;
+            right: 5px;
+            bottom: 5px;
+            z-index: 1;
+        }
+
+        .mark {
+            background-color: #000;
+            position: absolute;
+            left: 5px;
+            top: 5px;
+            opacity: 0.5;
+            filter: alpha(opacity=30);
+        }
+    </style>
+</head>
+<body>
+<div class="dad">
+    <div class="son"></div>
+    <div class="mark"></div>
+</div>
+</body>
+</html>

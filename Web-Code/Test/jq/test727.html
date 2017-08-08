@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<style>
+			li {
+				list-style: none;
+				width: 200px;
+				/*height: 40px;*/
+				border: 1px solid #360;
+				/*line-height: 40px;*/
+				cursor: pointer;
+			}
+			
+			.box {
+				width: 200px;
+				height: 200px;
+				border: 1px solid #ccc;
+				display: none;
+			}
+		</style>
+	</head>
+
+	<body>
+		<!--<button id="btn1">按钮1</button>
+		<button id="btn2">按钮2</button>
+		<button id="btn3">按钮3</button>
+		<div class="box">
+			<h3>lalalaljdlkasjdal</h3>
+			<p>
+				萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+			</p>
+		</div>-->
+
+		<ul class="list">
+			<li>我的第1个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第2个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第3个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第4个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第5个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第6个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第7个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+			<li>我的第8个li
+				<div class="box">
+					<h3>lalalaljdlkasjdal</h3>
+					<p>
+						萨达萨达客户萨克的挥洒的空间撒谎的空间撒谎的飒飒活动空间撒活动开始电话撒肯定哈萨克
+					</p>
+				</div>
+			</li>
+		</ul>
+	</body>
+
+</html>
+<script>
+	$(function() {
+		
+		
+		
+
+		$("li").each(function(i){
+			$(this).click(function(){
+				$(this).children(".box").stop().delay(800).slideToggle();
+			})
+		})
+
+		//		$("#btn1").click(function(){
+		//			$(".box").hide("slow");
+		//		})
+		//		$("#btn2").click(function  () {
+		//			$(".box").show();
+		//		})
+		//		$("#btn3").hover(function  () {
+		//			$(".box").stop().toggle("slow");
+		//		})
+
+		//		$("#btn1").click(function(){
+		//			$(".box").slideDown("slow");
+		//		})
+		//		$("#btn2").click(function  () {
+		//			$(".box").slideUp();
+		//		})
+		//		$("#btn3").hover(function  () {
+		//			$(".box").stop().slideToggle("slow");
+		//		})
+
+		//		$("#btn1").click(function(){
+		//			$(".box").fadeIn("slow");
+		//		})
+		//		$("#btn2").click(function  () {
+		//			$(".box").fadeOut("slow");
+		//		})
+		//		$("#btn3").hover(function  () {
+		//			$(".box").stop().fadeToggle("slow");
+		//		})
+	})
+</script>

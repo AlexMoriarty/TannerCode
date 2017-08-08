@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery.min.js"></script>
+</head>
+<style type="text/css">
+    * {
+        margin: 0px;
+        padding: 0px;
+    }
+
+    body {
+        width: 300px;
+        margin: 0 auto;
+    }
+
+    div {
+        margin: 5px;
+        padding: 5px;
+        border: 1px solid #ccc;
+        /*background-color: #fff;*/
+    }
+
+    p {
+        width: 100px;
+        height: 100px;
+        background-color: #ccc;
+    }
+</style>
+<body>
+<div>1</div>
+<div class="active">2</div>
+<p></p>
+<div>3</div>
+<div>4
+    <div>5</div>
+    <div class='box1'>6</div>
+</div>
+<div class='box1'>7
+    <div>8
+        <div>9
+            <div>10</div>
+        </div>
+    </div>
+    <div>8
+        <div>9
+            <div>10</div>
+        </div>
+    </div>
+</div>
+
+</body>
+<script>
+    $(function () {
+        //后代选择器
+//        $('div div').css('background','orange');
+        //child  子选择器
+//        $('div > div').css('background', 'green');
+        //相邻兄弟选择器
+//        $('.active + div').css('background','lime');
+        //通用兄弟选择器
+        $('.active  ~  div').css('background','red');
+
+//        + 必须紧跟在后面不能有人插队
+//        ~ 之后的同级即可
+    })
+
+</script>
+</html>

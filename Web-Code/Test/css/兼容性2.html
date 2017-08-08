@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        .clearfix{
+            *zoom:1;
+        }
+        .clearfix:after{
+            content:"";
+            clear:both;
+            display: block;
+        }
+        .box{
+            border: 2px solid red;
+            width: 500px;
+        }
+        .left{
+            float: left;
+            background-color: yellow;
+        }
+        .right{
+            float: right;
+            background-color: blue;
+        }
+        h2{
+            height: 30px;
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+<div class="box clearfix">
+    <div class="left">
+        <h2>左边</h2>
+    </div>
+    <div class="right">
+        <h2>右边</h2>
+    </div>
+</div>
+</body>
+</html>

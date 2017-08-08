@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		   
+	</style>
+	<body>
+          <ul>
+			<li>我的第一个li标签</li>
+			<li>我的第二个li标签</li>
+			<li>我的第三个li标签</li>
+			<li>我的第四个li标签</li>
+			<li>我的第五个li标签</li>
+			<li>我的第六个li标签</li>
+		</ul>
+	</body>
+	<script>
+		$(function(){
+			//匹配大于指定索引值的元素
+			//$("li:gt(2)").css("color","#000099");
+			//匹配小于指定索引值的元素
+			$("li:lt(4)").css("color","#000099");
+		 })
+		
+	</script>
+</html>
