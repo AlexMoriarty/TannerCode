@@ -6,7 +6,7 @@
  * Time: 01:02
  */
 
-var_dump($a);
+//var_dump($a);
 echo '<br>';
 
 $b = 'aaa';
@@ -17,6 +17,9 @@ echo '<br>';
 //unset($b);
 var_dump($b);
 echo '<br>';
+
+$c = '';
+var_dump($c);
 
 
 if (isset($b)){
