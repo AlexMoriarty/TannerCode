@@ -21,8 +21,11 @@
 
 
 false   为假的情况    false.png图片
-
- 
+0 0.0 "0"
+null false
+array()
+$a
+''
 
 
 
