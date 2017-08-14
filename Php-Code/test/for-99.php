@@ -6,7 +6,7 @@
  * Time: 19:38
  */
 
-echo "<table border='1' cellspacing='0' cellpadding='0' width='700' style='text-align: center'>";
+echo "<table border='1' cellspacing='0' cellpadding='0' width='900' style='text-align: center'>";
 for ($i = 1; $i <= 9; $i++) {
     echo "<tr>";
     for ($j = 1; $j <= $i; $j++) {

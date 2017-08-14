@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<style type="text/css">
+			
+		</style>
+	</head>
+	<body>
+		<a href="#" action="add">链接</a>
+	</body>
+	<script>
+		$(function(){
+			//对自己定义的属性要进行修改的时候使用attr
+			$('a').prop('action','delete');
+			$('a').attr('action','delete');
+		})
+	</script>
+</html>

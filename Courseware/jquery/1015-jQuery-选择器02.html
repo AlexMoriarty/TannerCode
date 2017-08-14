@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		
+	
+		
+	</style>
+	<body>
+		<ul>
+			<li>我的第一个li标签</li>
+			<li>我的第二个li标签</li>
+			<li>我的第三个li标签</li>
+			<li>我的第四个li标签</li>
+			<li>我的第五个li标签</li>
+			<li>我的第六个li标签</li>
+		</ul>
+		
+		<div>
+			i am div
+			<p>我是p标签</p>
+		</div>
+	</body>
+	<script>
+		$(function(){
+			//选中第一个
+			//$('li:first').css({'color':'red','font-size':'30px'})
+			//选中最后一个
+		//	$('li:last').css({'color':'red','font-size':'30px'})
+			
+			//祖先后代
+			//$('div p').css('color','green');
+			//eq
+			//$('li:eq(5)').css('color','red');
+			//odd
+			//$('li:odd').css('color','#0000FF');
+			//even
+			$('li:even').css('color','#0000FF');
+		})
+		
+	</script>
+</html>

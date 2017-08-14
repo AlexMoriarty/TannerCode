@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		*{
+			margin: 0px;
+			padding: 0px;
+		}
+		div{
+			height: 200px;
+			width:200px;
+			border:2px solid blue;
+			padding: 20px;
+			margin: 10px;
+		}
+	</style>
+	<body>
+		<div>
+			
+		</div>
+	</body>
+	<script>
+		$(function(){
+			var $_width = $('div').width();
+			console.log($_width);
+			//包括补白  不包括边框
+			var $_innerWidth= $('div').innerWidth();
+			console.log($_innerWidth);
+			
+			//包括补白和边框
+			var $_outerWidth= $('div').outerWidth();
+			console.log($_outerWidth);
+			
+			//参数为true的时候包括边距
+			var $_outer= $('div').outerWidth(true);
+			console.log($_outer);
+		})
+		
+	</script>
+</html>

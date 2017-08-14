@@ -1,0 +1,31 @@
+
+
+
+变量定义
+$
+
+常量定义
+define()
+
+系统魔术常量
+_LINE_
+_FILE_
+_DIR_
+_FUNCTION_
+_CLASS_
+_METHOD
+
+八大数据类型
+int float bool string
+array object
+resource null
+
+单双引号区别
+''输出变量的名称
+""输出变量的名称
+
+什么时候为NULL类型    unset()  isset()
+
+
+
+

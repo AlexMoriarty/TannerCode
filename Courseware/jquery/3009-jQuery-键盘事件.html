@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<style type="text/css">
+		
+	</style>
+	<body>
+		<input type="text" name="" id="" value="" />
+	</body>
+	<script>
+	$(function(){
+		$('input').keyup(function(){
+			$(this).css('background','blue');
+		})
+		/*
+		$('input').keydown(function(){
+			$(this).css('background','red 	');
+		})*/
+		
+		$('input').keypress(function(){
+			$(this).css('background','red 	');
+		})
+	})
+	</script>
+</html>

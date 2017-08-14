@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<style type="text/css">
+			.active{
+				color: red;
+			}
+		</style>
+	</head>
+	<body>
+		
+	</body>
+	<script>
+		$(function(){
+			$("<div>",{
+	            class:'active'
+	            text:'click it',
+	            click: function(){
+	                $(this).toggleClass("active");
+	            }
+      		}).appendTo('body');   
+		})
+	</script>
+</html>

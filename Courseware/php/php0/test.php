@@ -1,0 +1,10 @@
+<?php
+
+//  localhost    
+
+	echo phpinfo();
+	
+?>
+
+
+  

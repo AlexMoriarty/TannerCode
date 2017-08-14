@@ -159,9 +159,10 @@ $(function () {
 
     // alert(datepickerMonth);
     var datepickerMonth = $('.ui-datepicker-month').text();
-    $('.ui-datepicker-header a:first-child').click(function () {
+    $('.ui-datepicker-header a:first-child').click(function aaa() {
         datepickerMonth = $('.ui-datepicker-month').text();
         alert(datepickerMonth);
+        aaa();
     });
     // $('.ui-datepicker-next').click(function () {
     //     datepickerMonth = $('.ui-datepicker-month').text();

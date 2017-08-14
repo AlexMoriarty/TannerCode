@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css"/>
+		<!-- jquery一定要在bootstrap之前引入-->
+		<script src="js/jquery-2.1.4.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<title>bootstrap</title>
+		<style type="text/css">
+			.scrollspy{
+			    height:400px;
+			    font-size:20px;
+			    overflow:scroll;
+			}
+
+		</style>
+	</head>
+	<body>
+		<nav class="navbar navbar-default" id="mynav">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#mynav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="#" class="navbar-brand">header</a>
+				</div>
+				<div class="collapse navbar-collapse " id="mynav" data-offset="60">
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="#one">首页</a></li>
+						<li><a href="#two">产品介绍</a></li>
+						<li class="dropdown">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown">产品历史<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a href="#three">1970</a></li>
+								<li><a href="#four">1988</a></li>
+								<li><a href="#five">1970</a></li>
+							</ul>
+						</li>
+						<li><a href="#six">关于我们</a></li>
+					</ul>
+				</div>
+				
+			</div>
+		</nav>
+		
+			<!--<div class="scrollspy" data-spy="scroll">-->
+				
+				
+		<div class="scrollspy" data-target="#mynav" data-spy="scroll">
+			<h4 id="one">one</h4>
+			 <p>oneoneoneoneoneoneoneoneoneoneoneone</p>
+			 <h4 id="two">two</h4>
+			 <p>twotwotwotwotwotwotwotwotwotwotwotwo</p>
+			 <h4 id="three">three</h4>
+			 <p>threethreethreethreethreethreethreethreethreethreethreethree</p>
+			 <h4 id="four">four</h4>
+			 <p>fourfourfourfourfourfourfourfourfourfour</p>
+			 <h4 id="five">five</h4>
+			 <p>fivefivefivefivefivefivefivefivefivefive</p>
+			 <h4 id="six">six</h4>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			 <p>sixsixsixsixsixsixsixsixsix</p>
+			
+		</div>
+	</body>
+	
+	<!--<script>
+		$(function(){
+			/*$(".scrollspy").scrollspy({
+       	 		target: "#mynav"
+   		 	});
+*/
+		})
+	</script>-->
+</html>

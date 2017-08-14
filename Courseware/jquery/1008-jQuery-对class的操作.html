@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<script src="js/jquery.min.js"></script>
+		<style type="text/css">
+			.active{
+				color: blue;
+				font-size: 30px;
+			}
+			
+			.toggle{
+				border:2px solid #006400;
+				padding: 20px;
+				width: 200px;
+			}
+		</style>
+	</head>
+	<body>
+		<!--<p class="toggle">我是一个段落标签</p>-->
+		<p>我是一个段落标签</p>
+	</body>
+	<script>
+		$(function(){
+			$('p').mouseover(function(){
+				//添加class 单个
+				//$(this).addClass('active');
+				
+				//添加多个class
+				$(this).addClass('active toggle');
+				//删除class
+				//$(this).removeClass('toggle');
+				
+				//触发class
+				//$(this).toggleClass('toggle');
+			})
+		})
+	</script>
+</html>
